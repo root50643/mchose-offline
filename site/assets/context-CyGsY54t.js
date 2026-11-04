@@ -1,0 +1,1 @@
+import{A as o,a9 as i}from"./_plugin-vue_export-helper-D2U_K4la.js";const e=Symbol("audio-detail-context");function r(t){i(e,Object.freeze(t))}function u(){const t=o(e,null);if(!t)throw new Error("useAudioDetailContext 必须在 AudioDetail 页面壳内使用");return t}export{r as p,u};

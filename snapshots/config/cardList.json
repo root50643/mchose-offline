@@ -1,0 +1,2911 @@
+{
+  "v": 1,
+  "data": [
+    {
+      "desc": "Ace 60 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2101",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2102",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x19f5",
+          "productId": "0xfc30",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x19f5",
+          "productId": "0xff1b",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60White_06e6d57a9a2f.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60WhiteFull_f196a7f973f8.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60WhiteLineFull_9aedd936edcf.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black-light",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLight_b3f9b9dd51bc.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLightFull_a617b0fc3ce6.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60Black_c0b834016a14.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackFull_af6b40a4b1bd.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLine_230da829208e.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLineFull_bd3bdac9fe4b.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60.glb"
+    },
+    {
+      "desc": "Ace 60 Pro 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2103",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2104",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x19f5",
+          "productId": "0xfc31",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x19f5",
+          "productId": "0xff0f",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60White_06e6d57a9a2f.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60WhiteFull_f196a7f973f8.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60WhiteLineFull_9aedd936edcf.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black-light",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLight_b3f9b9dd51bc.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLightFull_a617b0fc3ce6.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLine_230da829208e.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60BlackLineFull_bd3bdac9fe4b.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 60 Pro"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60.glb"
+    },
+    {
+      "desc": "Ace 60 Pro ISO FR 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3040",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3041",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260530OaXXz8wy.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_60_ProFR-ISOBlackFull_90anwuy2lemtjzvv.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 60 Pro\nISO FR"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/20260513CbK7ahW6.glb"
+    },
+    {
+      "desc": "Ace 60 Pro Nordic 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3002",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3022",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60Pro_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60ProNordicFull_82eb81d2aa44.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 60 Pro\nNordic"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60ProNordic.glb"
+    },
+    {
+      "desc": "Ace 60X I 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2126",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2127",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60X_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60X_whiteFull_1b471f78407a.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60X_wihteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60X_WhiteLineFull_3b7f3c843032.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60X_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60X_black_02c94ac4c334.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60.glb"
+    },
+    {
+      "desc": "Ace 60X II 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2112",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2113",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60X_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60X_whiteFull_1b471f78407a.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60X_wihteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60X_WhiteLineFull_3b7f3c843032.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace60X_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace60X_black_02c94ac4c334.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60.glb"
+    },
+    {
+      "desc": "Ace 68 I 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2114",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2115",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_whiteFull_4a74bb55c3ba.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_whiteLineFull_c0a6644dd782.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_blackFull_421cf2a89660.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-shallow-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_shallowBlackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_shallowBlackLineFull_5fb6dec2d942.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_blackLineFull_d9feb67741aa.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_redFull_b950020fe31a.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d1204e",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68.glb"
+    },
+    {
+      "desc": "Ace 68 Pro 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2116",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2117",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_whiteFull_4a74bb55c3ba.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_whiteLineFull_c0a6644dd782.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_blackFull_421cf2a89660.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-shallow-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_shallowBlackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_shallowBlackLineFull_5fb6dec2d942.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_blackLineFull_d9feb67741aa.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_redFull_b950020fe31a.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d1204e",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68.glb"
+    },
+    {
+      "desc": "Ace 68 III 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3003",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x302a",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_whiteFull_4a74bb55c3ba.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_whiteLineFull_c0a6644dd782.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_blackFull_421cf2a89660.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-shallow-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_shallowBlackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_shallowBlackLineFull_5fb6dec2d942.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_blackLineFull_d9feb67741aa.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68_redFull_b950020fe31a.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d1204e",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68.glb"
+    },
+    {
+      "desc": "Ace 68 Air II 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2120",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2121",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_whiteFull_8e90171d8dcd.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-air-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_transparent_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_transparent_whiteFull_a3ced781a053.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-air-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_pink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_pinkFull_5f4b22f07a40.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#f7d8df",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_blackFull_2980ddb09b36.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_redFull_a4a29ccba5d1.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e32365",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 68 Air"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68Air.glb"
+    },
+    {
+      "desc": "Ace 68 Air III 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2132",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2133",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_whiteFull_8e90171d8dcd.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-air-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_transparent_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_transparent_whiteFull_a3ced781a053.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-air-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_pink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_pinkFull_5f4b22f07a40.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#f7d8df",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_blackFull_2980ddb09b36.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Air_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air_redFull_a4a29ccba5d1.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e32365",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 68 Air"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68Air.glb"
+    },
+    {
+      "desc": "Ace 68 Air 2 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x300a",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x300b",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-ace68air2-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260421sXwX5HRc.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air2WhiteFull_yftpbe39v9zb70b7.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace-68-Air-2white_wu4xw9blnhrbdh8p.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-ace68air2-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260421CLfgL2Mu.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air2PinkFull_ve0a7h17xfe0iuq0.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3b8cd",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace-68-Air-2Pink_s885yesgebtks8u6.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-ace68air2-blue",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260421EITtr0Du.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air2BlueFull_y9yoryj3s6y2ekai.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#c6d2f0",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace-68-Air-2Blue_pozmsevv3o6px78j.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260421Z7pkUWAa.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air2BerryRedFull_isg4uep3a8tdj3tx.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#c10e4c",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace-68-Air-2Red_nqg6zwh4ed0836fg.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-ace68air2-mint-ice",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_Air2MintIce_5vnkzkz9jk6b0nhp.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air2MintIceFull_hmoj63kqs4nr7f8q.png",
+          "theme": "unknown",
+          "styleRaw": ".color-ace68air2-mint-ice { background: #68C2C6; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#68C2C7",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace-68-Air-2MintIce_6xw555i30hgdufs0.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-ace68air2-golden",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_Air2Golden_raaz81h2nc7jk2d3.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68Air2GoldenFull_pogx6d58rlc4jtfp.png",
+          "theme": "unknown",
+          "styleRaw": ".color-ace68air2-golden { background: #E8CE36; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#E9CE33",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace-68-Air-2Gold_aksh5e6ga5j5grss.jpg",
+              "theme": "light"
+            }
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "backdrop",
+        "title": "Ace 68 Air 2"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/20260409bp3cCV5w.glb"
+    },
+    {
+      "desc": "Ace 68 GT 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3007",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3009",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-sliver-feather",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTFeather_dxjdhxyuqeq6v9yk.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTFeatherFull_xib46x9abe168f8b.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d0d0d8",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-golden-sliver",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTGoldSliver_ocw863hamop0mpfc.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTGoldSliverFull_yl3qv7pb1bn18q99.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d0d0d8",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68GT_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_GT-sliver_651e825acb94.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#ccc",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-golden",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68GT_golden.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTGoldenFull_407cd8e7d7e0.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d3cdc8",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-mist-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68GT_pink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTPinkFull_0d44e0f89eee.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e7bbd1",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-cherry-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_GTCherryRed_ii34caaib3mpvzn0.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_GTCherryRedFull_zxqrpfv23fzjvr6v.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#56283b",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68GT_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTBlackFull_7691c1f29971.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#242428",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "gt68-color-black-dark",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_GT黑金_2x_1_x4fds81xrpiaetlc.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_GT黑金_2x_2_9e7bkp49f4pnp39k.png",
+          "theme": "unknown",
+          "styleRaw": ".gt68-color-black-dark { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/3.黑金_87qxo1gxa031fqos.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#242428",
+            "textColor": "#FFFFFF"
+          }
+        },
+        {
+          "className": "color-glaze-purple",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68GT_glaze-purple.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68GTGlazePurpleFull_947f46a2e7fd.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#29165c",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 68 GT"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68GT.glb"
+    },
+    {
+      "desc": "Ace 68 Turbo 16K 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3026",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3027",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_wihteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboWhiteLineFull_d6037064f4de.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-mist-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_mistWhite.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboMistWhiteFull_ddbced8cd4bf.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-mist-silver",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_Turbo-Mist_Silver_1e5ed192bb9f.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboMistSilverFull_2200bf9557e8.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#bfc0c8",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-air-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_pink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboPinkFull_ec23c0c345c7.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e7c9d0",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboBlackLineFull_131dfba924d3.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-mist-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_mistPink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboMistPinkFull_26a1921f9ece.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#f4bac3",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboRedFull_5154e986512e.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-turbo-orange",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_org.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboOrgFull_056eb2a80513.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#c86939",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 68 Turbo"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68Turbo.glb"
+    },
+    {
+      "desc": "Ace 68 Turbo 8K 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3028",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 0
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3029",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_wihteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboWhiteLineFull_d6037064f4de.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-mist-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_mistWhite.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboMistWhiteFull_ddbced8cd4bf.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-mist-silver",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_Turbo-Mist_Silver_1e5ed192bb9f.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboMistSilverFull_2200bf9557e8.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#bfc0c8",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-air-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_pink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboPinkFull_ec23c0c345c7.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e7c9d0",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboBlackLineFull_131dfba924d3.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-mist-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_mistPink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboMistPinkFull_26a1921f9ece.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#f4bac3",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboRedFull_5154e986512e.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-turbo-orange",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68Turbo_org.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68TurboOrgFull_056eb2a80513.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#c86939",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product",
+        "title": "Ace 68 Turbo"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68Turbo.glb"
+    },
+    {
+      "desc": "Ace 68 V2 III 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3024",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3025",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_whiteReflection.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2WhiteReflectionFull_fca893d45fdc.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorWhite_k25noilky15dbbvl.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_V2_White_Line_2x_11d74fd9fa40.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2WhiteLineFull_17c0476617e9.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorWhiteLine_2rz5qo0r3y52zv0p.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-white-copy",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_whiteSide.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2WhiteSideFull_6ca22816c54b.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorWhiteCopy_bbdyy65ksuu06thp.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace68-v2-white-frosted-BMW",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_whiteFrostedBMW.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2WhiteFrostedBMWFull_8d4b6afd42f6.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorWhiteFrostedBMW_ilbddf17hskvco87.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace68-v2-white-frosted-Halo",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_whiteFrostedHalo.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2WhiteFrostedHaloFull_ea66de2d285a.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#eee",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorWhiteFrostedHalo_sdk7p0f56l7yui0q.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace68-v2-pink-frosted-BMW",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_pinkFrostedBMW.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2PinkFrostedBMWFull_990215b23937.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#f0c9d8",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorPinkFrostedBMW_h49hih1i7o8x3icg.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace68-v2-pink-frosted-Halo",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_pinkFrostedHalo.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2PinkFrostedHaloFull_4732f0b60d2d.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#edbfd1",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorPinkFrostedHalo_3ld8vmfz77ui2e12.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2BlackFull_d0c8b0e7dd67.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorBlack_1u15uswyikhl9ki8.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-mist-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_68_V2雾透黑_2x_32a46456cc65.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2MistBlackFull_f8a212e96067.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorMistBlack_yvu47ze0urw2bja8.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorBlackLineFull_vqewxqgkgm6mkwtj.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorBlackLineFull_vqewxqgkgm6mkwtj.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorBlackLine_ofrgijhsn25lfmq7.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Ace68V2_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2RedFull_a59307f80109.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#cf2163",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace68V2ColorRed_g7ec4pu6nxgqfi1q.jpg",
+              "theme": "dark"
+            }
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "backdrop",
+        "title": "Ace 68 V2"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68V2.glb"
+    },
+    {
+      "desc": "Ace 75 8K 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x303c",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x303d",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-ace75-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260512Bmxp4mwF.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ACE75WhiteFull_ff4e992614a5.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#ddd",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/ace-75-white_ay3an7yq0ome9skp.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260512DkplHiIk.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ACE75PinkFull_1833d63eebf1.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e6c3d3",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/ace-75-pink_rtgdqju7sj7uacoa.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260512BazMkvNx.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ACE75BlackFull_d8518880dd80.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#2c2a32",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/ace-75-black_gslfq6nj01yf1rba.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-black-gold",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75BlackGold_9kirmcb6ahoxy09k.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75BlackGoldFull_mgut61cw7rff3ouz.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#2c2a32",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/ace-75-black-gold_p393n0z26xvny34k.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-purple",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/20260512fdKRHJXR.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ACE75PurpleFull_1f4dc70d6a8b.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e2d0f9",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/ace-75-purple_3qqs6bttqo3mjpdj.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-moonrock-gray",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MoonrockGray_8dg2pv1c44cvxn0j.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MoonrockGrayFull_elccwng88c7f57rz.png",
+          "theme": "unknown",
+          "styleRaw": ".color-ace75-moonrock-gray { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MoonrockGrayColor_gakd0dst0qj99no0.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#dadada",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MoonrockGray_0ay2jl5b4heeesic.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-night-purple",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NightPurple_pdtt1yb8h1u2kj4f.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NightPurpleFull_ruzgz6vw0fs3yznq.png",
+          "theme": "unknown",
+          "styleRaw": ".color-ace75-night-purple { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NightPurpleColor_sh0hky5z0uwtdlnl.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#2b1e55",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NightPurple_ke516lg4at6yjglc.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-navy-blue",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NavyBlue_bgos8oe6obkzf6m9.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NavyBlueFull_dn9iw7zel9sz0yke.png",
+          "theme": "unknown",
+          "styleRaw": ".color-ace75-navy-blue { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NavyBlueColor_nf0ciq9ngxtvxz9w.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#172660",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75NavyBlue_7zhmbxsavewfla3o.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-ace75-mecha-green",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MechaGreen_jau0ndgh2ni5xal1.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MechaGreenFull_t24qcrpr5uf44fgz.png",
+          "theme": "unknown",
+          "styleRaw": ".color-ace75-mecha-green { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MechaGreenColor_8a5btrywn0q00ssy.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#4e5223",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/Ace_75MechaGreen_0zo6donlxsa6kwpy.jpg",
+              "theme": "dark"
+            }
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "backdrop"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/Ace_75_x160_344721493d81.glb"
+    },
+    {
+      "desc": "G75 V2 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2021",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2022",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3033",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 0,
+          "productName": "MCHOSE G75 V2 2.4G"
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2010",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2,
+          "productName": "MCHOSE G75 V2 2.4G"
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G75V2_8K_White.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G75V28KWhiteFull_bc0ce6383038.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G75V2_8K_Black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G75V28KBlackFull_130fe11d5e51.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#262528",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-peach-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G75V2_8K_Pink.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G75V28KPinkFull_f2cbb903f55c.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#ecc0cc",
+            "textColor": "#000"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G75V2.glb"
+    },
+    {
+      "desc": "G87 V2 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2015",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2019",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3033",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 0,
+          "productName": "MCHOSE G87 V2 2.4G"
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2010",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2,
+          "productName": "MCHOSE G87 V2 2.4G"
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G87V2White.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87V2WhiteFull_30bcb2909d45.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G87V2WhiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87V2WhiteLineFull_12b7c35228d1.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-white-copy",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G87_v2Whitening_duu8ffkyd48ezizz.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87_v2WhiteningFull_4fkklwfr65e1u64w.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-black-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G87V2_blackSide.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87V2BlackSideFull_7e75bd2ed4b5.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff",
+            "scrollThumbColor": "#4a4a4a",
+            "scrollDividerColor": "#7b7676"
+          }
+        },
+        {
+          "className": "color-peach-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G87V2_peachLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87V2PeachLineFull_e632e8d8e305.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e2bac2",
+            "textColor": "#000",
+            "scrollThumbColor": "#cc8a96",
+            "scrollDividerColor": "#efaaba"
+          }
+        },
+        {
+          "className": "color-pink-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G87V2_pinkSide.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87V2PinkSideFull_01a74c4e4005.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff",
+            "scrollThumbColor": "#4a4a4a",
+            "scrollDividerColor": "#7b7676"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/G87V2_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G87V2REDFull_aa424e3a8655.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff",
+            "scrollThumbColor": "#d61867",
+            "scrollDividerColor": "#f74891"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G87V2.glb"
+    },
+    {
+      "desc": "G98 V3 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2025",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2026",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x1015",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 0,
+          "productName": "MCHOSE G98 V3 2.4G"
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x1017",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 2,
+          "productName": "MCHOSE G98 V3 2.4G"
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G98_V3_Ash_Grey_edf260bcc5a2.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G98V3WhiteGreyFul_q5ny90v4tymyse58.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-white-copy",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G98_V3_ZheyingWhite_nvs7kc54rfq18riy.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G98V3ZheyingWhiteFull_mnndgyvu9wio23un.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G98_V3BlackGold_88ffwpc2e3pbn2k5.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G98V3BlackGoldFull_mifnif6dhvqy9ppr.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff",
+            "scrollThumbColor": "#151515",
+            "scrollDividerColor": "#7b7676"
+          }
+        },
+        {
+          "className": "color-star-blue",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G98_V3_Clear_Sky_Blue_48817a39a9f5.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G98V3ClearSkyBlueFull_dee9tf3i8asd7pud.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-peach-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G98_V3_Misty_Peach_Gradient_d041f4b4965b.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G98V3MistyPeachGradientFull_zgpc0jsmosmuzn80.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#f4d8e4",
+            "textColor": "#000",
+            "scrollThumbColor": "#f4dce6",
+            "scrollDividerColor": "#efaaba"
+          }
+        },
+        {
+          "className": "color-black-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/G98_V3_Mountain_Gradient_91336ea94bb0.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/G98V3MountainGradientFull_pt154o1yoo0hnx04.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff",
+            "scrollThumbColor": "#151515",
+            "scrollDividerColor": "#7b7676"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/20260524mRgQZ01D.glb"
+    },
+    {
+      "desc": "God 60 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3020",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x301a",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/God_60OrderSilver_hqr0luvnwygtljux.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/God_60OrderSilverFull_fa486zloensad739.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60orderSliver_76nexo4gekp24lbg.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#cbc9ce",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-god60-chaos-silver",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/God_60ChaosSilver_xm34fe5ss2w950b5.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/God_60ChaosSilverFull_nkqrecyk4flvl0y7.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60chaosSliver_uwjtd05n44ow2kyx.png",
+          "theme": "unknown",
+          "styleRaw": ".color-god60-chaos-silver { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/ChaosSliver_mcky2f9ynjunl5k7.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#cbc9ce",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-god60-silver",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/God_60Sliver_tqb7olo1zo2ou2qk.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60SliverFull_digym9qzvevwbdm2.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60sliver_50n1k34nj1rggvkn.png",
+          "theme": "unknown",
+          "styleRaw": ".color-god60-silver { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/白银_i4lc8sszi9zvo6ca.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#cbc9ce",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-god60-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/God_60Pink_omda8tbq4bsby64u.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60PinkFull_v1z7qbdddyx2y6bv.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60pink_tyjnjghi11owkl4l.png",
+          "theme": "unknown",
+          "styleRaw": ".color-god60-pink { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/粉色_vxp7pmaszvgujpr4.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e0bfd1",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-god60-black-gold",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/God_60BlackGold_a6f9u6et18mmrpxz.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60BlackGoldFull_qmqacu1ez61mb5yk.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60blackGolden_a2qynrfen1y6kvle.png",
+          "theme": "unknown",
+          "styleRaw": ".color-god60-black-gold { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/3.黑金_87qxo1gxa031fqos.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#252427",
+            "textColor": "#ffeec5"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/God_60_凡人联名款_7u0mv3lz6o374lk9.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/God_60greenFull_ujk6d9uqssc2jqfb.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/God60mortal_fyhqspt8pogpinov.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#0c4535",
+            "textColor": "#fbe9bd"
+          },
+          "featSupport": "CollabType01"
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/God_60_x160_fixed_ycvirwemrrer5vk3.glb"
+    },
+    {
+      "desc": "GT 75 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x302D",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x302F",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "gt75-color-silver",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/1.GT_75白银_2x_fu5jitaonhgarxin.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT_75Sliver_qtohqnh5tsszflh5.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT75白银_2x_257wnwq7pzj0h3p8.png",
+          "theme": "light",
+          "styleRaw": ".gt75-color-silver { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/白银_i4lc8sszi9zvo6ca.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#E0E0E1",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "RTGT75": "#CACACA"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/GT75ColorSliver_6aokvzbhd1xjdiak.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "gt75-color-golden-dark",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/2.GT_75黑金_2x_9qtyzndzlg0ltq63.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT_75BlackGolden_dhl1h4cd5u9txg35.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT75黑金_2x_jecq63pva7db2dad.png",
+          "theme": "dark",
+          "styleRaw": ".gt75-color-golden-dark { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/3.黑金_87qxo1gxa031fqos.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#1A1819",
+            "textColor": "#F7E8C7",
+            "functionKeyIconColor": {
+              "RTGT75": "#313131"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/GT75ColorBlackGolden_p1uir1cbh6ma668u.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "gt75-color-pink",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/3.GT_75粉色_2x_g6az2uuh8zmtvbhz.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT_75Pink_1tuj8ey8w5a11128.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT75粉色_2x_cuk2igd4b570zm05.png",
+          "theme": "unknown",
+          "styleRaw": ".gt75-color-pink { background-image: url('https://cdn.mchose.com.cn/configCenter/static/images/粉色_vxp7pmaszvgujpr4.png'); background-size: cover; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#DEB9C9",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "RTGT75": "#F9E5ED"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/GT75ColorPink_sv1ol9p2vmbvql91.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-white-copy",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/GT_75Test_vvla48ov7pi9h6ti.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT_75TestDeviceImage_re5b8bo85upcp6m7.png",
+          "rtImage": "https://cdn.mchose.com.cn/configCenter/static/images/GT75白银_2x_257wnwq7pzj0h3p8.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#E0E0E1",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "RTGT75": "#CACACA"
+            }
+          },
+          "featSupport": "CollabType01"
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "backdrop"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/GT_75_X160_dcimwj38dyqqeyz2.glb"
+    },
+    {
+      "desc": "Jet 75 I 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2118",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2119",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75WhiteFull_ed1b0e6f0139.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#dbdbdb",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75BlackLineFull_b5618a27414e.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75WhiteLineFull_6f2c79c856f1.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#dbdbdb",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75RedFull_6e6ce51fe081.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Jet75.glb"
+    },
+    {
+      "desc": "Jet 75 II 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x211a",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x211b",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75WhiteFull_ed1b0e6f0139.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#dbdbdb",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75BlackLineFull_b5618a27414e.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75WhiteLineFull_6f2c79c856f1.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#dbdbdb",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Jet75_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Jet75RedFull_6e6ce51fe081.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Jet75.glb"
+    },
+    {
+      "desc": "K87 V3 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2023",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2024",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x1015",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 0,
+          "productName": "MCHOSE K87 V3 2.4G"
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x1017",
+          "usagePage": "0xff80",
+          "usage": "0x01",
+          "priority": 2,
+          "productName": "MCHOSE K87 V3 2.4G"
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/1.K87_V3white_9mei2ymrn3bzue8s.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3WhiteFull_m08efsrwg9b199iw.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#FCFBFA",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "SideLightK87V3:bg": "#D6D6D6",
+              "SideLightK87V3:light": "#5C676E",
+              "SideLightK87V3:logo": "#B3B5B7",
+              "K87V3GunlunButton:fill": "#ACAFB0",
+              "K87V3GunlunButton:stroke": "#DCD7D4"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3ColorWhite_m1992q281vggburn.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-blue3",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/2.K87_V3whiteBlue_2rmz81y585otl9pc.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3WhiteBlueFull_zfdthpb6vxnv4pke.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#FCFBFA",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "SideLightK87V3:bg": "#8BABDD",
+              "SideLightK87V3:light": "#5C676E",
+              "SideLightK87V3:logo": "#6C89C1",
+              "K87V3GunlunButton:fill": "#ACAFB0",
+              "K87V3GunlunButton:stroke": "#DCD7D4"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3ColorBlue3_kfmcvh05cuazssc8.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-star-blue",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/3.K87_V3blue_j6d0urg0phru2qw1.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3BlueFull_8ywobq8zcs7yswk1.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#FCFBFA",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "SideLightK87V3:bg": "#D6D6D6",
+              "SideLightK87V3:light": "#5C676E",
+              "SideLightK87V3:logo": "#B3B5B7",
+              "K87V3GunlunButton:fill": "#ACAFB0",
+              "K87V3GunlunButton:stroke": "#DCD7D4"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3ColorStarBlue_khumb62aurfxc5y9.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/4.K87_V3black_wsdzplh2c67ek2gj.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3BlackFull_2jwo23itjaa27a5n.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#202020",
+            "textColor": "#E8CC87",
+            "functionKeyIconColor": {
+              "SideLightK87V3:bg": "#E8CC87",
+              "SideLightK87V3:light": "#5C676E",
+              "SideLightK87V3:logo": "#C4A152",
+              "K87V3GunlunButton:fill": "#282727",
+              "K87V3GunlunButton:stroke": "#484848"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3ColorBlack_hi2wtgduregdh2j0.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-peach-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/5.K87_V3pinkPeach_jlq2batyh20clewl.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3PinkPeachFull_x6fv08tj7nc1gjul.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#FCE7F0",
+            "textColor": "#6F4141",
+            "functionKeyIconColor": {
+              "SideLightK87V3:bg": "#FFDAE4",
+              "SideLightK87V3:light": "#5C676E",
+              "SideLightK87V3:logo": "#CE95A7",
+              "K87V3GunlunButton:fill": "#B67282",
+              "K87V3GunlunButton:stroke": "#D2ABBC"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3ColorPeachSide_i8q6sx78jwp87621.jpg",
+              "theme": "light"
+            }
+          }
+        },
+        {
+          "className": "color-k87V3-green",
+          "image": "https://cdn.mchose.com.cn/configCenter/static/images/6.K87_V3green_b5cpks84yucigv74.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3GreenFull_q8ceujfs7viralvt.png",
+          "theme": "unknown",
+          "styleRaw": ".color-k87V3-green { background: #b8ef52; }",
+          "virtualKeyStyle": {
+            "backgroundColor": "#C9F08A",
+            "textColor": "#000000",
+            "functionKeyIconColor": {
+              "SideLightK87V3:bg": "#5B5855",
+              "SideLightK87V3:light": "#363636",
+              "SideLightK87V3:logo": "#363636",
+              "K87V3GunlunButton:fill": "#699A39",
+              "K87V3GunlunButton:stroke": "#ABDC6F"
+            }
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K87V3ColorGreen_jex9ke0kbyahuy94.jpg",
+              "theme": "light"
+            }
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "backdrop"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/static/files/K87_V3_xxx_qqjru7h9difp23u1.glb"
+    },
+    {
+      "desc": "K87S 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x200e",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x200f",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3033",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 0,
+          "productName": "MCHOSE K87S 2.4G"
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2010",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2,
+          "productName": "MCHOSE K87S 2.4G"
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K87S_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87SWhiteFull_bc29d1a5e07f.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000",
+            "scrollThumbColor": "#f8f9fb",
+            "scrollDividerColor": "#d7dee3"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K87S_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87SBlackFull_2f2b1bfa5c0b.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff",
+            "scrollThumbColor": "#4a4a4a",
+            "scrollDividerColor": "#7b7676"
+          }
+        },
+        {
+          "className": "color-peach-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K87SPeachLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87SPeachLineFull_96f1faad2bf0.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e2bac2",
+            "textColor": "#000",
+            "scrollThumbColor": "#cc8a96",
+            "scrollDividerColor": "#efaaba"
+          }
+        },
+        {
+          "className": "color-pink-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K87S_pinkSide.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87SPinkSideFull_f197a24621b4.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff",
+            "scrollThumbColor": "#4a4a4a",
+            "scrollDividerColor": "#7b7676"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K87S_red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/K87SRedFull_a811c91495ac.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff",
+            "scrollThumbColor": "#d61867",
+            "scrollDividerColor": "#f74891"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/K87S.glb"
+    },
+    {
+      "desc": "K99 V3 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2020",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x201f",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x3033",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 0,
+          "productName": "MCHOSE K99 V3 2.4G"
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x2010",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2,
+          "productName": "MCHOSE K99 V3 2.4G"
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/01_K99V3_PureWhite_s9syl87jae0jdser.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3PureWhite_9dhma5relcjufiwo.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-golden-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-golden-white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/02_K99V3_GoldenSandWhite_cxpuvjnsj1ufwe9d.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3GoldenSandWhite_bt8qh3lf1wxmud7d.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-sky-blue",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-sky-blue.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/03_K99V3_ClearSkyBlue_91u5iu8p6u3w05kj.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3ClearSkyBlue_kdxud3dqxudx7h53.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-blue3",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-blue3.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/04_K99V3_Glacier_4f6hdmjoakkg218i.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3Glacier_gyo448em939q2ikr.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-black-golden",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-black-golden.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/05_K99V3_BlackGold_mhuw3djwpk1icus1.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#f7c85e"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3BlackGold_ky62flpcsw320xw6.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-orange",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-orange.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/06_K99V3_HorizonOrange_8yhkhpebwfzepnrm.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3HorizonOrange_oliwnaw9bq790z9b.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-peach-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-peach-side.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/07_K99V3_MistyPeach_9wy3uk6k5ancjqu1.png",
+          "theme": "unknown",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e2bac2",
+            "textColor": "#000"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3MistyPeach_i8idft0rmxa2zq7h.jpg",
+              "theme": "dark"
+            }
+          }
+        },
+        {
+          "className": "color-black-side",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/K99_V3-black-side.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/08_K99V3_DistantMountain_e75gzuazvu5aq8uu.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          },
+          "presentations": {
+            "homeImmersive": {
+              "imageUrl": "https://cdn.mchose.com.cn/configCenter/static/images/K99V3DistantMountain_whsz73ybdkmjc1sq.jpg",
+              "theme": "dark"
+            }
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "backdrop"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/K99V3.glb"
+    },
+    {
+      "desc": "Mix 87 I 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2122",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x2123",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Mix87_White.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Mix87WhiteFull_3d06e383d8cd.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Mix87_Black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Mix87BlackFull_a33139846537.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#2b2a2b",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Mix87_Red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Mix87RedFull_7a541290742e.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Mix87.glb"
+    },
+    {
+      "desc": "Mix 87 III 配置",
+      "identities": [
+        {
+          "vendorId": "0x3837",
+          "productId": "0x300d",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x3837",
+          "productId": "0x302c",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Mix87_White.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Mix87WhiteFull_3d06e383d8cd.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#e3e1e3",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Mix87_Black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Mix87BlackFull_a33139846537.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#2b2a2b",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-red",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/Mix87_Red.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/Mix87RedFull_7a541290742e.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#d01758",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Mix87.glb"
+    },
+    {
+      "desc": "Zero75X 配置",
+      "identities": [
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x211c",
+          "usagePage": "0x0001",
+          "usage": "0x0000",
+          "priority": 1
+        },
+        {
+          "vendorId": "0x41e4",
+          "productId": "0x211d",
+          "usagePage": "0xff00",
+          "usage": "0x0001",
+          "priority": 2
+        }
+      ],
+      "colorList": [
+        {
+          "className": "color-white",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/ZERO75X_white.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ZERO75XWhiteFull_bf8ddec3a960.png",
+          "theme": "light",
+          "virtualKeyStyle": {
+            "backgroundColor": "#ddd",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-white-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/ZERO75X_whiteLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ZERO75XWhiteLineFull_a9b4e1637183.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#ddd",
+            "textColor": "#000"
+          }
+        },
+        {
+          "className": "color-black",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/ZERO75X_black.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ZERO75XBlackFull_a35d311bd825.png",
+          "theme": "dark",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        },
+        {
+          "className": "color-black-line",
+          "image": "https://cdn.mchose.com.cn/configCenter/assets/img/keyboard/ZERO75X_blackLine.png",
+          "deviceImage": "https://cdn.mchose.com.cn/configCenter/static/images/ZERO75XBlackLineFull_9456de3a2ab3.png",
+          "virtualKeyStyle": {
+            "backgroundColor": "#151515",
+            "textColor": "#fff"
+          }
+        }
+      ],
+      "webdriverEnum": {
+        "deviceType": 1,
+        "subType": 2
+      },
+      "homePresentation": {
+        "mode": "product"
+      },
+      "glbModelPath": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/ZERO75X.glb"
+    }
+  ]
+}

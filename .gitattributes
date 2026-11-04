@@ -1,0 +1,6 @@
+* text=auto eol=lf
+/site/** -text
+/upstream/** -text
+/snapshots/** -text
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

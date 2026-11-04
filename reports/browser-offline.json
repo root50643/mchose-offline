@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-04T13:17:48.265Z",
+  "offlineVersion": "d1b2139542798e98a8f3",
+  "serversStopped": [
+    8765,
+    8767
+  ],
+  "serverProbePassed": true,
+  "rootRoute": "http://127.0.0.1:8765/?diagnostics=1#/connectDevice",
+  "settingsRoute": "http://127.0.0.1:8767/mchose-offline/?diagnostics=1#/setting",
+  "mouseToolRoute": "http://127.0.0.1:8767/mchose-offline/?diagnostics=1#/test-mouse",
+  "rootCacheState": "ready",
+  "settingsCacheState": "ready",
+  "mouseToolCacheState": "ready",
+  "rootNetwork": {
+    "startedAt": 1793798249317.1,
+    "elapsedSeconds": 19,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8765"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  },
+  "settingsNetwork": {
+    "startedAt": 1793798246480.4,
+    "elapsedSeconds": 22,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8767"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  },
+  "mouseToolNetwork": {
+    "startedAt": 1793798247608.1,
+    "elapsedSeconds": 20,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8767"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  },
+  "hardwarePermission": "awaiting user device selection"
+}

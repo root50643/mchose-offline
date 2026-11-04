@@ -1,0 +1,360 @@
+{
+  "generatedAt": "2026-11-04T13:08:29.604Z",
+  "patches": [
+    "disable extension probe:assets/index-BbOLO0T8.js:chrome-extension://jffbochibkahlbbmanpmndnhmeliecah/config.json",
+    "disable extension probe:assets/index-BbOLO0T8.js:chrome-extension://fjbbmgamncjadhlpmffehlmmkdnkiadk/css/content.css",
+    "disable extension probe:assets/index-BbOLO0T8.js:chrome-extension://fjbbmgamncjadhlpmffehlmmkdnkiadk/css/bangs.css",
+    "function:trackInit",
+    "function:_track",
+    "function:trackElementClick",
+    "function:getApiBaseUrl",
+    "function:getMemberUserApiBaseUrl",
+    "function:getCurrentApiConfig",
+    "function:getAuthToken",
+    "function:getAuthUser",
+    "function:getUserData",
+    "function:createHomeAdvertisementMock",
+    "function:loadConfigFromUrl",
+    "initializer:getFeedbackConfig",
+    "initializer:getFeedbackConfigDetail",
+    "initializer:loadAudioOtaAppConfig",
+    "initializer:HeaderUserAction",
+    "initializer:DownloadClient",
+    "initializer:AUDIO_WEB_ORIGIN",
+    "preflight new mouse and receiver firmware",
+    "verify legacy offer and payload contents",
+    "preflight complete legacy update before device changes",
+    "disable WebSocket initialization",
+    "disable queued WebSocket telemetry",
+    "filter device catalog to mice and docks",
+    "remove keyboard and audio category entries",
+    "remove cloud and store header actions",
+    "remove server account and updater utility actions",
+    "remove desktop client download entry",
+    "remove audio HID authorization filters",
+    "disable login",
+    "disable account dialog",
+    "disable community dialog",
+    "disable authenticated state",
+    "disable audio device enumeration",
+    "force offline session",
+    "bind explicit DPI diagnostics"
+  ],
+  "resources": [
+    {
+      "file": "vendor/cdn.mchose.com.cn/customPage/driver-ui/driver-ui.global.js",
+      "rewrites": 3
+    },
+    {
+      "file": "vendor/cdn.mchose.com.cn/customPage/driver-ui/vue/driver-ui.vue.js",
+      "rewrites": 0
+    },
+    {
+      "file": "vendor/cdn.mchose.com.cn/customPage/iconfont/iconfont.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/_plugin-vue_export-helper-D2U_K4la.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/connectHeader-IVwR_pmk.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/context-CyGsY54t.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/eqAuditionPip-CFXgxyYS.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/eqDraft-DqPCs0kO.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/FeedbackPage-C8oMdwbv.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-1Utm7UKU.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-BbOLO0T8.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-BfDJf4mL.js",
+      "rewrites": 6
+    },
+    {
+      "file": "assets/index-Bj84M_Mv.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-Bn6yGK3H.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-By3Joyfo.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-C5e3ON7y.js",
+      "rewrites": 1
+    },
+    {
+      "file": "assets/index-CEcPbdLa.js",
+      "rewrites": 1
+    },
+    {
+      "file": "assets/index-CHEJJxuS.js",
+      "rewrites": 2
+    },
+    {
+      "file": "assets/index-CIfNNVqJ.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-CODRIIN6.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-Cpdz-cST.js",
+      "rewrites": 1
+    },
+    {
+      "file": "assets/index-CR6mUMIQ.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-DA5iR2OU.js",
+      "rewrites": 2
+    },
+    {
+      "file": "assets/index-DBCRdrN4.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-DjiHZgVm.js",
+      "rewrites": 1
+    },
+    {
+      "file": "assets/index-DNKfLNRF.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-Dpp9-y81.js",
+      "rewrites": 2
+    },
+    {
+      "file": "assets/index-KzSyPNOn.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-TqTOr5dA.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/index-xiPuB49w.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/initializeControlSubscription-Dw--LrVu.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/k20GtLyricAnimation-JFhKo9hb.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/k20GtLyricPreviewLayout-MccYC2Wt.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/keyboard-z7o4_qhb.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/legacyGlbKeyboardLayout-DOliorTS.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/list-DsV6BULc.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68Air_transparent_white.png"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68Turbo_mist_white.png"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_whiteFrostedBMW.png"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_whiteFrostedHalo.png"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_pinkFrostedBMW.png"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_pinkFrostedHalo.png"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/svg/keyboard/G87_whiteLine.svg"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/svg/keyboard/G87_shallowBlackLine.svg"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/assets/svg/keyboard/G87_blackLine.svg"
+    },
+    {
+      "file": "assets/main-C4JepROK.css",
+      "omittedBackground": "https://cdn.mchose.com.cn/configCenter/static/images/Ace75BlackGoldColor_c8a24g5b63dw3fgm.png"
+    },
+    {
+      "file": "assets/main-CWbC7lIt.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/main-DnvOpr5S.js",
+      "rewrites": 489
+    },
+    {
+      "file": "assets/mousePreview-Bz9U3sWJ.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/officialEqSource-DleMp4sB.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/purify.es-DxJI3Wx7.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/replaceTemplateDialog-Bd26sQBc.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/share-fWnA0dff.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/storeWatcher-D2qRzclE.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/toast-DX7aiHTz.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/toastLayer-B3abDFz7.js",
+      "rewrites": 1
+    },
+    {
+      "file": "assets/useK20GtPreviewStore-CSD3Yytb.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/useK20GtScreenTextMarquee-CQU1crIA.js",
+      "rewrites": 0
+    },
+    {
+      "file": "assets/useWebLyrics-B6du91Y9.js",
+      "rewrites": 0
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/async-chunks.eb3cc63b291311124c88.js",
+      "rewrites": 0
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/gif-preview.356758551f524f1464ed.js",
+      "rewrites": 1
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/loader.js",
+      "rewrites": 0
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/lodash.1e0153938fbb9c24d9c7.js",
+      "rewrites": 0
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/main.b1d3fb6f68d495cc5961.js",
+      "rewrites": 141
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/runtime.c76159af9e56bb9b5198.js",
+      "rewrites": 0
+    },
+    {
+      "file": "cizhou/CZ_SHARED_DATA/vendor.eb5dd870edfd0970b87f.js",
+      "rewrites": 0
+    }
+  ],
+  "skipped": [],
+  "missingResources": {
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "vendor/cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin": {
+      "sourceUrl": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "pdf/en_US/G3.pdf": {
+      "sourceUrl": "https://www.mchose.com.cn/pdf/en_US/G3.pdf",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    "pdf/zh_CN/G3.pdf": {
+      "sourceUrl": "https://www.mchose.com.cn/pdf/zh_CN/G3.pdf",
+      "error": "Error: HTTP 404 Not Found"
+    }
+  }
+}

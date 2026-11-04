@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-11-04T13:13:21.811Z",
+  "passed": true,
+  "archivedFiles": 624,
+  "archivedBytes": 288827448,
+  "officialTemplateSnapshots": 112,
+  "scopeExcludedFiles": 216,
+  "publishedFiles": 630,
+  "publishedBytes": 289396829,
+  "syntaxChecks": 71,
+  "unresolvedDownloads": [
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+      "reason": "mouse-firmware-legacy",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://www.mchose.com.cn/pdf/en_US/G3.pdf",
+      "reason": "seed",
+      "error": "Error: HTTP 404 Not Found"
+    },
+    {
+      "url": "https://www.mchose.com.cn/pdf/zh_CN/G3.pdf",
+      "reason": "seed",
+      "error": "Error: HTTP 404 Not Found"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "This check verifies files and static references. Browser, network and physical-device acceptance are reported separately."
+  ]
+}

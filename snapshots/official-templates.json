@@ -1,0 +1,562 @@
+{
+  "A5": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V2Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V2Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V2Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V2Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V3Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V3Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V3Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V3Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V3Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V3Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5V3Ultra+(3955)": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5V3Ultra+(3955)": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A5ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA5ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A6ultratest": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA6ultratest": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7Ultra(RE)": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7Ultra(RE)": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V2Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V2Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V2Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V2Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V2Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V2Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V2Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V2Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V3Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V3Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V3Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V3Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V3Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V3Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V3Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V3Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7V3-X": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7V3-X": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "A7XUltra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEA7XUltra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "AX5V2": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEAX5V2": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "AX5V2new": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEAX5V2new": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "AX5V2old": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEAX5V2old": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3A": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3A": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3S": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3S": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3Ultra4K": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3Ultra4K": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3Ultra8K": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3Ultra8K": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G3V3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG3V3": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "G7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEG7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "K5Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEK5Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "K5Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEK5Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "K7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEK7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "K7V2Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEK7V2Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "K7V2Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEK7V2Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "L7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEL7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "L7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEL7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "L7Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEL7Pro+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "L7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEL7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "L7Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEL7Ultra+": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "M7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEM7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "M7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEM7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "M7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEM7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MagDock": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEMagDock": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "R7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSER7Ultra": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "V7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEV7": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "V7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  },
+  "MCHOSEV7Pro": {
+    "code": 200,
+    "message": "成功",
+    "data": {}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-04T13:14:10.141Z",
+  "offlineVersion": "d1b2139542798e98a8f3",
+  "passed": true,
+  "tests": [
+    {
+      "command": "node tools/verify.mjs",
+      "passed": true,
+      "kind": "source hashes, syntax and static resource references"
+    },
+    {
+      "command": "node tools/test-runtime.mjs",
+      "passed": true,
+      "kind": "isolated runtime and simulated device; not physical HID"
+    },
+    {
+      "command": "node tools/test-offline.mjs",
+      "passed": true,
+      "kind": "service-worker fixtures and real local HTTP servers"
+    },
+    {
+      "command": "node tools/test-model-assets.mjs --accept-known-source-404",
+      "passed": true,
+      "kind": "reverse audit of 39 mouse models with 2 explicit upstream manual outages"
+    }
+  ],
+  "upstreamUnavailable": {
+    "firmwareFiles": 10,
+    "manualFiles": 2
+  },
+  "physicalHardwareTested": false
+}

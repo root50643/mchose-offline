@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-04T13:17:11.066Z",
+  "offlineVersion": "d1b2139542798e98a8f3",
+  "root": {
+    "startedAt": 1793798018346.9,
+    "elapsedSeconds": 212,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8765"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  },
+  "prefix": {
+    "startedAt": 1793798017501,
+    "elapsedSeconds": 213,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8767"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  },
+  "mouseTool": {
+    "startedAt": 1793798074237.6,
+    "elapsedSeconds": 156,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8767"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  }
+}
