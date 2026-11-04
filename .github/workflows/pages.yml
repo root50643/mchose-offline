@@ -27,6 +27,8 @@ jobs:
         run: node tools/test-offline.mjs
       - name: Test frozen offline runtime
         run: node tools/test-runtime.mjs
+      - name: Verify exact official snapshot filenames
+        run: node tools/snapshot.mjs --verify-official-paths-only
       - name: Verify every mouse model and explicit upstream outages
         run: node tools/test-model-assets.mjs --accept-known-source-404
       - name: Build and verify offline cache manifest

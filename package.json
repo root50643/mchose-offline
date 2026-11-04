@@ -10,7 +10,7 @@
     "patch": "node tools/patch-app.mjs",
     "build": "node tools/build-offline.mjs",
     "verify": "node tools/verify.mjs",
-    "test": "node tools/test-runtime.mjs && node tools/test-offline.mjs && node tools/test-model-assets.mjs --accept-known-source-404",
+    "test": "node tools/test-runtime.mjs && node tools/test-offline.mjs && node tools/snapshot.mjs --verify-official-paths-only && node tools/test-model-assets.mjs --accept-known-source-404",
     "serve": "node tools/dev-server.mjs --port 8765",
     "publish": "node tools/publish.mjs publish",
     "deployment-status": "node tools/publish.mjs status",

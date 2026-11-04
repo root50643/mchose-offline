@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-04T14:11:00.057Z",
+  "offlineVersion": "b154f43c319f1a90f729",
+  "device": "MCHOSE A7 V3 Ultra+",
+  "connected": true,
+  "dpiViewLoaded": true,
+  "restoredDpiValuesDisplayed": true,
+  "additionalHardwareWrites": false,
+  "cacheState": "ready",
+  "network": {
+    "startedAt": 1793801343682,
+    "elapsedSeconds": 116,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8765"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  },
+  "offlineReconnectConfirmed": true,
+  "serverStopped": true,
+  "restoredDpiValuesStillCorrect": true,
+  "networkAfterOfflineReconnect": {
+    "startedAt": 1793801474412.3,
+    "elapsedSeconds": 45,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8765"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  }
+}

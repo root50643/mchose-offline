@@ -120,6 +120,86 @@ function decodeModelName(input) {
   return [...data].map((c,i)=>String.fromCharCode(c ^ key.charCodeAt(i%key.length))).join('');
 }
 
+function officialResponsePath(name,sourceUrl) {
+  const suffix=crypto.createHash('sha256').update(sourceUrl).digest('hex').slice(0,16);
+  return 'snapshots/official/'+encodeURIComponent(name)+'.__url_'+suffix+'.json';
+}
+
+async function verifyOfficialPaths(manifest) {
+  const exact=new Set(),folded=new Set(),directoryCache=new Map();
+  for(const record of manifest.files){
+    if(record.status!=='ok')throw new Error('Official response is unavailable: '+record.name);
+    if(exact.has(record.path)||folded.has(record.path.toLowerCase()))throw new Error('Official response path collision: '+record.path);
+    exact.add(record.path);folded.add(record.path.toLowerCase());
+    const expected=officialResponsePath(record.name,record.sourceUrl);
+    if(record.path!==expected)throw new Error('Official response path does not use source URL SHA256: '+record.path);
+    let current=ROOT;
+    for(const segment of record.path.split('/')){
+      if(!segment||segment==='.'||segment==='..')throw new Error('Unsafe official response path: '+record.path);
+      if(!directoryCache.has(current))directoryCache.set(current,await fs.readdir(current));
+      if(!directoryCache.get(current).includes(segment))throw new Error('Exact case-sensitive path is absent: '+record.path+' (segment '+segment+')');
+      current=path.join(current,segment);
+    }
+    const buffer=await fs.readFile(current);
+    if(buffer.length!==record.bytes||digest(buffer)!==record.sha256)throw new Error('Official response integrity failure: '+record.path);
+  }
+  return {files:manifest.files.length,uniqueCaseSensitivePaths:exact.size,uniqueCaseInsensitivePaths:folded.size,missingExactCasePaths:[],hashMismatches:[]};
+}
+
+async function migrateOfficialPaths() {
+  const directory=path.join(SNAPSHOTS,'official');
+  const manifestPath=path.join(directory,'source-manifest.json');
+  const manifest=JSON.parse(await fs.readFile(manifestPath,'utf8'));
+  const previousRecords=manifest.files.map(record=>({...record}));
+  const inventory=await fs.readdir(directory);
+  const buffers=new Map();
+  // Windows can read a differently cased alias. Verify each logical source's
+  // recorded digest before copying, and preserve every query in a distinct file.
+  for(const record of previousRecords){
+    if(record.status!=='ok')throw new Error('Cannot migrate failed official response: '+record.name);
+    const oldPath=path.resolve(ROOT,record.path);
+    const relative=path.relative(directory,oldPath);
+    if(relative.startsWith('..')||path.isAbsolute(relative)||relative.includes(path.sep))throw new Error('Unexpected official response location: '+record.path);
+    const buffer=await fs.readFile(oldPath);
+    if(buffer.length!==record.bytes||digest(buffer)!==record.sha256)throw new Error('Original official response hash mismatch: '+record.path);
+    buffers.set(record.sourceUrl,buffer);
+  }
+  for(const record of manifest.files){
+    const previousPath=record.path;
+    const targetPath=officialResponsePath(record.name,record.sourceUrl);
+    const target=path.join(ROOT,targetPath),buffer=buffers.get(record.sourceUrl);
+    try{await fs.writeFile(target,buffer,{flag:'wx'});}catch(error){
+      if(error.code!=='EEXIST')throw error;
+      const existing=await fs.readFile(target);
+      if(existing.length!==record.bytes||digest(existing)!==record.sha256)throw new Error('Existing official target differs: '+targetPath);
+    }
+    record.path=targetPath;
+    if(previousPath!==targetPath){record.previousPath=previousPath;record.pathMigratedAt=new Date().toISOString();}
+  }
+  const integrity=await verifyOfficialPaths(manifest);
+  manifest.pathNaming='encoded-name plus SHA256(sourceUrl) prefix; case-independent unique paths';
+  manifest.pathIntegrity={checkedAt:new Date().toISOString(),...integrity};
+  const temporary=manifestPath+'.tmp';
+  await fs.writeFile(temporary,JSON.stringify(manifest,null,2)+'\n');
+  await fs.rename(temporary,manifestPath);
+  const liveNames=new Set(manifest.files.map(record=>path.posix.basename(record.path).toLowerCase()));
+  let removed=0;
+  const realDirectory=await fs.realpath(directory);
+  for(const filename of inventory){
+    if(filename==='source-manifest.json'||!filename.endsWith('.json')||liveNames.has(filename.toLowerCase()))continue;
+    const references=previousRecords.filter(record=>path.posix.basename(record.path).toLowerCase()===filename.toLowerCase());
+    if(!references.length)continue;
+    const target=await fs.realpath(path.join(directory,filename));
+    const relative=path.relative(realDirectory,target);
+    if(!relative||relative.startsWith('..')||path.isAbsolute(relative)||relative.includes(path.sep))throw new Error('Official cleanup target escapes its directory: '+target);
+    const buffer=await fs.readFile(target),sha=digest(buffer);
+    if(!references.every(record=>record.bytes===buffer.length&&record.sha256===sha))throw new Error('Superseded official response is shared by differing content: '+filename);
+    await fs.rm(target);removed++;
+  }
+  const finalIntegrity=await verifyOfficialPaths(manifest);
+  console.log(JSON.stringify({officialPathMigration:true,removedVerifiedOldResponses:removed,...finalIntegrity}));
+}
+
 async function snapshotOfficial() {
   const main = await fs.readFile(path.join(UPSTREAM,'www.mchose.com.cn/assets/main-DnvOpr5S.js'),'utf8');
   const found = /const deviceList=\{keyboard:\[\],mouse:\[([\s\S]*?)\],audio:/.exec(main);
@@ -138,7 +218,7 @@ async function snapshotOfficial() {
     const name=model.replace(/\s+/g,'');
     for(const requested of [name,...(/^MCHOSE/i.test(name)?[]:['MCHOSE'+name])]){
       const sourceUrl='https://www.maicong.cn/mchose/official?name='+encodeURIComponent(requested);
-      const relative='snapshots/official/'+encodeURIComponent(requested)+'.json';
+      const relative=officialResponsePath(requested,sourceUrl);
       const file=path.join(ROOT,relative);
       let buffer,reply,error;
       try{
@@ -160,7 +240,9 @@ async function snapshotOfficial() {
     }
     if(apiRecords.length%20===0)console.log(JSON.stringify({officialQueries:apiRecords.length,models:models.length}));
   }
-  await fs.writeFile(path.join(directory,'source-manifest.json'),JSON.stringify({formatVersion:1,updatedAt:new Date().toISOString(),files:apiRecords},null,2)+'\n');
+  const manifest={formatVersion:1,updatedAt:new Date().toISOString(),pathNaming:'encoded-name plus SHA256(sourceUrl) prefix; case-independent unique paths',files:apiRecords};
+  if(apiRecords.every(record=>record.status==='ok'))manifest.pathIntegrity={checkedAt:new Date().toISOString(),...await verifyOfficialPaths(manifest)};
+  await fs.writeFile(path.join(directory,'source-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
   await fs.writeFile(path.join(SNAPSHOTS,'official-templates.json'),JSON.stringify(replies,null,2)+'\n');
   console.log(JSON.stringify({officialQueries:apiRecords.length,ok:apiRecords.filter(x=>x.status==='ok').length,empty:apiRecords.filter(x=>x.empty).length,errors:apiRecords.filter(x=>x.status==='error').length}));
 }
@@ -444,6 +526,11 @@ async function pruneExcludedArchives() {
 }
 
 await fs.mkdir(SNAPSHOTS,{recursive:true});
+if(args.has('--migrate-official-paths-only')){await migrateOfficialPaths();process.exit(0);}
+if(args.has('--verify-official-paths-only')){
+  const manifest=JSON.parse(await fs.readFile(path.join(SNAPSHOTS,'official/source-manifest.json'),'utf8'));
+  console.log(JSON.stringify({officialPathVerification:true,...await verifyOfficialPaths(manifest)}));process.exit(0);
+}
 if(args.has('--official-only')){await snapshotOfficial();process.exit(0);}
 try { const old = JSON.parse(await fs.readFile(MANIFEST_FILE,'utf8')); for (const item of old.files || []) records.set(item.url,item); } catch {}
 await repairPathCollisions();

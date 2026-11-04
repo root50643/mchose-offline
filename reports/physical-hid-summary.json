@@ -17,5 +17,7 @@
   "buttonsOrMacrosModified": false,
   "independentEvidenceReviewPassed": true,
   "sourceEvidenceSha256": "189bbfce7c1369b1ef656ed4bc8d7563937bb7f0970deab636e30d49d5796ad0",
-  "privacy": "Full device settings and screenshots are retained privately and are excluded from this summary."
+  "privacy": "Full device settings and screenshots are retained privately and are excluded from this summary.",
+  "deviceModuleSha256": "f386eda05c13bb9185df141233571dc361d1c1feb2948dda5d28806ae3efc650",
+  "deviceModuleUnchangedAfterStorageIsolation": true
 }

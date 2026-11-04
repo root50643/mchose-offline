@@ -6,1233 +6,1466 @@
       "model": "A5",
       "name": "A5",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5",
-      "path": "snapshots/official/A5.json",
+      "path": "snapshots/official/A5.__url_5708cd5f9d68da89.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:42:59.435Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.046Z"
     },
     {
       "model": "A5",
       "name": "MCHOSEA5",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5",
-      "path": "snapshots/official/MCHOSEA5.json",
+      "path": "snapshots/official/MCHOSEA5.__url_e5d16dddd2fce04d.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:00.769Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.047Z"
     },
     {
       "model": "A5 Pro",
       "name": "A5Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5Pro",
-      "path": "snapshots/official/A5Pro.json",
+      "path": "snapshots/official/A5Pro.__url_19946abf0c72579f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:01.769Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.047Z"
     },
     {
       "model": "A5 Pro",
       "name": "MCHOSEA5Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5Pro",
-      "path": "snapshots/official/MCHOSEA5Pro.json",
+      "path": "snapshots/official/MCHOSEA5Pro.__url_7ef6c118884e964b.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:03.115Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.048Z"
     },
     {
       "model": "A5 Ultra",
       "name": "A5Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5Ultra",
-      "path": "snapshots/official/A5Ultra.json",
+      "path": "snapshots/official/A5Ultra.__url_3574523dad62d279.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:04.466Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.049Z"
     },
     {
       "model": "A5 Ultra",
       "name": "MCHOSEA5Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5Ultra",
-      "path": "snapshots/official/MCHOSEA5Ultra.json",
+      "path": "snapshots/official/MCHOSEA5Ultra.__url_7c8d4d4cbe72a20e.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:05.804Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.050Z"
     },
     {
       "model": "A5 V2 Pro",
       "name": "A5V2Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V2Pro",
-      "path": "snapshots/official/A5V2Pro.json",
+      "path": "snapshots/official/A5V2Pro.__url_1f7005be0458861f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:07.091Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V2Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.051Z"
     },
     {
       "model": "A5 V2 Pro",
       "name": "MCHOSEA5V2Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V2Pro",
-      "path": "snapshots/official/MCHOSEA5V2Pro.json",
+      "path": "snapshots/official/MCHOSEA5V2Pro.__url_8bbf0c2a1c0b54f5.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:08.387Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V2Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.051Z"
     },
     {
       "model": "A5 V2 Ultra",
       "name": "A5V2Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V2Ultra",
-      "path": "snapshots/official/A5V2Ultra.json",
+      "path": "snapshots/official/A5V2Ultra.__url_d2af84d01604d560.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:09.975Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V2Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.052Z"
     },
     {
       "model": "A5 V2 Ultra",
       "name": "MCHOSEA5V2Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V2Ultra",
-      "path": "snapshots/official/MCHOSEA5V2Ultra.json",
+      "path": "snapshots/official/MCHOSEA5V2Ultra.__url_f314e2ad38ca5059.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:11.310Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V2Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.053Z"
     },
     {
       "model": "A5 V3",
       "name": "A5V3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V3",
-      "path": "snapshots/official/A5V3.json",
+      "path": "snapshots/official/A5V3.__url_fd5106b3d1966de0.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:12.646Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.054Z"
     },
     {
       "model": "A5 V3",
       "name": "MCHOSEA5V3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V3",
-      "path": "snapshots/official/MCHOSEA5V3.json",
+      "path": "snapshots/official/MCHOSEA5V3.__url_6fd4daf4db0746ec.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:13.962Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.054Z"
     },
     {
       "model": "A5 V3 Pro",
       "name": "A5V3Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V3Pro",
-      "path": "snapshots/official/A5V3Pro.json",
+      "path": "snapshots/official/A5V3Pro.__url_ea8ec168e5ba8292.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:15.281Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V3Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.055Z"
     },
     {
       "model": "A5 V3 Pro",
       "name": "MCHOSEA5V3Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V3Pro",
-      "path": "snapshots/official/MCHOSEA5V3Pro.json",
+      "path": "snapshots/official/MCHOSEA5V3Pro.__url_5003c58b329182bf.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:16.587Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V3Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.056Z"
     },
     {
       "model": "A5 V3 Ultra",
       "name": "A5V3Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V3Ultra",
-      "path": "snapshots/official/A5V3Ultra.json",
+      "path": "snapshots/official/A5V3Ultra.__url_8e4837383a1ec0ee.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:17.885Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V3Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.056Z"
     },
     {
       "model": "A5 V3 Ultra",
       "name": "MCHOSEA5V3Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V3Ultra",
-      "path": "snapshots/official/MCHOSEA5V3Ultra.json",
+      "path": "snapshots/official/MCHOSEA5V3Ultra.__url_300588120832583d.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:19.230Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V3Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.057Z"
     },
     {
       "model": "A5 V3 Ultra+",
       "name": "A5V3Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V3Ultra%2B",
-      "path": "snapshots/official/A5V3Ultra%2B.json",
+      "path": "snapshots/official/A5V3Ultra%2B.__url_78f6b41fed67749f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:20.547Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V3Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.057Z"
     },
     {
       "model": "A5 V3 Ultra+",
       "name": "MCHOSEA5V3Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V3Ultra%2B",
-      "path": "snapshots/official/MCHOSEA5V3Ultra%2B.json",
+      "path": "snapshots/official/MCHOSEA5V3Ultra%2B.__url_d95cdb20227b3da4.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:21.878Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V3Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.058Z"
     },
     {
       "model": "A5 V3 Ultra+(3955)",
       "name": "A5V3Ultra+(3955)",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5V3Ultra%2B(3955)",
-      "path": "snapshots/official/A5V3Ultra%2B(3955).json",
+      "path": "snapshots/official/A5V3Ultra%2B(3955).__url_82bc641a60a26e90.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:23.230Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5V3Ultra%2B(3955).json",
+      "pathMigratedAt": "2026-11-04T14:02:25.066Z"
     },
     {
       "model": "A5 V3 Ultra+(3955)",
       "name": "MCHOSEA5V3Ultra+(3955)",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5V3Ultra%2B(3955)",
-      "path": "snapshots/official/MCHOSEA5V3Ultra%2B(3955).json",
+      "path": "snapshots/official/MCHOSEA5V3Ultra%2B(3955).__url_fa1b290b4af6a3e0.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:24.238Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5V3Ultra%2B(3955).json",
+      "pathMigratedAt": "2026-11-04T14:02:25.066Z"
     },
     {
       "model": "A5 ultra",
       "name": "A5ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A5ultra",
-      "path": "snapshots/official/A5ultra.json",
+      "path": "snapshots/official/A5ultra.__url_b00626297b55e354.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:24.239Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A5ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.067Z"
     },
     {
       "model": "A5 ultra",
       "name": "MCHOSEA5ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA5ultra",
-      "path": "snapshots/official/MCHOSEA5ultra.json",
+      "path": "snapshots/official/MCHOSEA5ultra.__url_97260a6d9c9579ee.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:24.240Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA5ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.068Z"
     },
     {
       "model": "A6 ultra test",
       "name": "A6ultratest",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A6ultratest",
-      "path": "snapshots/official/A6ultratest.json",
+      "path": "snapshots/official/A6ultratest.__url_ca3a93aab0771007.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:25.538Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A6ultratest.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.068Z"
     },
     {
       "model": "A6 ultra test",
       "name": "MCHOSEA6ultratest",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA6ultratest",
-      "path": "snapshots/official/MCHOSEA6ultratest.json",
+      "path": "snapshots/official/MCHOSEA6ultratest.__url_b4b349dd081f4155.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:26.841Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA6ultratest.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.069Z"
     },
     {
       "model": "A7",
       "name": "A7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7",
-      "path": "snapshots/official/A7.json",
+      "path": "snapshots/official/A7.__url_33959ccd788d0c65.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:28.139Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.070Z"
     },
     {
       "model": "A7",
       "name": "MCHOSEA7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7",
-      "path": "snapshots/official/MCHOSEA7.json",
+      "path": "snapshots/official/MCHOSEA7.__url_be10eed5b0568031.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:29.487Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.070Z"
     },
     {
       "model": "A7 Pro",
       "name": "A7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7Pro",
-      "path": "snapshots/official/A7Pro.json",
+      "path": "snapshots/official/A7Pro.__url_c69b54da1e1e5fee.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:30.819Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.071Z"
     },
     {
       "model": "A7 Pro",
       "name": "MCHOSEA7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7Pro",
-      "path": "snapshots/official/MCHOSEA7Pro.json",
+      "path": "snapshots/official/MCHOSEA7Pro.__url_51e83401de866a1f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:32.128Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.072Z"
     },
     {
       "model": "A7 Ultra",
       "name": "A7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7Ultra",
-      "path": "snapshots/official/A7Ultra.json",
+      "path": "snapshots/official/A7Ultra.__url_63780b6a99de17ce.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:33.417Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.073Z"
     },
     {
       "model": "A7 Ultra",
       "name": "MCHOSEA7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7Ultra",
-      "path": "snapshots/official/MCHOSEA7Ultra.json",
+      "path": "snapshots/official/MCHOSEA7Ultra.__url_786ddfcc74fbc56a.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:34.705Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.073Z"
     },
     {
       "model": "A7 Ultra(RE)",
       "name": "A7Ultra(RE)",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7Ultra(RE)",
-      "path": "snapshots/official/A7Ultra(RE).json",
+      "path": "snapshots/official/A7Ultra(RE).__url_813ea5a268c2ded9.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:36.054Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7Ultra(RE).json",
+      "pathMigratedAt": "2026-11-04T14:02:25.074Z"
     },
     {
       "model": "A7 Ultra(RE)",
       "name": "MCHOSEA7Ultra(RE)",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7Ultra(RE)",
-      "path": "snapshots/official/MCHOSEA7Ultra(RE).json",
+      "path": "snapshots/official/MCHOSEA7Ultra(RE).__url_264a3b02143cbb18.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:37.564Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7Ultra(RE).json",
+      "pathMigratedAt": "2026-11-04T14:02:25.075Z"
     },
     {
       "model": "A7 V2 Pro",
       "name": "A7V2Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V2Pro",
-      "path": "snapshots/official/A7V2Pro.json",
+      "path": "snapshots/official/A7V2Pro.__url_2b5c3f3a899823ca.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:38.878Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V2Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.076Z"
     },
     {
       "model": "A7 V2 Pro",
       "name": "MCHOSEA7V2Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V2Pro",
-      "path": "snapshots/official/MCHOSEA7V2Pro.json",
+      "path": "snapshots/official/MCHOSEA7V2Pro.__url_bfa4ebacedd247a9.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:40.208Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V2Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.076Z"
     },
     {
       "model": "A7 V2 Pro+",
       "name": "A7V2Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V2Pro%2B",
-      "path": "snapshots/official/A7V2Pro%2B.json",
+      "path": "snapshots/official/A7V2Pro%2B.__url_48c70966ce1e52d5.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:41.523Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V2Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.077Z"
     },
     {
       "model": "A7 V2 Pro+",
       "name": "MCHOSEA7V2Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V2Pro%2B",
-      "path": "snapshots/official/MCHOSEA7V2Pro%2B.json",
+      "path": "snapshots/official/MCHOSEA7V2Pro%2B.__url_81958d3b80486cf9.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:42.890Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V2Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.078Z"
     },
     {
       "model": "A7 V2 Ultra",
       "name": "A7V2Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V2Ultra",
-      "path": "snapshots/official/A7V2Ultra.json",
+      "path": "snapshots/official/A7V2Ultra.__url_1a9b0f9cb7a9a51f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:44.239Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V2Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.079Z"
     },
     {
       "model": "A7 V2 Ultra",
       "name": "MCHOSEA7V2Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V2Ultra",
-      "path": "snapshots/official/MCHOSEA7V2Ultra.json",
+      "path": "snapshots/official/MCHOSEA7V2Ultra.__url_4e265c62ea38b09f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:45.575Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V2Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.079Z"
     },
     {
       "model": "A7 V2 Ultra+",
       "name": "A7V2Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V2Ultra%2B",
-      "path": "snapshots/official/A7V2Ultra%2B.json",
+      "path": "snapshots/official/A7V2Ultra%2B.__url_5953059ded7357f8.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:46.929Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V2Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.080Z"
     },
     {
       "model": "A7 V2 Ultra+",
       "name": "MCHOSEA7V2Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V2Ultra%2B",
-      "path": "snapshots/official/MCHOSEA7V2Ultra%2B.json",
+      "path": "snapshots/official/MCHOSEA7V2Ultra%2B.__url_a5c98e756869cf41.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:48.511Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V2Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.081Z"
     },
     {
       "model": "A7 V3",
       "name": "A7V3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V3",
-      "path": "snapshots/official/A7V3.json",
+      "path": "snapshots/official/A7V3.__url_1e2c01f069ae3011.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:50.096Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.082Z"
     },
     {
       "model": "A7 V3",
       "name": "MCHOSEA7V3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V3",
-      "path": "snapshots/official/MCHOSEA7V3.json",
+      "path": "snapshots/official/MCHOSEA7V3.__url_d998f87ac4d02d17.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:51.385Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.083Z"
     },
     {
       "model": "A7 V3 Pro",
       "name": "A7V3Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V3Pro",
-      "path": "snapshots/official/A7V3Pro.json",
+      "path": "snapshots/official/A7V3Pro.__url_0c3d771e0a27cbab.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:52.732Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V3Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.084Z"
     },
     {
       "model": "A7 V3 Pro",
       "name": "MCHOSEA7V3Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V3Pro",
-      "path": "snapshots/official/MCHOSEA7V3Pro.json",
+      "path": "snapshots/official/MCHOSEA7V3Pro.__url_b3592755ea35a006.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:54.052Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V3Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.085Z"
     },
     {
       "model": "A7 V3 Pro+",
       "name": "A7V3Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V3Pro%2B",
-      "path": "snapshots/official/A7V3Pro%2B.json",
+      "path": "snapshots/official/A7V3Pro%2B.__url_5bf801472bafcdab.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:55.381Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V3Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.086Z"
     },
     {
       "model": "A7 V3 Pro+",
       "name": "MCHOSEA7V3Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V3Pro%2B",
-      "path": "snapshots/official/MCHOSEA7V3Pro%2B.json",
+      "path": "snapshots/official/MCHOSEA7V3Pro%2B.__url_080e144c8170b361.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:56.673Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V3Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.087Z"
     },
     {
       "model": "A7 V3 Ultra",
       "name": "A7V3Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V3Ultra",
-      "path": "snapshots/official/A7V3Ultra.json",
+      "path": "snapshots/official/A7V3Ultra.__url_75e8ddb31cd0dca7.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:57.991Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V3Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.088Z"
     },
     {
       "model": "A7 V3 Ultra",
       "name": "MCHOSEA7V3Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V3Ultra",
-      "path": "snapshots/official/MCHOSEA7V3Ultra.json",
+      "path": "snapshots/official/MCHOSEA7V3Ultra.__url_052f5101811fe2cc.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:43:59.306Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V3Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.089Z"
     },
     {
       "model": "A7 V3 Ultra+",
       "name": "A7V3Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V3Ultra%2B",
-      "path": "snapshots/official/A7V3Ultra%2B.json",
+      "path": "snapshots/official/A7V3Ultra%2B.__url_db549d767b7843d8.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:00.635Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V3Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.090Z"
     },
     {
       "model": "A7 V3 Ultra+",
       "name": "MCHOSEA7V3Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V3Ultra%2B",
-      "path": "snapshots/official/MCHOSEA7V3Ultra%2B.json",
+      "path": "snapshots/official/MCHOSEA7V3Ultra%2B.__url_99eceef1ee3ba0cb.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:02.010Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V3Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.091Z"
     },
     {
       "model": "A7 V3-X",
       "name": "A7V3-X",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7V3-X",
-      "path": "snapshots/official/A7V3-X.json",
+      "path": "snapshots/official/A7V3-X.__url_f9ce2ffc980aee6a.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:03.337Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7V3-X.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.092Z"
     },
     {
       "model": "A7 V3-X",
       "name": "MCHOSEA7V3-X",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7V3-X",
-      "path": "snapshots/official/MCHOSEA7V3-X.json",
+      "path": "snapshots/official/MCHOSEA7V3-X.__url_03ea14935c625e24.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:04.682Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7V3-X.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.093Z"
     },
     {
       "model": "A7X Ultra",
       "name": "A7XUltra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=A7XUltra",
-      "path": "snapshots/official/A7XUltra.json",
+      "path": "snapshots/official/A7XUltra.__url_324a5bd98f56c0a5.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:06.057Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/A7XUltra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.094Z"
     },
     {
       "model": "A7X Ultra",
       "name": "MCHOSEA7XUltra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEA7XUltra",
-      "path": "snapshots/official/MCHOSEA7XUltra.json",
+      "path": "snapshots/official/MCHOSEA7XUltra.__url_54b2410d3656e38c.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:07.365Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEA7XUltra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.094Z"
     },
     {
       "model": "AX5 V2",
       "name": "AX5V2",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=AX5V2",
-      "path": "snapshots/official/AX5V2.json",
+      "path": "snapshots/official/AX5V2.__url_26360985089f74ee.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:08.720Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/AX5V2.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.095Z"
     },
     {
       "model": "AX5 V2",
       "name": "MCHOSEAX5V2",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEAX5V2",
-      "path": "snapshots/official/MCHOSEAX5V2.json",
+      "path": "snapshots/official/MCHOSEAX5V2.__url_05589fd902073171.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:10.190Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEAX5V2.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.096Z"
     },
     {
       "model": "AX5 V2 new",
       "name": "AX5V2new",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=AX5V2new",
-      "path": "snapshots/official/AX5V2new.json",
+      "path": "snapshots/official/AX5V2new.__url_3589845fcf8c1377.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:11.491Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/AX5V2new.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.097Z"
     },
     {
       "model": "AX5 V2 new",
       "name": "MCHOSEAX5V2new",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEAX5V2new",
-      "path": "snapshots/official/MCHOSEAX5V2new.json",
+      "path": "snapshots/official/MCHOSEAX5V2new.__url_4dd08fe139970a2b.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:12.835Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEAX5V2new.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.098Z"
     },
     {
       "model": "AX5 V2 old",
       "name": "AX5V2old",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=AX5V2old",
-      "path": "snapshots/official/AX5V2old.json",
+      "path": "snapshots/official/AX5V2old.__url_9060d084e9527cea.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:14.162Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/AX5V2old.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.098Z"
     },
     {
       "model": "AX5 V2 old",
       "name": "MCHOSEAX5V2old",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEAX5V2old",
-      "path": "snapshots/official/MCHOSEAX5V2old.json",
+      "path": "snapshots/official/MCHOSEAX5V2old.__url_d3c84e49f19fd964.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:15.487Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEAX5V2old.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.099Z"
     },
     {
       "model": "G3",
       "name": "G3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3",
-      "path": "snapshots/official/G3.json",
+      "path": "snapshots/official/G3.__url_56f1232a1faadac2.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:16.890Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.100Z"
     },
     {
       "model": "G3",
       "name": "MCHOSEG3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3",
-      "path": "snapshots/official/MCHOSEG3.json",
+      "path": "snapshots/official/MCHOSEG3.__url_291e58289cd4877b.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:18.208Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.101Z"
     },
     {
       "model": "G3 A",
       "name": "G3A",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3A",
-      "path": "snapshots/official/G3A.json",
+      "path": "snapshots/official/G3A.__url_6a94d7a0e6923b0d.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:19.486Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3A.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.102Z"
     },
     {
       "model": "G3 A",
       "name": "MCHOSEG3A",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3A",
-      "path": "snapshots/official/MCHOSEG3A.json",
+      "path": "snapshots/official/MCHOSEG3A.__url_8c4ef08bba8f8920.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:20.833Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3A.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.102Z"
     },
     {
       "model": "G3 Pro",
       "name": "G3Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3Pro",
-      "path": "snapshots/official/G3Pro.json",
+      "path": "snapshots/official/G3Pro.__url_0fa683b4cfe9addf.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:21.809Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.103Z"
     },
     {
       "model": "G3 Pro",
       "name": "MCHOSEG3Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3Pro",
-      "path": "snapshots/official/MCHOSEG3Pro.json",
+      "path": "snapshots/official/MCHOSEG3Pro.__url_bd0abb04b5609d3c.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:22.826Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.104Z"
     },
     {
       "model": "G3 S",
       "name": "G3S",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3S",
-      "path": "snapshots/official/G3S.json",
+      "path": "snapshots/official/G3S.__url_a2d9a2df35522ae7.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:24.155Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3S.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.104Z"
     },
     {
       "model": "G3 S",
       "name": "MCHOSEG3S",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3S",
-      "path": "snapshots/official/MCHOSEG3S.json",
+      "path": "snapshots/official/MCHOSEG3S.__url_c2e9c98d6fd1c433.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:25.498Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3S.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.106Z"
     },
     {
       "model": "G3 Ultra",
       "name": "G3Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3Ultra",
-      "path": "snapshots/official/G3Ultra.json",
+      "path": "snapshots/official/G3Ultra.__url_8263b7a0898bac6f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:25.937Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.106Z"
     },
     {
       "model": "G3 Ultra",
       "name": "MCHOSEG3Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3Ultra",
-      "path": "snapshots/official/MCHOSEG3Ultra.json",
+      "path": "snapshots/official/MCHOSEG3Ultra.__url_8c5b1d22a4d6be71.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:27.339Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.107Z"
     },
     {
       "model": "G3 Ultra 4K",
       "name": "G3Ultra4K",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3Ultra4K",
-      "path": "snapshots/official/G3Ultra4K.json",
+      "path": "snapshots/official/G3Ultra4K.__url_bf93c478e7951671.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:28.694Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3Ultra4K.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.108Z"
     },
     {
       "model": "G3 Ultra 4K",
       "name": "MCHOSEG3Ultra4K",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3Ultra4K",
-      "path": "snapshots/official/MCHOSEG3Ultra4K.json",
+      "path": "snapshots/official/MCHOSEG3Ultra4K.__url_a31063dd3f8504bd.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:30.050Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3Ultra4K.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.109Z"
     },
     {
       "model": "G3 Ultra 8K",
       "name": "G3Ultra8K",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3Ultra8K",
-      "path": "snapshots/official/G3Ultra8K.json",
+      "path": "snapshots/official/G3Ultra8K.__url_7f94095e5691b66f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:31.388Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3Ultra8K.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.110Z"
     },
     {
       "model": "G3 Ultra 8K",
       "name": "MCHOSEG3Ultra8K",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3Ultra8K",
-      "path": "snapshots/official/MCHOSEG3Ultra8K.json",
+      "path": "snapshots/official/MCHOSEG3Ultra8K.__url_83620bf03c22aead.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:32.721Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3Ultra8K.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.111Z"
     },
     {
       "model": "G3 V3",
       "name": "G3V3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G3V3",
-      "path": "snapshots/official/G3V3.json",
+      "path": "snapshots/official/G3V3.__url_c38f9edc6b6ac712.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:34.086Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G3V3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.111Z"
     },
     {
       "model": "G3 V3",
       "name": "MCHOSEG3V3",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG3V3",
-      "path": "snapshots/official/MCHOSEG3V3.json",
+      "path": "snapshots/official/MCHOSEG3V3.__url_7f7b81516f25db73.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:35.389Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG3V3.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.112Z"
     },
     {
       "model": "G7",
       "name": "G7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=G7",
-      "path": "snapshots/official/G7.json",
+      "path": "snapshots/official/G7.__url_1917b83359b1aea4.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:36.781Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/G7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.113Z"
     },
     {
       "model": "G7",
       "name": "MCHOSEG7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEG7",
-      "path": "snapshots/official/MCHOSEG7.json",
+      "path": "snapshots/official/MCHOSEG7.__url_ec8be770472efb10.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:38.126Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEG7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.114Z"
     },
     {
       "model": "K5 Pro",
       "name": "K5Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=K5Pro",
-      "path": "snapshots/official/K5Pro.json",
+      "path": "snapshots/official/K5Pro.__url_6eb7e7e6104bc15f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:39.438Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/K5Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.114Z"
     },
     {
       "model": "K5 Pro",
       "name": "MCHOSEK5Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEK5Pro",
-      "path": "snapshots/official/MCHOSEK5Pro.json",
+      "path": "snapshots/official/MCHOSEK5Pro.__url_cd3bf5a77c7e437c.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:40.735Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEK5Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.115Z"
     },
     {
       "model": "K5 Ultra",
       "name": "K5Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=K5Ultra",
-      "path": "snapshots/official/K5Ultra.json",
+      "path": "snapshots/official/K5Ultra.__url_4ce40b817fa37e23.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:42.089Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/K5Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.116Z"
     },
     {
       "model": "K5 Ultra",
       "name": "MCHOSEK5Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEK5Ultra",
-      "path": "snapshots/official/MCHOSEK5Ultra.json",
+      "path": "snapshots/official/MCHOSEK5Ultra.__url_0a66d25b3fd48767.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:43.081Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEK5Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.116Z"
     },
     {
       "model": "K7 Ultra",
       "name": "K7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=K7Ultra",
-      "path": "snapshots/official/K7Ultra.json",
+      "path": "snapshots/official/K7Ultra.__url_c915fd9fa3f428eb.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:44.447Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/K7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.117Z"
     },
     {
       "model": "K7 Ultra",
       "name": "MCHOSEK7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEK7Ultra",
-      "path": "snapshots/official/MCHOSEK7Ultra.json",
+      "path": "snapshots/official/MCHOSEK7Ultra.__url_4b39036e144f73a7.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:45.730Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEK7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.118Z"
     },
     {
       "model": "K7 V2 Pro+",
       "name": "K7V2Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=K7V2Pro%2B",
-      "path": "snapshots/official/K7V2Pro%2B.json",
+      "path": "snapshots/official/K7V2Pro%2B.__url_cbf7db433f9669e0.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:47.022Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/K7V2Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.119Z"
     },
     {
       "model": "K7 V2 Pro+",
       "name": "MCHOSEK7V2Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEK7V2Pro%2B",
-      "path": "snapshots/official/MCHOSEK7V2Pro%2B.json",
+      "path": "snapshots/official/MCHOSEK7V2Pro%2B.__url_6de8a826dd77310a.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:48.305Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEK7V2Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.119Z"
     },
     {
       "model": "K7 V2 Ultra+",
       "name": "K7V2Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=K7V2Ultra%2B",
-      "path": "snapshots/official/K7V2Ultra%2B.json",
+      "path": "snapshots/official/K7V2Ultra%2B.__url_7d313854c57f5a1f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:49.626Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/K7V2Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.120Z"
     },
     {
       "model": "K7 V2 Ultra+",
       "name": "MCHOSEK7V2Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEK7V2Ultra%2B",
-      "path": "snapshots/official/MCHOSEK7V2Ultra%2B.json",
+      "path": "snapshots/official/MCHOSEK7V2Ultra%2B.__url_715fe5b18b664b46.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:50.937Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEK7V2Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.121Z"
     },
     {
       "model": "L7",
       "name": "L7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=L7",
-      "path": "snapshots/official/L7.json",
+      "path": "snapshots/official/L7.__url_797923e60094e745.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:52.276Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/L7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.122Z"
     },
     {
       "model": "L7",
       "name": "MCHOSEL7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEL7",
-      "path": "snapshots/official/MCHOSEL7.json",
+      "path": "snapshots/official/MCHOSEL7.__url_baa1e46b03d8bc0a.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:53.620Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEL7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.122Z"
     },
     {
       "model": "L7 Pro",
       "name": "L7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=L7Pro",
-      "path": "snapshots/official/L7Pro.json",
+      "path": "snapshots/official/L7Pro.__url_dcddc12ac9a37346.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:54.939Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/L7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.123Z"
     },
     {
       "model": "L7 Pro",
       "name": "MCHOSEL7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEL7Pro",
-      "path": "snapshots/official/MCHOSEL7Pro.json",
+      "path": "snapshots/official/MCHOSEL7Pro.__url_e298786a7ed18892.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:56.228Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEL7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.124Z"
     },
     {
       "model": "L7 Pro+",
       "name": "L7Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=L7Pro%2B",
-      "path": "snapshots/official/L7Pro%2B.json",
+      "path": "snapshots/official/L7Pro%2B.__url_ed8b2a0945092cee.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:57.580Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/L7Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.125Z"
     },
     {
       "model": "L7 Pro+",
       "name": "MCHOSEL7Pro+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEL7Pro%2B",
-      "path": "snapshots/official/MCHOSEL7Pro%2B.json",
+      "path": "snapshots/official/MCHOSEL7Pro%2B.__url_12bd18feb8441a9a.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:58.929Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEL7Pro%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.126Z"
     },
     {
       "model": "L7 Ultra",
       "name": "L7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=L7Ultra",
-      "path": "snapshots/official/L7Ultra.json",
+      "path": "snapshots/official/L7Ultra.__url_591573f9604e44f2.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:44:59.922Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/L7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.127Z"
     },
     {
       "model": "L7 Ultra",
       "name": "MCHOSEL7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEL7Ultra",
-      "path": "snapshots/official/MCHOSEL7Ultra.json",
+      "path": "snapshots/official/MCHOSEL7Ultra.__url_15d5ecd468817b2f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:00.900Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEL7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.127Z"
     },
     {
       "model": "L7 Ultra+",
       "name": "L7Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=L7Ultra%2B",
-      "path": "snapshots/official/L7Ultra%2B.json",
+      "path": "snapshots/official/L7Ultra%2B.__url_3a6f670ff8e2bd02.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:02.210Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/L7Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.128Z"
     },
     {
       "model": "L7 Ultra+",
       "name": "MCHOSEL7Ultra+",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEL7Ultra%2B",
-      "path": "snapshots/official/MCHOSEL7Ultra%2B.json",
+      "path": "snapshots/official/MCHOSEL7Ultra%2B.__url_bf4170a6d98d74c2.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:03.542Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEL7Ultra%2B.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.129Z"
     },
     {
       "model": "M7",
       "name": "M7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=M7",
-      "path": "snapshots/official/M7.json",
+      "path": "snapshots/official/M7.__url_a2b9777e81035acc.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:04.831Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/M7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.129Z"
     },
     {
       "model": "M7",
       "name": "MCHOSEM7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEM7",
-      "path": "snapshots/official/MCHOSEM7.json",
+      "path": "snapshots/official/MCHOSEM7.__url_220ba4eccd2242d9.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:06.170Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEM7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.130Z"
     },
     {
       "model": "M7 Pro",
       "name": "M7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=M7Pro",
-      "path": "snapshots/official/M7Pro.json",
+      "path": "snapshots/official/M7Pro.__url_262ce82c36303ff4.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:07.493Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/M7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.131Z"
     },
     {
       "model": "M7 Pro",
       "name": "MCHOSEM7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEM7Pro",
-      "path": "snapshots/official/MCHOSEM7Pro.json",
+      "path": "snapshots/official/MCHOSEM7Pro.__url_297ead1aa228960d.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:08.870Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEM7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.132Z"
     },
     {
       "model": "M7 Ultra",
       "name": "M7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=M7Ultra",
-      "path": "snapshots/official/M7Ultra.json",
+      "path": "snapshots/official/M7Ultra.__url_1854dcd5f379c915.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:10.229Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/M7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.132Z"
     },
     {
       "model": "M7 Ultra",
       "name": "MCHOSEM7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEM7Ultra",
-      "path": "snapshots/official/MCHOSEM7Ultra.json",
+      "path": "snapshots/official/MCHOSEM7Ultra.__url_23dbb5f5e3e68a3d.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:11.579Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEM7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.133Z"
     },
     {
       "model": "MagDock",
       "name": "MagDock",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MagDock",
-      "path": "snapshots/official/MagDock.json",
+      "path": "snapshots/official/MagDock.__url_8610085942c7d166.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:12.902Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MagDock.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.134Z"
     },
     {
       "model": "MagDock",
       "name": "MCHOSEMagDock",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEMagDock",
-      "path": "snapshots/official/MCHOSEMagDock.json",
+      "path": "snapshots/official/MCHOSEMagDock.__url_c4651e57554e36bd.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:14.241Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEMagDock.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.135Z"
     },
     {
       "model": "R7 Ultra",
       "name": "R7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=R7Ultra",
-      "path": "snapshots/official/R7Ultra.json",
+      "path": "snapshots/official/R7Ultra.__url_10e5de282d130fa0.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:14.620Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/R7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.135Z"
     },
     {
       "model": "R7 Ultra",
       "name": "MCHOSER7Ultra",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSER7Ultra",
-      "path": "snapshots/official/MCHOSER7Ultra.json",
+      "path": "snapshots/official/MCHOSER7Ultra.__url_51de9b4a0a7dc74f.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:15.964Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSER7Ultra.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.136Z"
     },
     {
       "model": "V7",
       "name": "V7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=V7",
-      "path": "snapshots/official/V7.json",
+      "path": "snapshots/official/V7.__url_c06fc42b4210b878.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:17.287Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/V7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.137Z"
     },
     {
       "model": "V7",
       "name": "MCHOSEV7",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEV7",
-      "path": "snapshots/official/MCHOSEV7.json",
+      "path": "snapshots/official/MCHOSEV7.__url_9d28da1b3d578df6.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:18.630Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEV7.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.137Z"
     },
     {
       "model": "V7 Pro",
       "name": "V7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=V7Pro",
-      "path": "snapshots/official/V7Pro.json",
+      "path": "snapshots/official/V7Pro.__url_730ce8016199e4a2.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:19.964Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/V7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.138Z"
     },
     {
       "model": "V7 Pro",
       "name": "MCHOSEV7Pro",
       "sourceUrl": "https://www.maicong.cn/mchose/official?name=MCHOSEV7Pro",
-      "path": "snapshots/official/MCHOSEV7Pro.json",
+      "path": "snapshots/official/MCHOSEV7Pro.__url_581ab3d8f7e559a6.json",
       "status": "ok",
       "bytes": 41,
       "sha256": "c33df179b70d8205489cd002d77af86dda7f58a936cdfcd58817fa32744bd7bf",
       "capturedAt": "2026-11-04T12:45:21.268Z",
-      "empty": true
+      "empty": true,
+      "previousPath": "snapshots/official/MCHOSEV7Pro.json",
+      "pathMigratedAt": "2026-11-04T14:02:25.139Z"
     }
-  ]
+  ],
+  "pathNaming": "encoded-name plus SHA256(sourceUrl) prefix; case-independent unique paths",
+  "pathIntegrity": {
+    "checkedAt": "2026-11-04T14:02:25.168Z",
+    "files": 112,
+    "uniqueCaseSensitivePaths": 112,
+    "uniqueCaseInsensitivePaths": 112,
+    "missingExactCasePaths": [],
+    "hashMismatches": []
+  }
 }

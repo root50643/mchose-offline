@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-04T13:14:10.141Z",
-  "offlineVersion": "d1b2139542798e98a8f3",
+  "checkedAt": "2026-11-04T14:12:11.700Z",
+  "offlineVersion": "b154f43c319f1a90f729",
   "passed": true,
   "tests": [
     {
@@ -29,5 +29,7 @@
     "manualFiles": 2
   },
   "physicalHardwareTested": true,
-  "physicalHardwareReport": "reports/physical-hid-summary.json"
+  "physicalHardwareReport": "reports/physical-hid-summary.json",
+  "storageIsolationVerified": true,
+  "exactOfficialSnapshotPathsVerified": true
 }

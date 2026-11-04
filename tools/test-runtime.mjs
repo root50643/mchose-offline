@@ -25,23 +25,59 @@ const mappedFiles = Object.entries(data.urlMap);
 const collisions = mappedFiles.filter(([url, local]) => local.includes('.__url_') && new URL(url).pathname.endsWith('.bin'));
 assert.ok(collisions.length >= 2, 'The snapshot should retain the known pair of case-colliding dongle firmware files.');
 
-class MemoryStorage {
-  constructor(values = {}) { Object.assign(this, values); }
-  getItem(key) { return Object.hasOwn(this, key) ? String(this[key]) : null; }
-  setItem(key, value) { this[key] = String(value); }
-  removeItem(key) { delete this[key]; }
+const otherProjectValues = {
+  'webdriver-auth': JSON.stringify({ user: { token: 'test-only-old-token' }, sessionStatus: 'authenticated' }),
+  userConfig: JSON.stringify({ token: 'test-only-legacy-token' }),
+  global: JSON.stringify({ userConfig: { token: 'test-only-nested-token' }, theme: 'dark', otherPreference: 7 }),
+  mouse: JSON.stringify({ otherProjectMouse: 'preserve-this-value' }),
+  unrelated: 'another application owns this value',
+};
+function createNativeStorage(localBacking, sessionBacking) {
+  const state = new WeakMap();
+  const reads = { local: [], session: [] };
+  function data(receiver) {
+    const result = state.get(receiver);
+    if (!result) throw new TypeError('Illegal invocation: Storage receiver required.');
+    return result;
+  }
+  class NativeStorage {
+    getItem(key) { const backing = data(this); reads[backing === localBacking ? 'local' : 'session'].push(String(key)); return backing.get(String(key)) ?? null; }
+    setItem(key, value) { data(this).set(String(key), String(value)); }
+    removeItem(key) { data(this).delete(String(key)); }
+    clear() { data(this).clear(); }
+    key(index) { return [...data(this).keys()][Number(index)] ?? null; }
+    get length() { return data(this).size; }
+  }
+  function instance(backing) {
+    const target = new NativeStorage();
+    const proxy = new Proxy(target, {
+      get(object, key, receiver) {
+        return typeof key === 'string' && !Reflect.has(object, key) && backing.has(key) ? backing.get(key) : Reflect.get(object, key, receiver);
+      },
+      set(object, key, value) { backing.set(String(key), String(value)); return true; },
+      deleteProperty(object, key) { backing.delete(String(key)); return true; },
+      has(object, key) { return backing.has(String(key)) || Reflect.has(object, key); },
+      ownKeys() { return [...backing.keys()]; },
+      getOwnPropertyDescriptor(object, key) {
+        return typeof key === 'string' && backing.has(key)
+          ? { value: backing.get(key), enumerable: true, configurable: true, writable: true }
+          : Reflect.getOwnPropertyDescriptor(object, key);
+      },
+    });
+    state.set(target, backing); state.set(proxy, backing);
+    return proxy;
+  }
+  return { Storage: NativeStorage, local: instance(localBacking), session: instance(sessionBacking), reads };
 }
-function harness(base) {
+function harness(base, options = {}) {
   const calls = { fetch: [], beacon: [], xhr: [], open: [], dispatched: [] };
   const eventListeners = new Map();
   const elements = new Map();
-  const localStorage = new MemoryStorage({
-    'webdriver-auth': JSON.stringify({ user: { token: 'test-only-old-token' }, sessionStatus: 'authenticated' }),
-    userConfig: JSON.stringify({ token: 'test-only-legacy-token' }),
-    global: JSON.stringify({ userConfig: { token: 'test-only-nested-token' }, theme: 'dark', otherPreference: 7 }),
-  });
+  const localBacking = options.localBacking || new Map(Object.entries(otherProjectValues));
+  const sessionBacking = options.sessionBacking || new Map(Object.entries({ ...otherProjectValues, tabSession: 'preserve session value' }));
+  const nativeStorage = createNativeStorage(localBacking, sessionBacking);
   const locationUrl = new URL(base);
-  const location = { href: locationUrl.href, origin: locationUrl.origin, pathname: locationUrl.pathname, hash: '', replace(value) { this.href = value; } };
+  const location = { href: locationUrl.href, origin: locationUrl.origin, hostname: locationUrl.hostname, protocol: locationUrl.protocol, port: locationUrl.port, pathname: locationUrl.pathname, hash: '', replace(value) { this.href = value; } };
   const document = {
     currentScript: { src: new URL('offline-runtime.js', base).href }, readyState: 'loading',
     getElementById(id) { return elements.get(id) || null; },
@@ -53,7 +89,7 @@ function harness(base) {
   class MockCustomEvent { constructor(type, init = {}) { this.type = type; this.detail = init.detail; } }
   class MockPerformanceObserver { constructor(callback) { this.callback = callback; } observe() {} }
   const window = {
-    location, document, localStorage,
+    location, document, localStorage: nativeStorage.local, sessionStorage: nativeStorage.session, Storage: nativeStorage.Storage,
     fetch: async (input, options) => {
       calls.fetch.push({ url: input instanceof Request ? input.url : String(input), method: options?.method || (input instanceof Request ? input.method : 'GET') });
       return new Response('native local fixture', { status: 200 });
@@ -63,15 +99,23 @@ function harness(base) {
     addEventListener(type, callback) { eventListeners.set(type, callback); },
   };
   const navigator = { sendBeacon(...arguments_) { calls.beacon.push(arguments_); return true; } };
-  const context = vm.createContext({
-    window, document, localStorage, location, navigator, XMLHttpRequest: MockXhr,
+  const globals = {
+    window, document, location, navigator, XMLHttpRequest: MockXhr, Storage: nativeStorage.Storage,
     URL, URLSearchParams, Request, Response, Headers, DOMException, CustomEvent: MockCustomEvent,
     PerformanceObserver: MockPerformanceObserver,
     performance: { getEntriesByType: () => [], timeOrigin: 1, now: () => 0 },
     console, setTimeout, clearTimeout, setInterval, clearInterval,
+  };
+  for (const name of ['localStorage', 'sessionStorage']) Object.defineProperty(globals, name, {
+    configurable: true, get() { return window[name]; }, set(value) { window[name] = value; },
   });
+  const context = vm.createContext(globals);
   vm.runInContext(runtimeText, context, { filename: 'site/offline-runtime.js', timeout: 5000 });
-  return { calls, context, window, navigator, localStorage, elements, eventListeners, location, runtime: window.__mchoseOffline };
+  return { calls, context, window, navigator, localBacking, sessionBacking,
+    nativeStorageReads: nativeStorage.reads,
+    rawLocalStorage: nativeStorage.local, rawSessionStorage: nativeStorage.session,
+    get localStorage() { return window.localStorage; }, get sessionStorage() { return window.sessionStorage; },
+    elements, eventListeners, location, runtime: window.__mchoseOffline };
 }
 
 let assertions = 0;
@@ -120,10 +164,12 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
   assert.equal(h.calls.fetch.length, 0, 'Config initialization must not contact a server.');
   assert.equal(h.localStorage.getItem('webdriver-auth'), null, 'The real persisted auth key must not restore a session.');
   assert.equal(h.localStorage.getItem('userConfig'), null, 'Legacy user configuration must not restore a session.');
-  const globalPreferences = JSON.parse(h.localStorage.getItem('global'));
-  assert.equal(globalPreferences.userConfig, undefined, 'Nested legacy auth data must be removed.');
-  assert.equal(globalPreferences.theme, 'dark', 'Offline auth cleanup must preserve local non-auth preferences.');
-  assert.equal(globalPreferences.otherPreference, 7);
+  assert.equal(h.localStorage.getItem('global'), null, 'Unmarked origin-wide preferences must not enter this project namespace.');
+  assert.equal(h.localStorage.getItem('mouse'), null, 'Unmarked origin-wide mouse data must not enter this project namespace.');
+  for (const [key, value] of Object.entries(otherProjectValues)) {
+    assert.equal(h.rawLocalStorage.getItem(key), value, 'Other projects localStorage must remain unchanged: ' + key);
+    assert.equal(h.rawSessionStorage.getItem(key), value, 'Other projects sessionStorage must remain unchanged: ' + key);
+  }
 
   const [sampleOriginal, sampleLocal] = collisions[0];
   await h.window.fetch(new Request(sampleOriginal, { method: 'HEAD' }));
@@ -192,6 +238,114 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
   console.log(`PASS runtime ${base}: exact mirror map, case collisions, protocol-relative URLs, config loaders, auth cleanup, local APIs, blocked external transports`);
   console.log(`PASS missing-manual handling ${base}: window.open, anchor, fetch and XHR use a local notice without native requests or navigation`);
 }
+
+const legacyMarkers = { 'mchose-offline-language-initialized': '1', 'cz@keyboardConfig@v1': '{}' };
+const sharedLocalSeed = { ...otherProjectValues, ...legacyMarkers };
+const sharedSessionSeed = { ...otherProjectValues, sessionOnly: 'another app session' };
+const sharedLocal = new Map(Object.entries(sharedLocalSeed));
+const sharedSession = new Map(Object.entries(sharedSessionSeed));
+const namespaceA = harness('https://root50643.github.io/mchose-offline/', { localBacking: sharedLocal, sessionBacking: sharedSession });
+const namespaceB = harness('https://root50643.github.io/another-project/', { localBacking: sharedLocal, sessionBacking: sharedSession });
+assert.notEqual(namespaceA.runtime.storageNamespace, namespaceB.runtime.storageNamespace, 'Different Pages project paths need distinct storage namespaces.');
+assert.equal(namespaceA.runtime.storageNamespace, 'mchose-offline:v1:%2Fmchose-offline%2F:data:');
+assert.equal(namespaceA.localStorage.getItem('mouse'), null, 'GitHub Pages must not migrate origin-wide mouse data even when legacy markers exist.');
+assert.equal(namespaceB.localStorage.getItem('global'), null);
+for (const h of [namespaceA, namespaceB]) {
+  assert.ok(h.nativeStorageReads.local.every(key => key.startsWith('mchose-offline:v1:')), 'GitHub Pages must not read unprefixed localStorage values.');
+  assert.ok(h.nativeStorageReads.session.every(key => key.startsWith('mchose-offline:v1:')), 'GitHub Pages must not read unprefixed sessionStorage values.');
+}
+for (const storageName of ['localStorage', 'sessionStorage']) {
+  const a = namespaceA[storageName], b = namespaceB[storageName];
+  a.setItem('method', 'project A ' + storageName);
+  b.setItem('method', 'project B ' + storageName);
+  a.setItem('numeric', 37);
+  assert.equal(a.getItem('numeric'), '37');
+  assert.equal(a.getItem.call(a, 'method'), 'project A ' + storageName);
+  const detachedGet = a.getItem;
+  assert.equal(detachedGet('method'), 'project A ' + storageName, 'Scoped methods must retain the native receiver.');
+  assert.equal(namespaceA.context.Storage.prototype.getItem.call(a, 'method'), 'project A ' + storageName);
+  namespaceA.context.Storage.prototype.setItem.call(a, 'prototypeMethod', 'project A prototype');
+  assert.equal(a.getItem('prototypeMethod'), 'project A prototype');
+  assert.equal(b.getItem('prototypeMethod'), null);
+  a.property = 'project A property'; b.property = 'project B property';
+  assert.equal(a.property, 'project A property');
+  assert.equal(b.property, 'project B property');
+  assert.ok(Object.keys(a).includes('property'));
+  assert.ok(!Object.keys(a).includes('unrelated'));
+  assert.ok(Object.prototype.hasOwnProperty.call(a, 'property'));
+  assert.ok('property' in a);
+  assert.equal(Object.getOwnPropertyDescriptor(a, 'property').value, 'project A property');
+  const keys = Array.from({ length: a.length }, (_, index) => a.key(index));
+  assert.deepEqual([...keys].sort(), Object.keys(a).sort());
+  assert.equal(namespaceA.context.Storage.prototype.key.call(a, 0), a.key(0));
+  assert.equal(a.key(a.length), null);
+  const nativeLength = Object.getOwnPropertyDescriptor(namespaceA.context.Storage.prototype, 'length').get;
+  assert.equal(nativeLength.call(a), a.length);
+  delete a.property;
+  assert.equal(a.property, undefined);
+  assert.equal(b.property, 'project B property');
+  a.removeItem('method');
+  assert.equal(a.getItem('method'), null);
+  assert.equal(b.getItem('method'), 'project B ' + storageName);
+  namespaceA.context.Storage.prototype.removeItem.call(a, 'prototypeMethod');
+  assert.equal(a.getItem('prototypeMethod'), null);
+  a.clear();
+  assert.equal(a.length, 0); assert.equal(a.key(0), null); assert.deepEqual(Object.keys(a), []);
+  a.setItem('prototypeClear', 'only project A');
+  namespaceA.context.Storage.prototype.clear.call(a);
+  assert.equal(a.length, 0);
+  assert.equal(b.getItem('method'), 'project B ' + storageName, 'clear() must preserve other project namespaces.');
+}
+namespaceA.localStorage.setItem('separate', 'local');
+assert.equal(namespaceA.sessionStorage.getItem('separate'), null);
+namespaceA.sessionStorage.setItem('separate', 'session');
+assert.equal(namespaceA.localStorage.getItem('separate'), 'local');
+for (const [key, value] of Object.entries(sharedLocalSeed)) assert.equal(sharedLocal.get(key), value, 'Origin-wide local data changed: ' + key);
+for (const [key, value] of Object.entries(sharedSessionSeed)) assert.equal(sharedSession.get(key), value, 'Origin-wide session data changed: ' + key);
+namespaceA.localStorage.setItem('webdriver-auth', otherProjectValues['webdriver-auth']);
+namespaceA.localStorage.setItem('userConfig', otherProjectValues.userConfig);
+namespaceA.localStorage.setItem('global', otherProjectValues.global);
+const namespaceAReloaded = harness('https://root50643.github.io/mchose-offline/', { localBacking: sharedLocal, sessionBacking: sharedSession });
+assert.equal(namespaceAReloaded.localStorage.getItem('webdriver-auth'), null);
+assert.equal(namespaceAReloaded.localStorage.getItem('userConfig'), null);
+const ownPreferences = JSON.parse(namespaceAReloaded.localStorage.getItem('global'));
+assert.equal(ownPreferences.userConfig, undefined);
+assert.equal(ownPreferences.theme, 'dark'); assert.equal(ownPreferences.otherPreference, 7);
+assert.equal(sharedLocal.get('webdriver-auth'), otherProjectValues['webdriver-auth']);
+assert.equal(sharedLocal.get('userConfig'), otherProjectValues.userConfig);
+assert.equal(sharedLocal.get('global'), otherProjectValues.global);
+assert.equal(namespaceAReloaded.localStorage.getItem('separate'), 'local', 'Namespaces must remain stable across reloads.');
+console.log('PASS Storage isolation: shared Pages local/session data preserved, distinct project namespaces, all methods/prototype calls/properties/enumeration/clear, scoped auth cleanup');
+
+for (const partialMarkers of [{}, { 'mchose-offline-language-initialized': '1' }, { 'cz@keyboardConfig@v1': '{}' }, { ...legacyMarkers, 'mchose-offline-language-initialized': '0' }]) {
+  const seed = { ...otherProjectValues, ...partialMarkers };
+  const backing = new Map(Object.entries(seed));
+  const h = harness('http://127.0.0.1:8765/', { localBacking: backing });
+  assert.equal(h.localStorage.getItem('mouse'), null, 'Loopback migration requires both exact legacy markers.');
+  for (const [key, value] of Object.entries(seed)) assert.equal(backing.get(key), value);
+}
+for (const base of ['http://127.0.0.1:8765/', 'http://localhost:8765/', 'http://[::1]:8765/']) {
+  const seed = { ...otherProjectValues, ...legacyMarkers, unknownLegacyField: 'do not import this' };
+  const backing = new Map(Object.entries(seed));
+  const h = harness(base, { localBacking: backing });
+  assert.equal(h.localStorage.getItem('mouse'), otherProjectValues.mouse, 'Recognized loopback data should be copied into the project namespace.');
+  assert.equal(h.localStorage.getItem('unknownLegacyField'), null, 'Migration must copy only allowlisted app keys.');
+  assert.equal(h.localStorage.getItem('unrelated'), null);
+  assert.equal(h.localStorage.getItem('webdriver-auth'), null);
+  assert.equal(h.localStorage.getItem('userConfig'), null);
+  const preferences = JSON.parse(h.localStorage.getItem('global'));
+  assert.equal(preferences.userConfig, undefined); assert.equal(preferences.theme, 'dark');
+  for (const [key, value] of Object.entries(seed)) assert.equal(backing.get(key), value, 'Migration must preserve every original unprefixed key.');
+  h.localStorage.clear();
+  const reloaded = harness(base, { localBacking: backing });
+  assert.equal(reloaded.localStorage.getItem('mouse'), null, 'Clearing scoped data must not re-import the old unprefixed snapshot on reload.');
+  for (const [key, value] of Object.entries(seed)) assert.equal(backing.get(key), value);
+}
+const newerBacking = new Map(Object.entries({ ...otherProjectValues, ...legacyMarkers }));
+newerBacking.set('mchose-offline:v1:%2F:data:mouse', 'newer namespaced mouse preferences');
+const newer = harness('http://127.0.0.1:8765/', { localBacking: newerBacking });
+assert.equal(newer.localStorage.getItem('mouse'), 'newer namespaced mouse preferences', 'Legacy migration must not overwrite newer scoped values.');
+console.log('PASS loopback migration: exact two-marker gate, allowlist only, no source deletion, no overwrite, no re-import after scoped clear');
 console.log(`Runtime assertions: ${assertions}+`);
 
 const keyTestName = 'index-BbOLO0T8.js';
