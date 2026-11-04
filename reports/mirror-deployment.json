@@ -1,0 +1,39 @@
+{
+  "mode": "mirror",
+  "version": "6ea63f4d84fc24ff559cee785b223fce41b4cc6f596dbe5d679a70baffab7c08",
+  "commit": "d5dd1dcab7db8ed89a100dc189b39d593bf388c7",
+  "checkedAt": "2026-11-04T15:41:53.338Z",
+  "pages": "https://root50643.github.io/mchose-offline/",
+  "workflowRun": 41860039124,
+  "workflowConclusion": "success",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 974,
+      "exact": true
+    },
+    {
+      "path": "mirror-runtime.js",
+      "status": 200,
+      "bytes": 142497,
+      "exact": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "bytes": 3753,
+      "exact": true
+    }
+  ],
+  "browserObservation": {
+    "checkedAt": "2026-11-04T15:44:07.953Z",
+    "originalTitle": "M HUB 迈从科技 官方驱动",
+    "manufacturerConnectionPageVisible": true,
+    "addedOfflineStatusAbsent": true,
+    "addedDiagnosticsAbsent": true,
+    "formerOfflinePageAutomaticallyReplaced": true,
+    "pagesHidPermissionNotGranted": true,
+    "physicalReadTestOrigin": "http://127.0.0.1:8765/"
+  }
+}

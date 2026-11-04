@@ -43,6 +43,6 @@
     "Not a full offline archive. Unknown, unavailable or unsaved static assets keep their original manufacturer URLs.",
     "The manufacturer CDN was unreachable for keyboardConfig.json, keyboardPreset.json, the React driver UI bridge and other deferred assets during testing. The two optional keyboard requests use the original SDK fallback after a 5-second timeout.",
     "All original function entry points and backend calls were restored, but authenticated cloud synchronization, firmware flashing, other hardware models and the gmouse React application have not passed live acceptance.",
-    "GitHub Pages deployment is verified separately after publication."
+    "GitHub Pages publication and live browser migration are verified separately in reports/mirror-deployment.json; physical HID was tested on localhost."
   ]
 }
