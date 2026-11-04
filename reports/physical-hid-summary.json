@@ -1,0 +1,21 @@
+{
+  "model": "MCHOSE A7 V3 Ultra+",
+  "usbVendorId": "0x3837",
+  "usbProductId": "0x1018",
+  "testType": "Physical-device WebHID DPI write, read-back, and restoration",
+  "testedDate": "2026-11-04",
+  "passed": true,
+  "changedDpiFields": 1,
+  "temporaryDpiDelta": 100,
+  "changedValueReadBackVerified": true,
+  "allDpiRestored": true,
+  "activeProfileUnchanged": true,
+  "activeDpiIndexUnchanged": true,
+  "performanceSettingsUnchanged": true,
+  "externalAttempts": 0,
+  "firmwareFlashed": false,
+  "buttonsOrMacrosModified": false,
+  "independentEvidenceReviewPassed": true,
+  "sourceEvidenceSha256": "189bbfce7c1369b1ef656ed4bc8d7563937bb7f0970deab636e30d49d5796ad0",
+  "privacy": "Full device settings and screenshots are retained privately and are excluded from this summary."
+}

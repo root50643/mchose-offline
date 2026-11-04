@@ -28,5 +28,6 @@
     "firmwareFiles": 10,
     "manualFiles": 2
   },
-  "physicalHardwareTested": false
+  "physicalHardwareTested": true,
+  "physicalHardwareReport": "reports/physical-hid-summary.json"
 }

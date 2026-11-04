@@ -93,15 +93,34 @@ if (command === 'publish') {
   console.log('Pages workflow dispatched.');
 } else if (command === 'release') {
   const tag = 'v1.0.0';
+  const commit = git(['rev-parse', 'HEAD']);
+  if (git(['status', '--porcelain'])) throw new Error('Commit all project changes before packaging a release.');
+  const remoteCommit = git(['ls-remote', 'origin', 'refs/heads/main']).split(/\s/)[0];
+  if (remoteCommit !== commit) throw new Error('Release commit must exactly match pushed main.');
   const archive = path.join(root, 'artifacts', 'mchose-offline.zip');
   if (!fs.existsSync(archive)) throw new Error('Run tools/package.ps1 first.');
   const acceptance = JSON.parse(fs.readFileSync(path.join(root, 'reports', 'acceptance.json'), 'utf8'));
   if (acceptance.passed !== true) throw new Error('Acceptance has not passed.');
+  async function tagCommit() {
+    const reference = await api(`/repos/${repository}/git/ref/tags/${tag}`, 'GET', undefined, [404]);
+    if (reference.status === 404) return null;
+    let object = reference.data.object;
+    for (let depth = 0; object.type === 'tag' && depth < 8; depth++) object = (await api(`/repos/${repository}/git/tags/${object.sha}`)).data.object;
+    if (object.type !== 'commit') throw new Error('Release tag does not resolve to a commit.');
+    return object.sha;
+  }
+  const priorTag = await tagCommit();
+  if (priorTag && priorTag !== commit) throw new Error('Existing release tag points to a different commit; it will not be moved.');
   let release = await api(`/repos/${repository}/releases/tags/${tag}`, 'GET', undefined, [404]);
+  if (release.status === 404) {
+    const draft = (await api(`/repos/${repository}/releases?per_page=100`)).data.find(item => item.tag_name === tag);
+    if (draft) release = { status: 200, data: draft };
+  }
   if (release.status === 404) release = await api(`/repos/${repository}/releases`, 'POST', {
-    tag_name: tag, target_commitish: 'main', name: 'M HUB 滑鼠離線版 1.0.0', draft: false, prerelease: false,
+    tag_name: tag, target_commitish: commit, name: 'M HUB 滑鼠離線版 1.0.0', draft: true, prerelease: false,
     body: '完整離線包：解壓縮後在 Windows 按兩下 start-offline.cmd，以 Chrome／Edge 開啟。包含公開前端快照、所有滑鼠所需資源、可取得的韌體與測試紀錄。非官方專案；不含雲端服務或遙測。原站已失效的韌體列於來源清單，驗收不刷寫韌體。',
   });
+  if (!priorTag && release.data.target_commitish !== commit) throw new Error('Draft release targets a different commit.');
   const uploader = release.data.upload_url.replace(/\{.*$/, '');
   const links = [];
   for (const asset of [archive, archive + '.sha256']) {
@@ -112,20 +131,24 @@ if (command === 'publish') {
     const sha = `sha256:${hash.digest('hex')}`;
     const existing = release.data.assets?.find(item => item.name === filename);
     if (existing) {
-      if (existing.size !== size || (existing.digest && existing.digest !== sha)) throw new Error(`Existing release asset differs: ${filename}`);
+      if (existing.size !== size || existing.digest !== sha || existing.state !== 'uploaded') throw new Error(`Existing release asset differs or is not verified: ${filename}`);
       links.push(existing.browser_download_url);
       continue;
     }
+    if (!release.data.draft) throw new Error(`Published release is missing ${filename}; create a new version instead of modifying published assets.`);
+    console.log(JSON.stringify({ uploading: filename, bytes: size }));
     const response = await fetch(`${uploader}?name=${encodeURIComponent(filename)}`, {
       method: 'POST', duplex: 'half', body: fs.createReadStream(asset),
       headers: { Authorization: `Bearer ${credential.password}`, Accept: 'application/vnd.github+json', 'Content-Type': filename.endsWith('.zip') ? 'application/zip' : 'text/plain', 'Content-Length': String(size) },
     });
     const uploaded = await response.json();
     if (!response.ok) throw new Error(`Release upload failed: ${response.status} ${uploaded.message || ''}`);
-    if (uploaded.size !== size || (uploaded.digest && uploaded.digest !== sha)) throw new Error(`Release integrity mismatch: ${filename}`);
+    if (uploaded.size !== size || uploaded.digest !== sha || uploaded.state !== 'uploaded') throw new Error(`Release integrity mismatch: ${filename}`);
     links.push(uploaded.browser_download_url);
   }
-  console.log(JSON.stringify({ release: release.data.html_url, assets: links }, null, 2));
+  if (release.data.draft) release = await api(`/repos/${repository}/releases/${release.data.id}`, 'PATCH', { draft: false, make_latest: 'true' });
+  if (await tagCommit() !== commit) throw new Error('Published release tag does not match the verified commit.');
+  console.log(JSON.stringify({ release: release.data.html_url, commit, assets: links }, null, 2));
 } else {
   throw new Error('Usage: node tools/publish.mjs [status|publish|dispatch|release]');
 }

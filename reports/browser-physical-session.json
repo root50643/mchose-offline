@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-04T13:55:19.136Z",
+  "offlineVersion": "d1b2139542798e98a8f3",
+  "device": "MCHOSE A7 V3 Ultra+",
+  "network": {
+    "startedAt": 1793800393215.2,
+    "elapsedSeconds": 125,
+    "blockedExternalAttempts": 0,
+    "localResourceRemaps": 0,
+    "apiRequests": 0,
+    "origins": [
+      "http://127.0.0.1:8765"
+    ],
+    "externalResources": [],
+    "cspViolations": [],
+    "events": []
+  }
+}

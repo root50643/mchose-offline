@@ -15,9 +15,9 @@
 
 ## GitHub Pages 與斷網快取
 
-發布目標：[GitHub Pages](https://root50643.github.io/mchose-offline/) 與 [GitHub 儲存庫](https://github.com/root50643/mchose-offline)。目前等待 Chrome 首次裝置授權及實機 DPI 讀寫驗收，尚未建立公開儲存庫或發布網站。
+網站：[GitHub Pages](https://root50643.github.io/mchose-offline/)。原始快照、維護工具與驗收紀錄：[GitHub 儲存庫](https://github.com/root50643/mchose-offline)。
 
-本機完整離線包位於 `artifacts/mchose-offline.zip`，雜湊位於同名 `.sha256` 檔。發布後預定提供 [GitHub 離線包](https://github.com/root50643/mchose-offline/releases/download/v1.0.0/mchose-offline.zip)；目前此遠端連結尚未啟用。解壓縮後按兩下 `start-offline.cmd`。
+下載：[完整離線 ZIP](https://github.com/root50643/mchose-offline/releases/download/v1.0.0/mchose-offline.zip)、[SHA-256](https://github.com/root50643/mchose-offline/releases/download/v1.0.0/mchose-offline.zip.sha256)。本機封裝輸出位於 `artifacts/`；解壓縮後按兩下 `start-offline.cmd`。
 
 首次使用 Pages 時，請等待底部顯示「完整快取已就緒，可斷網使用」，再中斷網路。完整資源尚未下載、儲存空間不足或快取被瀏覽器清除時，不會顯示可離線。可以按「重試快取」重建；本機啟動器則可直接使用資料夾裡的檔案。
 
@@ -61,9 +61,9 @@ node tools/dev-server.mjs --port 8766 --prefix /mchose-offline
 
 ## 驗收記錄
 
-目前資源完整性、39 型號反向引用、runtime、Windows 啟動器、三分鐘零外連，以及停止本機伺服器後重新開啟網頁的測試均已通過。實體 A7 V3 Ultra+ 仍等待使用者在 Chrome 的裝置選擇視窗授權，尚未執行硬體寫入；GitHub 發布因此暫未執行。`reports/acceptance.json` 會明確區分已通過項目與待完成項目。
+資源完整性、39 型號反向引用、runtime、Windows 啟動器、三分鐘零外連，以及停止本機伺服器後重新開啟網頁的測試均已通過。2026-11-04 已使用實體 A7 V3 Ultra+，透過 WebHID 暫改一項 DPI、讀回確認、還原並再次讀回。六段 DPI、作用中板載配置／段位及效能參數與測試前一致，未修改按鍵、巨集或韌體。公開摘要為 `reports/physical-hid-summary.json`，完整個人設定與截圖不會加入公開專案或 ZIP。
 
-接續實機驗收時，在 Chrome 開啟 `http://127.0.0.1:8765/?diagnostics=1`，按「連接設備」並選取 A7 V3 Ultra+。進入滑鼠設定後，診斷面板的「DPI 讀寫並還原測試」會執行已限定的測試並顯示 JSON 結果；請勿以模擬測試結果代替此步驟。
+若需重新驗收，在 Chrome 開啟 `http://127.0.0.1:8765/?diagnostics=1`，按「連接設備」並選取 A7 V3 Ultra+。進入滑鼠設定後，診斷面板的「DPI 讀寫並還原測試」會執行已限定的測試並顯示 JSON 結果；請勿以模擬測試結果代替實機驗收。
 
 驗收結果由專案的 `reports/` 記錄。必要項目包括：所有發布資源完整性、根目錄與 `/mchose-offline/` 子路徑、本機斷網冷啟動、Pages 完整快取後斷網重開、零第三方網路請求，以及 A7 V3 Ultra+ 實機 DPI 讀寫後還原。其他型號以資源與程式檢查為準，不能據此宣稱全部型號均完成實機測試。
 
