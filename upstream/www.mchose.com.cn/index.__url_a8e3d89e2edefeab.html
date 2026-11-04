@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://www.maicong.cn/logo.png" />
+    <meta name="twitter:image" content="https://www.maicong.cn/logo.png" />
+    <title>M HUB 迈从科技 官方驱动</title>
+    <!-- 与 configLoader：production/pre → configCenter，其余 → configCenter-test -->
+    <script src="https://cdn.mchose.com.cn/configCenter/config/globalLoader.js" fetchpriority="high"></script>
+    <script>
+      (function () {
+        var loader = window['MC_CONFIG_GLOBAL_PROD_LOADER'];
+        var urls = ['https://cdn.mchose.com.cn/customPage/driver-ui/driver-ui.css', 'https://cdn.mchose.com.cn/customPage/driver-ui/driver-ui.global.js', 'https://cdn.mchose.com.cn/customPage/driver-ui/vue/driver-ui.vue.js'];
+        function mount(version) {
+          var html = urls.map(function (url, index) {
+            if (version) url += (url.indexOf('?') < 0 ? '?' : '&') + 'hash=' + encodeURIComponent(version);
+            return index
+              ? '<script src="' + url + '" fetchpriority="high"><\/script>'
+              : '<link rel="stylesheet" href="' + url + '" fetchpriority="high">';
+          }).join('');
+          document.write(html);
+        }
+        var pending = loader && loader.getValue && loader.getValue();
+        if (!pending || !pending.then) return mount('');
+        pending.then(function (value) {
+          var version = value && value.version && value.version.__duVersion;
+          mount(version == null || version === '' ? '' : String(version));
+        }, function () { mount(''); });
+      })();
+    </script>
+    <link rel="icon" href="./mchose.ico" />
+    <script type="module" crossorigin src="./assets/main-CWbC7lIt.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/index-BfDJf4mL.js">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./cizhou/CZ_SHARED_DATA/loader.js?v=4"></script>
+    <script>
+      // 注销 Service Worker 并清除缓存
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

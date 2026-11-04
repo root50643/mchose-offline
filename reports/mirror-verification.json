@@ -1,0 +1,27 @@
+{
+  "mode": "mirror",
+  "passed": true,
+  "version": "6ea63f4d84fc24ff559cee785b223fce41b4cc6f596dbe5d679a70baffab7c08",
+  "generatedAt": "2026-11-04T15:37:08.790Z",
+  "sourceFiles": 803,
+  "publishedFiles": 807,
+  "publishedBytes": 317005892,
+  "syntaxChecks": 171,
+  "externalFallbackReferences": [
+    "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68Air_transparent_white.png",
+    "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68Turbo_mist_white.png",
+    "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_pinkFrostedBMW.png",
+    "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_pinkFrostedHalo.png",
+    "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_whiteFrostedBMW.png",
+    "https://cdn.mchose.com.cn/configCenter/assets/png/keyboard/Ace68V2_whiteFrostedHalo.png",
+    "https://cdn.mchose.com.cn/configCenter/assets/svg/keyboard/G87_blackLine.svg",
+    "https://cdn.mchose.com.cn/configCenter/assets/svg/keyboard/G87_shallowBlackLine.svg",
+    "https://cdn.mchose.com.cn/configCenter/assets/svg/keyboard/G87_whiteLine.svg",
+    "https://cdn.mchose.com.cn/configCenter/static/images/Ace75BlackGoldColor_c8a24g5b63dw3fgm.png",
+    "https://www.mchose.com.cn/favicon.ico"
+  ],
+  "errors": [],
+  "limitations": [
+    "Static verification covers mirrored files and references. Unknown assets and original live APIs still use the manufacturer servers. Browser checks are recorded separately."
+  ]
+}

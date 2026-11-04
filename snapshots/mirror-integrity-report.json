@@ -1,0 +1,158 @@
+{
+  "checkedAt": "2026-11-04T15:14:20.628Z",
+  "mode": "Bounded acceleration mirror; failed or deferred assets must keep official fallback URLs",
+  "sourceFiles": 803,
+  "deploymentBytes": 316758988,
+  "sourceBytes": 316815650,
+  "missing": [],
+  "hashErrors": [],
+  "caseErrors": [],
+  "collisions": [],
+  "auditedDynamicSeeds": 48,
+  "auditedDynamicSeedsAbsent": [],
+  "canonicalEntries": {
+    "root": "index.html",
+    "rootIndexAlias": "index.html",
+    "gmouse": "gmouse/index.html",
+    "g7max": "g7max/index.html"
+  },
+  "deferredUpstream": 771,
+  "pending": 0,
+  "unavailable": [
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "mouse-firmware-legacy"
+    },
+    {
+      "url": "https://www.mchose.com.cn/custom/keyboardConfig.json",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/favicon.ico",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "markup-resource"
+    },
+    {
+      "url": "https://www.mchose.com.cn/gmouse/static/chunks/468-e695ebcb4d845c32.js",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "public-path-asset"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/feedback/gift.png",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/global/badge_top1.png",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/global/badge_top2.png",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/global/badge_top3.png",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/global/empty_dark.svg",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/global/empty.svg",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/music/empty_dark.svg",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/img/music/empty.svg",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/index.txt",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/pdf/en_US/G3.pdf",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "seed"
+    },
+    {
+      "url": "https://www.mchose.com.cn/pdf/zh_CN/G3.pdf",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "seed"
+    },
+    {
+      "url": "https://www.mchose.com.cn/renderer/tips.html",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "relative-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/src/icons/empty.svg",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    },
+    {
+      "url": "https://www.mchose.com.cn/svg/logo.svg",
+      "error": "Error: HTTP 404 Not Found",
+      "reason": "root-asset-literal"
+    }
+  ]
+}

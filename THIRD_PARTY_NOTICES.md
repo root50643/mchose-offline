@@ -1,17 +1,13 @@
-# 第三方內容與非官方聲明
+# 第三方內容與授權
 
-這是 M HUB 公開前端的非官方離線封存與相容性修改，與 MCHOSE／邁從科技沒有官方合作或隸屬關係。
+M HUB 的前端程式、商標、圖片、字型、說明文件、設定資料與韌體，其權利屬原作者及相應權利人。取得檔案內原有的版權、授權及第三方套件聲明予以保留；本儲存庫不為第三方內容另行授權。
 
-原網站的程式、商標、圖片、字型、說明文件及韌體，其權利仍屬原作者或相應權利人。本專案保留所取得檔案中的原有聲明，不為第三方內容另行授權，也不宣稱取得原廠未公開的開發專案或後端程式。
+來源入口：
 
-公開來源入口：
+- [M HUB](https://www.mchose.com.cn/)
+- [MCHOSE 靜態資源](https://cdn.mchose.com.cn/)
+- [原廠服務網站](https://www.maicong.cn/)
 
-- https://www.mchose.com.cn/
-- https://cdn.mchose.com.cn/
-- https://www.maicong.cn/
+`upstream/` 保存取得的原始檔案，`site/` 為 GitHub Pages 使用的前端鏡像。來源網址、擷取結果、檔案大小與 SHA-256 記錄於 `snapshots/mirror-source-manifest.json`；較早的來源清單及測試證據保留作版本歷史。
 
-完整檔案來源、擷取時間、大小與 SHA-256 請見 `snapshots/source-manifest.json`。`upstream/` 保存取得的原始檔案，`site/` 是用於離線瀏覽及 GitHub Pages 的修改版本。
-
-離線版移除雲端服務、遙測與外部載入。封存韌體僅代表擷取當時可取得的版本；實機驗收不執行韌體更新。
-
-開發工具若附帶第三方套件，請一併查閱 `tools/vendor/` 中的授權聲明。
+原檔隨附的 `*.LICENSE.txt` 與其他授權聲明仍適用於對應內容。維護工具使用的 Acorn 及其 MIT 授權見 [tools/vendor/acorn-LICENSE](tools/vendor/acorn-LICENSE)。本專案保存的是公開提供的瀏覽器前端資源，不包含原廠未公開的開發專案或後端程式。

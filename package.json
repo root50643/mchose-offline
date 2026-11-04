@@ -1,19 +1,15 @@
 {
   "name": "mchose-offline",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Unofficial self-contained offline archive of the public M HUB mouse configurator",
+  "description": "M HUB factory frontend mirror with locally hosted static resources",
   "type": "module",
   "engines": { "node": ">=22" },
   "scripts": {
-    "snapshot": "node tools/snapshot.mjs",
-    "patch": "node tools/patch-app.mjs",
-    "build": "node tools/build-offline.mjs",
-    "verify": "node tools/verify.mjs",
-    "test": "node tools/test-runtime.mjs && node tools/test-offline.mjs && node tools/snapshot.mjs --verify-official-paths-only && node tools/test-model-assets.mjs --accept-known-source-404",
-    "serve": "node tools/dev-server.mjs --port 8765",
-    "publish": "node tools/publish.mjs publish",
-    "deployment-status": "node tools/publish.mjs status",
-    "package": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/package.ps1"
+    "snapshot": "node tools/snapshot-mirror.mjs",
+    "build": "node tools/build-mirror.mjs",
+    "verify": "node tools/verify-mirror.mjs",
+    "test": "node tools/test-mirror.mjs && node tools/test-mirror-config.mjs && node tools/test-mirror-storage-events.mjs && node tools/test-mirror-cleanup.mjs",
+    "serve": "node tools/dev-server.mjs --port 8765"
   }
 }

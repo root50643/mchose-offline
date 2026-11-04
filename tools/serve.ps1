@@ -9,7 +9,7 @@ $ErrorActionPreference = 'Stop'
 $siteRoot = [IO.Path]::GetFullPath($(if ($SiteDirectory) { $SiteDirectory } else { Join-Path $PSScriptRoot '..\site' }))
 $sitePrefix = $siteRoot.TrimEnd([IO.Path]::DirectorySeparatorChar) + [IO.Path]::DirectorySeparatorChar
 if (-not (Test-Path -LiteralPath (Join-Path $siteRoot 'index.html') -PathType Leaf)) {
-    Write-Host 'Offline website files are missing. Extract the complete archive before starting.' -ForegroundColor Red
+    Write-Host 'Website files are missing. Build the project before starting.' -ForegroundColor Red
     exit 1
 }
 
@@ -44,12 +44,12 @@ $listener = [Net.Sockets.TcpListener]::new([Net.IPAddress]::Loopback, $Port)
 try { $listener.Start() }
 catch {
     Write-Host "Cannot start http://127.0.0.1:$Port/ . Port $Port may already be in use." -ForegroundColor Red
-    Write-Host "Close the previous offline server or run: powershell -File tools\serve.ps1 -Port 8766"
+    Write-Host "Close the previous local server or run: powershell -File tools\serve.ps1 -Port 8766"
     exit 1
 }
 
 $localUrl = "http://127.0.0.1:$Port/"
-Write-Host "MCHOSE offline server: $localUrl" -ForegroundColor Green
+Write-Host "M HUB local preview: $localUrl" -ForegroundColor Green
 Write-Host 'Open this address in Chrome or Edge. Keep this window open; press Ctrl+C to stop.'
 Write-Host 'This server listens only on this computer and does not download anything.'
 if (-not $NoBrowser) {

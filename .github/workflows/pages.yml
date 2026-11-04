@@ -1,4 +1,4 @@
-name: Deploy offline site to GitHub Pages
+name: Deploy M HUB frontend mirror
 
 on:
   push:
@@ -23,18 +23,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Test offline cache and local server
-        run: node tools/test-offline.mjs
-      - name: Test frozen offline runtime
-        run: node tools/test-runtime.mjs
-      - name: Verify exact official snapshot filenames
-        run: node tools/snapshot.mjs --verify-official-paths-only
-      - name: Verify every mouse model and explicit upstream outages
-        run: node tools/test-model-assets.mjs --accept-known-source-404
-      - name: Build and verify offline cache manifest
-        run: node tools/build-offline.mjs
-      - name: Verify archived sources and deployed resource references
-        run: node tools/verify.mjs
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build factory frontend mirror
+        run: node tools/build-mirror.mjs
+      - name: Verify mirrored static resources
+        run: node tools/verify-mirror.mjs
+      - name: Test mirror behavior
+        run: node tools/test-mirror.mjs
+      - name: Test configuration resource mapping
+        run: node tools/test-mirror-config.mjs
+      - name: Test project storage events
+        run: node tools/test-mirror-storage-events.mjs
+      - name: Test previous-version cache cleanup
+        run: node tools/test-mirror-cleanup.mjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static files

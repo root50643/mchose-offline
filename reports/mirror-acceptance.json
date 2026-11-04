@@ -1,0 +1,48 @@
+{
+  "mode": "mirror",
+  "passed": true,
+  "version": "6ea63f4d84fc24ff559cee785b223fce41b4cc6f596dbe5d679a70baffab7c08",
+  "generatedAt": "2026-11-04T15:39:03.221Z",
+  "scope": "Mirrored static files, factory main interface, project subpath, former offline-cache migration, and read-only A7 V3 Ultra+ connection",
+  "completeFactoryParityVerified": false,
+  "checks": {
+    "staticVerification": "reports/mirror-verification.json",
+    "runtimeUrlMappings": 1606,
+    "storageEventScenarios": 48,
+    "originalConfigFilesByteIdentical": 4,
+    "precache": false,
+    "originalTitle": "M HUB 迈从科技 官方驱动",
+    "addedOfflineInterfaceAbsent": true,
+    "localRootBrowser": true,
+    "projectPrefixBrowser": true,
+    "g7maxWelcomePage": true,
+    "originalLoginDialogObserved": true,
+    "formerV1ServiceWorkerMigrationObserved": true,
+    "optionalKeyboardRequestsBoundedMs": 5000
+  },
+  "hardware": {
+    "model": "A7 V3 Ultra+",
+    "readOnly": true,
+    "dpi": [
+      400,
+      800,
+      1600,
+      3200,
+      6400,
+      50000
+    ],
+    "settingsWritten": false,
+    "firmwareWritten": false
+  },
+  "snapshot": {
+    "sourceFiles": 803,
+    "publishedBytes": 317005892,
+    "deferredManufacturerResources": 771
+  },
+  "limitations": [
+    "Not a full offline archive. Unknown, unavailable or unsaved static assets keep their original manufacturer URLs.",
+    "The manufacturer CDN was unreachable for keyboardConfig.json, keyboardPreset.json, the React driver UI bridge and other deferred assets during testing. The two optional keyboard requests use the original SDK fallback after a 5-second timeout.",
+    "All original function entry points and backend calls were restored, but authenticated cloud synchronization, firmware flashing, other hardware models and the gmouse React application have not passed live acceptance.",
+    "GitHub Pages deployment is verified separately after publication."
+  ]
+}

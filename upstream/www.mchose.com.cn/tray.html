@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M HUB - Tray</title>
+    <link rel="icon" href="./mchose.ico" />
+    <link rel="modulepreload" href="data:text/javascript;base64,LyoqCiAqIOaJmOebmOeql+WPo+eahFZ1ZeW6lOeUqOWFpeWPowogKiDni6znq4vnmoRWdWXlupTnlKjlrp7kvovvvIzkuJPpl6jnlKjkuo7miZjnm5jnlYzpnaLvvIjnsr7nroDniYjvvIzml6Dot6/nlLHjgIHml6BQaW5pYe+8iQogKi8KaW1wb3J0IHsgY3JlYXRlQXBwIH0gZnJvbSAndnVlJzsKaW1wb3J0ICdAL2Fzc2V0cy9zdHlsZS9pbmRleC5zY3NzJzsKaW1wb3J0ICdAL3ZpZXdzL3RyYXkvaWNvbnMuc2Nzcyc7CmltcG9ydCB7IGkxOG4sIGxhbmcgfSBmcm9tICdAL0xhbmcvaW5kZXguanMnOwppbXBvcnQgeyBpbml0VGhlbWUgfSBmcm9tICdAL3V0aWxzL3RoZW1lLmpzJzsKaW1wb3J0IGN1c3RvbVRyYXkgZnJvbSAnQC92aWV3cy90cmF5L2N1c3RvbVRyYXkudnVlJzsKCmNvbnN0IGlzUmVhbEVsZWN0cm9uSG9zdCA9ICgpID0+IC9FbGVjdHJvbi9pLnRlc3QobmF2aWdhdG9yLnVzZXJBZ2VudCk7Cgpjb25zdCBhcHAgPSBjcmVhdGVBcHAoY3VzdG9tVHJheSk7CmxhbmcuaW5pdExhbmcoKTsKaW5pdFRoZW1lKCk7CmlmIChpc1JlYWxFbGVjdHJvbkhvc3QoKSkgewogIGRvY3VtZW50LmRvY3VtZW50RWxlbWVudC5zZXRBdHRyaWJ1dGUoJ2VsZWN0cm9uLW1vZGUnLCAndHJ1ZScpOwp9CmFwcC5wcm92aWRlKCdpMThuJywgaTE4bik7CmFwcC5wcm92aWRlKCdsYW5nJywgbGFuZyk7CmFwcC51c2UoaTE4bik7CgphcHAuY29uZmlnLmdsb2JhbFByb3BlcnRpZXMuJHRyYXlNb2RlID0gdHJ1ZTsKYXBwLm1vdW50KCcjdHJheS1hcHAnKTsK" />
+    <style>
+      html,
+      body,
+      #tray-app {
+        min-width: 280px !important;
+        min-height: 40px !important;
+        height: auto !important;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 和 Edge */
+        background-color: transparent !important;
+      }
+      #tray-app::-webkit-scrollbar {
+        display: none;
+      }
+      body {
+        overflow-y: hidden;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/tray-CzUyoKLJ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/index-BfDJf4mL.js">
+    <link rel="modulepreload" crossorigin href="./assets/_plugin-vue_export-helper-D2U_K4la.js">
+    <link rel="modulepreload" crossorigin href="./assets/storeWatcher-D2qRzclE.js">
+    <link rel="modulepreload" crossorigin href="./assets/index-Bn6yGK3H.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-DuXl5sHl.css">
+    <link rel="stylesheet" crossorigin href="./assets/tray-DHuzPb9b.css">
+  </head>
+  <body>
+    <div id="tray-app"></div>
+    <script>
+      // 注销 Service Worker 并清除缓存
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
