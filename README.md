@@ -65,6 +65,8 @@ node tools/dev-server.mjs --port 8766 --prefix /mchose-offline
 
 資源完整性、39 型號反向引用、runtime、Windows 啟動器、三分鐘零外連，以及停止本機伺服器後重新開啟網頁的測試均已通過。2026-11-04 已使用實體 A7 V3 Ultra+，透過 WebHID 暫改一項 DPI、讀回確認、還原並再次讀回。六段 DPI、作用中板載配置／段位及效能參數與測試前一致，未修改按鍵、巨集或韌體。公開摘要為 `reports/physical-hid-summary.json`，完整個人設定與截圖不會加入公開專案或 ZIP。
 
+公開 Pages 的 628 個快取資源與 Service Worker 已逐檔比對 SHA-256，確認與本機驗收版一致（`reports/live-integrity.json`）。工具因無法可靠辨識 Windows 瀏覽器網址而中止原生操作，因此未直接完成公開站切換瀏覽器離線模式後重開的模擬；同版在本機停止 HTTP 伺服器後的重新開啟、實體滑鼠連線與讀取已通過。使用 Pages 時仍請先等待完整快取就緒。
+
 若需重新驗收，在 Chrome 開啟 `http://127.0.0.1:8765/?diagnostics=1`，按「連接設備」並選取 A7 V3 Ultra+。進入滑鼠設定後，診斷面板的「DPI 讀寫並還原測試」會執行已限定的測試並顯示 JSON 結果；請勿以模擬測試結果代替實機驗收。
 
 驗收結果由專案的 `reports/` 記錄。必要項目包括：所有發布資源完整性、根目錄與 `/mchose-offline/` 子路徑、本機斷網冷啟動、Pages 完整快取後斷網重開、零第三方網路請求，以及 A7 V3 Ultra+ 實機 DPI 讀寫後還原。其他型號以資源與程式檢查為準，不能據此宣稱全部型號均完成實機測試。

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T14:06:27.089Z",
+  "generatedAt": "2026-11-04T14:20:42.107Z",
   "passed": true,
   "archivedFiles": 624,
   "archivedBytes": 288827448,
@@ -7,7 +7,7 @@
   "scopeExcludedFiles": 216,
   "publishedFiles": 630,
   "publishedBytes": 289403858,
-  "syntaxChecks": 71,
+  "syntaxChecks": 72,
   "unresolvedDownloads": [
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",

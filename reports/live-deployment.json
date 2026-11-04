@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-04T14:20:37.198Z",
+  "url": "https://root50643.github.io/mchose-offline/",
+  "repository": "https://github.com/root50643/mchose-offline",
+  "deployedCommit": "ca8ac759f0e7eb2d008c581ba995106ae5ec5f7a",
+  "workflowRun": 41845223379,
+  "workflowUrl": "https://github.com/root50643/mchose-offline/actions/runs/41845223379",
+  "workflowConclusion": "success",
+  "offlineVersion": "b154f43c319f1a90f729",
+  "liveResourceIntegrityPassed": true,
+  "liveFilesVerified": 628,
+  "serviceWorkerMatches": true,
+  "browserOfflineEmulation": {
+    "performed": false,
+    "reason": "Windows UI automation stopped because it could not reliably identify the current browser URL."
+  },
+  "equivalentBuildLocalOfflineReconnectionPassed": true,
+  "physicalDpiWriteReadRestorePassed": true
+}

@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-04T14:12:11.699Z",
+  "checkedAt": "2026-11-04T14:20:37.198Z",
   "offlineVersion": "b154f43c319f1a90f729",
   "passed": true,
-  "status": "local_acceptance_passed_ready_for_publication",
+  "status": "published_resource_and_hardware_checks_passed",
   "static": {
     "passed": true,
     "sourceFiles": 624,
@@ -57,9 +57,11 @@
     "readOnlyOfflineReconnectPassed": true
   },
   "deployment": {
-    "status": "ready for updated GitHub Pages deployment",
+    "status": "published and all live resources verified",
     "repository": "root50643/mchose-offline",
-    "pagesTarget": "https://root50643.github.io/mchose-offline/"
+    "pagesTarget": "https://root50643.github.io/mchose-offline/",
+    "report": "reports/live-deployment.json",
+    "workflowUrl": "https://github.com/root50643/mchose-offline/actions/runs/41845223379"
   },
   "upstreamUnavailable": [
     {
@@ -126,7 +128,7 @@
   "notes": [
     "A passing VM mock-device test is not a physical-device test.",
     "The browser offline check stopped and probed both local HTTP servers; no system network configuration was changed.",
-    "The live GitHub Pages deployment will be verified after publication."
+    "Public-site browser offline emulation was not performed because the Windows UI tool stopped on URL identification; equivalent-build local offline reconnect and public resource hashes passed."
   ],
   "storageIsolationVerified": true,
   "officialSnapshotExactPathsVerified": true

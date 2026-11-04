@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-04T14:18:28.056Z",
+  "url": "https://root50643.github.io/mchose-offline/",
+  "offlineVersion": "b154f43c319f1a90f729",
+  "passed": true,
+  "filesVerified": 628,
+  "totalBytes": 289035584,
+  "serviceWorkerMatches": true,
+  "failures": [],
+  "method": "Read each public deployment resource and verify its SHA-256 and byte length against the local complete offline manifest.",
+  "limitations": [
+    "This verifies deployed resources, not browser network emulation. Physical-device and browser offline checks are documented separately."
+  ]
+}
