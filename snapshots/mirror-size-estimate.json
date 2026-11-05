@@ -1,0 +1,256 @@
+{
+  "checkedAt": "2026-11-05T01:15:43.654Z",
+  "targets": 31,
+  "knownBytes": 4553668,
+  "uncapturedKnownBytes": 1792248,
+  "rows": [
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60.glb",
+      "status": 200,
+      "bytes": 106924,
+      "etag": "\"564A3E686C446CE0E96659C28B2EDDCB\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace60ProNordic.glb",
+      "status": 200,
+      "bytes": 109552,
+      "etag": "\"5713B9D0724BC49471E8B43A15B29DE5\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68.glb",
+      "status": 200,
+      "bytes": 118976,
+      "etag": "\"CC9BE0DFBDACEAAEF18F22D33755EAF0\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68Air.glb",
+      "status": 200,
+      "bytes": 118996,
+      "etag": "\"7176B87C2D1950D01E64F2D985D0C1F7\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68GT.glb",
+      "status": 200,
+      "bytes": 125692,
+      "etag": "\"D50B253F7BEC5EF55B5FF1B47320F31B\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68Turbo.glb",
+      "status": 200,
+      "bytes": 125716,
+      "etag": "\"E3B13DEC95799393D937CC3EBB9A6648\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Ace68V2.glb",
+      "status": 200,
+      "bytes": 125696,
+      "etag": "\"7649BD1D7756D0970593AD1273EEB9AD\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G75V2.glb",
+      "status": 200,
+      "bytes": 144116,
+      "etag": "\"CBDB2C521670F194396FB521789BBC6F\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G87V2.glb",
+      "status": 200,
+      "bytes": 154360,
+      "etag": "\"C3F92DBA452ADD8A5EE19E28E5A06CA7\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Jet75.glb",
+      "status": 200,
+      "bytes": 139140,
+      "etag": "\"24DD154B263B8A5E5D8A71C3E58D9384\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/K87S.glb",
+      "status": 200,
+      "bytes": 157708,
+      "etag": "\"D7C728EFC649171A39395C06D1398B79\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/K99V3.glb",
+      "status": 200,
+      "bytes": 174588,
+      "etag": "\"51833045EB0DBFD1510B2D55C3B0CC4B\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/20260409bp3cCV5w.glb",
+      "status": 200,
+      "bytes": 125744,
+      "etag": "\"715613A1239D7FCB480EBEAB7726C6EE\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/20260513CbK7ahW6.glb",
+      "status": 200,
+      "bytes": 109532,
+      "etag": "\"AEEF206FA651AFEE7D41FD6A04931647\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/20260524mRgQZ01D.glb",
+      "status": 200,
+      "bytes": 176172,
+      "etag": "\"6EEB7729D6847937D90F7FCEDBA56E57\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/Ace_75_x160_344721493d81.glb",
+      "status": 200,
+      "bytes": 196684,
+      "etag": "\"F95A7B2AFE07F3814B30344721493D81\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/God_60_x160_fixed_ycvirwemrrer5vk3.glb",
+      "status": 200,
+      "bytes": 215852,
+      "etag": "\"A822559AEDB954438B47E35BAEB2347E\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/GT_75_X160_dcimwj38dyqqeyz2.glb",
+      "status": 200,
+      "bytes": 181644,
+      "etag": "\"ED251299F0510982D4240DE407C98205\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/files/K87_V3_xxx_qqjru7h9difp23u1.glb",
+      "status": 200,
+      "bytes": 154328,
+      "etag": "\"D70D5710B4247240380D38E6208F63B9\"",
+      "error": null,
+      "alreadyArchived": true
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Mix87.glb",
+      "status": 200,
+      "bytes": 150984,
+      "etag": "\"06C32D1AB5C26E95DB4FC74631BAAD42\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/ZERO75X.glb",
+      "status": 200,
+      "bytes": 139144,
+      "etag": "\"CBE280F915355BD2ECFA50A5046CB108\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G87.glb",
+      "status": 200,
+      "bytes": 137504,
+      "etag": "\"5E8AA16AEF3F884E49584B2927AF72E8\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/K99.glb",
+      "status": 200,
+      "bytes": 171200,
+      "etag": "\"7CFEBF4FD707A123192763C2F4C8107B\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G98.glb",
+      "status": 200,
+      "bytes": 171092,
+      "etag": "\"E7177EE471B7771A42385C33EF86FC90\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G98V2.glb",
+      "status": 200,
+      "bytes": 172788,
+      "etag": "\"C743DD087E3381EC001C36F615E159CA\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/X75.glb",
+      "status": 200,
+      "bytes": 142484,
+      "etag": "\"AAA1A15197D83ECA63C392DAE7F2095B\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/X75V2.glb",
+      "status": 200,
+      "bytes": 144104,
+      "etag": "\"CDFA68DC2D52644CBD0A0F543D7C9540\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/Z75S.glb",
+      "status": 200,
+      "bytes": 139068,
+      "etag": "\"04221D265E1CD34732444CCFF3462BDE\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G75.glb",
+      "status": 200,
+      "bytes": 142404,
+      "etag": "\"D1921F6DAE97D5C9A8355AF3A22B4B83\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/G75V2_1K.glb",
+      "status": 200,
+      "bytes": 140736,
+      "etag": "\"FF888EAAB2E8DFC279EA36E8530057A3\"",
+      "error": null,
+      "alreadyArchived": false
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/3D/keyboard/KX75.glb",
+      "status": 200,
+      "bytes": 140740,
+      "etag": "\"D9069C69136FBA4F306256B350D9A23E\"",
+      "error": null,
+      "alreadyArchived": false
+    }
+  ]
+}

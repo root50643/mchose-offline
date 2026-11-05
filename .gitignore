@@ -11,5 +11,7 @@ playwright-report/
 *.tmp
 *.temp
 *.part
+*.mirror-part
+*.mirror-native-part
 .DS_Store
 Thumbs.db

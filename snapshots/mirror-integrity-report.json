@@ -1,158 +1,735 @@
 {
-  "checkedAt": "2026-11-04T15:14:20.628Z",
-  "mode": "Bounded acceleration mirror; failed or deferred assets must keep official fallback URLs",
-  "sourceFiles": 803,
-  "deploymentBytes": 316758988,
-  "sourceBytes": 316815650,
+  "checkedAt": "2026-11-05T01:27:25.160Z",
+  "mode": "Source-byte verification of original full browser mirror; no network, HID, or application execution",
+  "sourceManifestUpdatedAt": "2026-11-05T01:22:57.580Z",
+  "sourceFiles": 1857,
+  "archivedDesktopFilesChecked": 145,
+  "deploymentBytes": 1022161318,
+  "sourceBytes": 1022229840,
   "missing": [],
   "hashErrors": [],
   "caseErrors": [],
   "collisions": [],
+  "mapErrors": [],
   "auditedDynamicSeeds": 48,
   "auditedDynamicSeedsAbsent": [],
+  "independentAudit": {
+    "generatedAt": "2026-11-05T01:24:49.711Z",
+    "dependencies": 1786,
+    "uncaptured": [
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: Source returned HTTP 200 with an empty body"
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: Source returned HTTP 200 with an empty body"
+      },
+      {
+        "url": "https://www.mchose.com.cn/favicon.ico",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://www.mchose.com.cn/index.txt",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://www.mchose.com.cn/renderer/tips.html",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      },
+      {
+        "url": "https://www.mchose.com.cn/src/icons/empty.svg",
+        "certainty": "complete-source-value",
+        "status": "error",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404"
+      }
+    ]
+  },
   "canonicalEntries": {
     "root": "index.html",
     "rootIndexAlias": "index.html",
     "gmouse": "gmouse/index.html",
     "g7max": "g7max/index.html"
   },
-  "deferredUpstream": 771,
   "pending": 0,
+  "deferredUpstream": 0,
+  "transientRetrievalErrors": [],
   "unavailable": [
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:38.398Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:38.500Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:38.804Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:39.097Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:39.353Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:39.544Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:39.862Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:39.919Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:40.185Z"
     },
     {
       "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "mouse-firmware-legacy"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "mouse-firmware-legacy",
+      "capturedAt": "2026-11-05T01:21:40.290Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin",
+      "status": "error",
+      "error": "Error: Source returned HTTP 200 with an empty body",
+      "reason": "source-audited-helper",
+      "capturedAt": "2026-11-05T01:22:55.542Z",
+      "sourceResponse": {
+        "httpStatus": 200,
+        "contentLength": 0,
+        "etag": "\"D41D8CD98F00B204E9800998ECF8427E\"",
+        "lastModified": "Sat, 13 Jun 2026 08:19:27 GMT",
+        "contentType": "application/octet-stream",
+        "finalUrl": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin"
+      }
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin",
+      "status": "error",
+      "error": "Error: Source returned HTTP 200 with an empty body",
+      "reason": "source-audited-helper",
+      "capturedAt": "2026-11-05T01:22:57.566Z",
+      "sourceResponse": {
+        "httpStatus": 200,
+        "contentLength": 0,
+        "etag": "\"D41D8CD98F00B204E9800998ECF8427E\"",
+        "lastModified": "Sat, 13 Jun 2026 08:19:27 GMT",
+        "contentType": "application/octet-stream",
+        "finalUrl": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin"
+      }
     },
     {
       "url": "https://www.mchose.com.cn/custom/keyboardConfig.json",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:08.054Z"
     },
     {
       "url": "https://www.mchose.com.cn/favicon.ico",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "markup-resource"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "markup-resource",
+      "capturedAt": "2026-11-05T01:21:08.094Z"
     },
     {
       "url": "https://www.mchose.com.cn/gmouse/static/chunks/468-e695ebcb4d845c32.js",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "public-path-asset"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "public-path-asset",
+      "capturedAt": "2026-11-05T01:21:09.169Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/feedback/gift.png",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:09.477Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/global/badge_top1.png",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:09.546Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/global/badge_top2.png",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:09.519Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/global/badge_top3.png",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:10.638Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/global/empty_dark.svg",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:10.925Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/global/empty.svg",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:10.653Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/music/empty_dark.svg",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:11.023Z"
     },
     {
       "url": "https://www.mchose.com.cn/img/music/empty.svg",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:12.131Z"
     },
     {
       "url": "https://www.mchose.com.cn/index.txt",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:12.149Z"
     },
     {
       "url": "https://www.mchose.com.cn/pdf/en_US/G3.pdf",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "seed"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "seed",
+      "capturedAt": "2026-11-05T01:21:08.012Z"
     },
     {
       "url": "https://www.mchose.com.cn/pdf/zh_CN/G3.pdf",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "seed"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "seed",
+      "capturedAt": "2026-11-05T01:21:08.032Z"
     },
     {
       "url": "https://www.mchose.com.cn/renderer/tips.html",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "relative-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "relative-asset-literal",
+      "capturedAt": "2026-11-05T01:21:12.385Z"
     },
     {
       "url": "https://www.mchose.com.cn/src/icons/empty.svg",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:12.461Z"
     },
     {
       "url": "https://www.mchose.com.cn/svg/logo.svg",
-      "error": "Error: HTTP 404 Not Found",
-      "reason": "root-asset-literal"
+      "status": "error",
+      "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "reason": "root-asset-literal",
+      "capturedAt": "2026-11-05T01:21:13.574Z"
     }
-  ]
+  ],
+  "statusCounts": {
+    "ok": 1857,
+    "error": 29,
+    "excluded-desktop-service": 148
+  },
+  "previousCdnBacklog": {
+    "listedUrls": 777,
+    "currentStatus": {
+      "ok": 762,
+      "error": 12,
+      "excluded-desktop-service": 3
+    }
+  },
+  "statusByHost": {
+    "api.mapbox.com": {
+      "ok": 4
+    },
+    "cdn.mchose.com.cn": {
+      "ok": 1577,
+      "error": 12,
+      "excluded-desktop-service": 148
+    },
+    "www.maicong.cn": {
+      "ok": 1
+    },
+    "www.mchose.com.cn": {
+      "ok": 275,
+      "error": 17
+    }
+  },
+  "originalUnavailableRecheck": [
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:38.398Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:38.500Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:38.804Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:39.097Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:39.353Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:39.544Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:39.862Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:39.919Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:40.185Z"
+    },
+    {
+      "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:40.290Z"
+    },
+    {
+      "url": "https://www.mchose.com.cn/pdf/en_US/G3.pdf",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:08.012Z"
+    },
+    {
+      "url": "https://www.mchose.com.cn/pdf/zh_CN/G3.pdf",
+      "previousError": "Error: HTTP 404 Not Found",
+      "currentStatus": "error",
+      "currentError": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+      "checkedAt": "2026-11-05T01:21:08.032Z"
+    }
+  ],
+  "packaging": {
+    "maxFileBytes": 63409455,
+    "maxAllowedFileBytes": 99614720,
+    "publishedSafetyBudget": 996147200,
+    "rawExceedsPublishedSafetyBudget": true,
+    "deduplicationSavingBytes": 44374050,
+    "uniqueContentBytes": 977787268,
+    "uniqueContentFitsPublishedSafetyBudget": true,
+    "largestDuplicateGroups": [
+      {
+        "sha256": "1c5a7515b61bc82baaa2e2c2fdae2032479fb9a99e09d4d021dc17314fc5939b",
+        "bytes": 5081104,
+        "copies": 2,
+        "savingBytes": 5081104,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/pcAssets/fonts/misans/MiSans-Bold.woff2",
+          "https://www.mchose.com.cn/g7max/assets/MiSans-Bold-2T5_CE7Q.woff2"
+        ]
+      },
+      {
+        "sha256": "78227c6ec59566785c65ac0b5312328bfa2f879918f3d7403725785615a9a8f6",
+        "bytes": 5034212,
+        "copies": 2,
+        "savingBytes": 5034212,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/pcAssets/fonts/misans/MiSans-Semibold.woff2",
+          "https://www.mchose.com.cn/g7max/assets/MiSans-Semibold-B34HIk9C.woff2"
+        ]
+      },
+      {
+        "sha256": "d704c1a932c0bd7e8a071d276cd81c0ed0c9fecfa26ac234f4bed0559fe1cb2d",
+        "bytes": 4858624,
+        "copies": 2,
+        "savingBytes": 4858624,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/pcAssets/fonts/misans/MiSans-Regular.woff2",
+          "https://www.mchose.com.cn/g7max/assets/MiSans-Regular-ES4DrbaF.woff2"
+        ]
+      },
+      {
+        "sha256": "189d3366bd7ef2070061fc26305cd3a81b0653eca4159b756803e6d0feff5768",
+        "bytes": 2545416,
+        "copies": 2,
+        "savingBytes": 2545416,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren-azure-sword_j9lad8ed1mw3rib2.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren2_light_7f3e3f06fb54.jpg"
+        ]
+      },
+      {
+        "sha256": "7f6a5e12480a6ba3d5abf3372ba190096fb7af356d91d5371c30d868ad5f1ed7",
+        "bytes": 2051715,
+        "copies": 2,
+        "savingBytes": 2051715,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren-sword-formation_ulu90g7x6unkt4c6.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren1_light_83ed9dd3967c.jpg"
+        ]
+      },
+      {
+        "sha256": "6c4fa3d881cbf46726b90c9027520446d04734cc154aa314f52bf75866f5816c",
+        "bytes": 1682701,
+        "copies": 2,
+        "savingBytes": 1682701,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren-mchose-collab-a_gpib90j6c874ewah.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren2_dark.jpg_76d4beafede2.jpg"
+        ]
+      },
+      {
+        "sha256": "868a9b5eda91afa8aecb6a02dbb44b3ef4bd6cd3b22ca8ec7560df6725813633",
+        "bytes": 1444196,
+        "copies": 2,
+        "savingBytes": 1444196,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren-eye-of-the-void_adcwn6p3g710zigt.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/fanren1_dark_1cdb6562f11f.jpg"
+        ]
+      },
+      {
+        "sha256": "f174698e26a3defc94a96248a30c506ac2be3045595e5ed150f57b779756f362",
+        "bytes": 915325,
+        "copies": 2,
+        "savingBytes": 915325,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/20260323kvbmoCl7.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/official-abyss-blue_3lrfk7lyyyi7uzhh.jpg"
+        ]
+      },
+      {
+        "sha256": "87520871ba2b6b371463c220cbc5e71c056b19114a552229c6b742b9a752a3b1",
+        "bytes": 704889,
+        "copies": 2,
+        "savingBytes": 704889,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/G75V28KBlackFull_130fe11d5e51.png",
+          "https://cdn.mchose.com.cn/configCenter/static/images/G75V2StoneBlackFull_130fe11d5e51.png"
+        ]
+      },
+      {
+        "sha256": "8c2a0ae0f62eb7be59345f9ec68b0ce2cb856cb806d64b946f41aaa2defa7eea",
+        "bytes": 335490,
+        "copies": 3,
+        "savingBytes": 670980,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/files/20260403kud5kY57.json",
+          "https://cdn.mchose.com.cn/configCenter/static/files/20260403vbKHooKO.json",
+          "https://cdn.mchose.com.cn/configCenter/static/files/20260403vs0XWoLy.json"
+        ]
+      },
+      {
+        "sha256": "4cadd906b4d49dd0be19c6a6bd05c95a8ed6c1b25be403d5ed510dfde9dea79f",
+        "bytes": 335474,
+        "copies": 3,
+        "savingBytes": 670948,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/files/202604039KUQDPku.json",
+          "https://cdn.mchose.com.cn/configCenter/static/files/20260403qtT6RvQN.json",
+          "https://cdn.mchose.com.cn/configCenter/static/files/20260403W8Ty9iRF.json"
+        ]
+      },
+      {
+        "sha256": "71e7e4197d20962eda880b1023b0b4b4f781eac26efba43f27e134f159989cb0",
+        "bytes": 670833,
+        "copies": 2,
+        "savingBytes": 670833,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/202603237O354YlD.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/official-star-orange_uenz5n6c47rmn581.jpg"
+        ]
+      },
+      {
+        "sha256": "ad8233e1c57882f0da627872c2510fae82e885eab10918403660f870a056337e",
+        "bytes": 665445,
+        "copies": 2,
+        "savingBytes": 665445,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/20260323zoAUAITg.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/official-sakura-pink_15woou5fl1l5jyx0.jpg"
+        ]
+      },
+      {
+        "sha256": "6001ed76ae6c1dd1ad3711ae301113084ed704bbc3385509342ccbf992ad4e5c",
+        "bytes": 640882,
+        "copies": 2,
+        "savingBytes": 640882,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/G75V28KPinkFull_f2cbb903f55c.png",
+          "https://cdn.mchose.com.cn/configCenter/static/images/G75V2PurePinkFull_f2cbb903f55c.png"
+        ]
+      },
+      {
+        "sha256": "e51f0d4d22dbc3b64947028758b2ff8dbce9953c09e9694a1939e2d6a5f10a71",
+        "bytes": 622734,
+        "copies": 2,
+        "savingBytes": 622734,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/20260323ij4wSiyq.jpg",
+          "https://cdn.mchose.com.cn/configCenter/static/images/official-berry-red_0xhxg28nx14di98b.jpg"
+        ]
+      },
+      {
+        "sha256": "9855f6654c5398eeba1d4ef333abfa033f60f8bc416b9edd5e3e54421c573728",
+        "bytes": 620286,
+        "copies": 2,
+        "savingBytes": 620286,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/G98ProStarBlueFull_5d00522279d0.png",
+          "https://cdn.mchose.com.cn/configCenter/static/images/G98StarBlueFull_5d00522279d0.png"
+        ]
+      },
+      {
+        "sha256": "191cc30d1f7a47f1a2b7d3c24c367d7aef74c426b68ab7d43a709e5ddce2feac",
+        "bytes": 618587,
+        "copies": 2,
+        "savingBytes": 618587,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/A7_V3_Pro_%E6%B5%86%E6%9E%9C%E7%BA%A2_2x_t9tf89n5na4vepl8.png",
+          "https://cdn.mchose.com.cn/configCenter/static/images/A7V3Pro_Red_t9tf89n5na4vepl8.png"
+        ]
+      },
+      {
+        "sha256": "b10c55f9a30f5c2984e618fbc0b325ca7ef87b11ed87d53701bc29778421b147",
+        "bytes": 606692,
+        "copies": 2,
+        "savingBytes": 606692,
+        "urls": [
+          "https://www.mchose.com.cn/gmouse/pdf/A7e_Pro_User_Guide.pdf",
+          "https://www.mchose.com.cn/gmouse/pdf/A7e_User_Guide.pdf"
+        ]
+      },
+      {
+        "sha256": "ceccb56e30004880ea2507d85ee8bfa3a393e5498f68f427e7a6002285af2a28",
+        "bytes": 606666,
+        "copies": 2,
+        "savingBytes": 606666,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/2.A5_V3_Pro%E6%B5%86%E6%9E%9C%E7%BA%A2_2x_5dgkkpepbfb66c5q.png",
+          "https://cdn.mchose.com.cn/configCenter/static/images/3.A5_V3_Ultra_%E6%B5%86%E6%9E%9C%E7%BA%A2_2x_5dgkkpepbfb66c5q.png"
+        ]
+      },
+      {
+        "sha256": "cd3ad188275d942418c476658ca77551b14c5a30b42d0279e76759d317d4ff87",
+        "bytes": 589349,
+        "copies": 2,
+        "savingBytes": 589349,
+        "urls": [
+          "https://cdn.mchose.com.cn/configCenter/static/images/G98ProStoneBlueFull_e885c89010de.png",
+          "https://cdn.mchose.com.cn/configCenter/static/images/G98StoneBlueFull_e885c89010de.png"
+        ]
+      }
+    ],
+    "note": "Deduplication is an estimate from exact SHA256 identity, not proof the final deployment has applied it."
+  },
+  "desktopScopeExclusion": {
+    "files": 148,
+    "archivedBytes": 21577687,
+    "evidence": [
+      "assets/index-BfDJf4mL.js: browser getRendererBuildInfo returns canUpdate:false; urlRenderer is desktop environment metadata",
+      "assets/main-DnvOpr5S.js: renderer updater returns before getEnvConfigs when canUpdate!==true; renderer OTA events are isInElectron-gated",
+      "assets/index-Dpp9-y81.js: systemRepair/prod is an explicit native THX repair/install openBrowser service"
+    ]
+  },
+  "versionPolicy": {
+    "globalSnapshot": "upstream/cdn.mchose.com.cn/configCenter/config/global.json",
+    "savedVersions": {
+      "MCHOSE V9 Turbo+--14391--24586": "1088b362cc",
+      "MCHOSE V9 PRO--10525--14429": "57db35ba97",
+      "MCHOSE V9 Turbo--14391--24589": "49404cbdd0",
+      "MCHOSE K20 GT--14391--24774": "5c60aa6352",
+      "keyboardPreset": "092b9d00a8",
+      "固件库": "71b6f01d13",
+      "keyboardConfig": "5ced98c80c",
+      "appLoadPage": "4fa6a4b160",
+      "androidAPPUpdata": "800aec8966",
+      "mobileOtaUpgrade": "2cab0bd964",
+      "iOSAPPUpdate": "f0c5e20434",
+      "mouseConfig": "89b67ad5c0",
+      "otaConfigApp_prod": "be9efcda79",
+      "newMouseConfig": "26d524ed61",
+      "pre-newMouseConfig": "131adeb545",
+      "cardList": "587a6b20e8",
+      "MCHOSE V9 PRO 2--14391--24592": "eae8b46caf",
+      "MCHOSE V9 Pro 2--14391--24593": "af4dd298bb",
+      "MCHOSE R9--14391--24595": "65489b0e1f",
+      "mchosePcFile": "f15a274d99",
+      "keyboardFirmwareHistory": "9a4bd9113d",
+      "mouseFirmwareHistory": "a92bb3635a",
+      "audition": "6cbe8d4a32",
+      "MCHOSE R9--14391--24594": "192969fae9",
+      "MCHOSE G9 V2--14391--24591": "2c4ae41f3a",
+      "__duVersion": "9fbc36a7d8",
+      "__duIconfont": "2222"
+    },
+    "driverUiCommit": "eeed9bcef909fb2b3c13953fb2b57faf88434569",
+    "note": "Existing hash-verified files are reused; new versioned configuration/UI requests use the archived global version hash. No live global metadata is silently substituted.",
+    "currentProbeCheckedAt": "2026-11-05T01:07:07.898Z",
+    "currentProbeVersionDifferences": [
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/config/global.json",
+        "differences": []
+      },
+      {
+        "url": "https://cdn.mchose.com.cn/configCenter/config/globalLoader.js",
+        "differences": []
+      }
+    ]
+  },
+  "integrityPassed": true,
+  "retrievalFinished": true,
+  "allSourceResourcesAvailable": false
 }

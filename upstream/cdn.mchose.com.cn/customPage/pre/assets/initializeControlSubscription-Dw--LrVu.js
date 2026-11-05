@@ -1,0 +1,1 @@
+function l({read:a,apply:s,subscribe:o,isCurrent:u=()=>!0,onError:i}){let e=!0,c=()=>{};const r=()=>e&&u(),n=t=>{r()&&s(t)};return{ready:(async()=>{try{n(await a())}catch(t){r()&&i(t)}if(r())try{c=o(n)}catch(t){i(t)}})(),unsubscribe(){e&&(e=!1,c())}}}export{l as i};
