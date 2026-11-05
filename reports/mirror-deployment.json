@@ -1,38 +1,105 @@
 {
   "mode": "mirror",
-  "version": "6ea63f4d84fc24ff559cee785b223fce41b4cc6f596dbe5d679a70baffab7c08",
-  "commit": "d5dd1dcab7db8ed89a100dc189b39d593bf388c7",
-  "checkedAt": "2026-11-04T15:41:53.338Z",
+  "passed": true,
+  "version": "28be34505a9a171516bcc0e05e5354b169e6aa928d3648fea673dcd12e4862ab",
+  "commit": "54a21d3dcb55f29c7e058b35b806afc260243000",
+  "checkedAt": "2026-11-05T02:27:48.213Z",
   "pages": "https://root50643.github.io/mchose-offline/",
-  "workflowRun": 41860039124,
+  "workflowRun": 41954990272,
   "workflowConclusion": "success",
+  "publishedBytes": 981556046,
   "files": [
     {
       "path": "index.html",
       "status": 200,
       "bytes": 974,
-      "exact": true
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "4d140c464c5c0680e0d05b41ddfcaf16383d048c1e2fca4da4fd27f3e3b989b9"
     },
     {
       "path": "mirror-runtime.js",
       "status": 200,
-      "bytes": 142497,
-      "exact": true
+      "bytes": 348832,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "c35f98dd0a7a5460cf0c0c7b217a825249ced4f6e7e255e8b1f36cfc5ea67e84"
+    },
+    {
+      "path": "mirror-bootstrap.js",
+      "status": 200,
+      "bytes": 729,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "68c525394fbab5711d1101adaa01bbbdda0d88a7465d8048490b109ffc148245"
     },
     {
       "path": "sw.js",
       "status": 200,
       "bytes": 3753,
-      "exact": true
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "250360a5e29d91eeb4aa344e5e7825f3027271b4bd8d1a22d0402d86b72344b9"
+    },
+    {
+      "path": "assets/main-CWbC7lIt.js",
+      "status": 200,
+      "bytes": 10770,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "9ddebe70749356413268feec58f14c34266d3d18a5f4ecdf03191d298b01fcd8"
+    },
+    {
+      "path": "gmouse/index.html",
+      "status": 200,
+      "bytes": 31428,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "a004da7d826b48bd41c0b41dc088d5703fed9af2c085bcab02c6097e7f485ece"
+    },
+    {
+      "path": "vendor/cdn.mchose.com.cn/configCenter/custom/keyboardConfig.json",
+      "status": 200,
+      "bytes": 5441,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "7a510e761219e3e645d9f55fd12a401f8266473a0b7ff1569931e4356421236e"
+    },
+    {
+      "path": "vendor/cdn.mchose.com.cn/configCenter/custom/keyboardPreset.json",
+      "status": 200,
+      "bytes": 1897,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "08e7f579e1576ed7c7c3eeee26ddfd6f7b439bb3128a694cdd4cc672075f308a"
+    },
+    {
+      "path": "vendor/cdn.mchose.com.cn/customPage/driver-ui/react/driver-ui.react.js",
+      "status": 200,
+      "bytes": 11679,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "1eb80645b45ce1e1a4ddb97f9a6548ca6ce6791f6c617c95942591fd79faead7"
+    },
+    {
+      "path": "vendor/cdn.mchose.com.cn/configCenter/static/files/0x3837_0x2015_124_c88546be4739.json.gz",
+      "status": 200,
+      "bytes": 15248,
+      "exact": true,
+      "autoDecodedEqual": false,
+      "sha256": "8baadd8af210aaabada8389470870f17aedb2809248c107fd3c6695987a086ba"
     }
   ],
   "browserObservation": {
-    "checkedAt": "2026-11-04T15:44:07.953Z",
+    "checkedAt": "2026-11-05T02:29:36.715Z",
     "originalTitle": "M HUB 迈从科技 官方驱动",
     "manufacturerConnectionPageVisible": true,
     "addedOfflineStatusAbsent": true,
+    "addedNonofficialWordsAbsent": true,
     "addedDiagnosticsAbsent": true,
-    "formerOfflinePageAutomaticallyReplaced": true,
+    "qaElementCount": 0,
+    "gmouseReactSettingsRendered": true,
+    "g7maxWelcomeRendered": true,
     "pagesHidPermissionNotGranted": true,
     "physicalReadTestOrigin": "http://127.0.0.1:8765/"
   }
