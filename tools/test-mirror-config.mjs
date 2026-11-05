@@ -4,6 +4,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { parse } from './vendor/acorn.mjs';
+import { localStaticPath } from './mirror-resource-policy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceOnly = process.argv.includes('--source-only');
@@ -32,7 +33,7 @@ const runtimeFunctions = functions(runtimeText);
 const builderText = await fs.readFile(path.join(root, 'tools/build-mirror.mjs'), 'utf8');
 const builderFunctions = functions(builderText);
 const report = { behaviorPatches: [], configurationRewrites: [], resourceRewrites: [] };
-const builderContext = vm.createContext({ parse, report, map, knownHosts: data.hosts, primaryOrigin: 'https://www.mchose.com.cn', path });
+const builderContext = vm.createContext({ parse, report, map, knownHosts: data.hosts, primaryOrigin: 'https://www.mchose.com.cn', path, localStaticPath });
 vm.runInContext(['walk', 'editsApplied', 'parseJs', 'patchCompatibility', 'patchConfigLoaderResults', 'rewriteJs', 'localReference', 'rewriteHtml'].map(name => builderFunctions.get(name)).join('\n')
   + '\nglobalThis.builder = {patchCompatibility,patchConfigLoaderResults,rewriteHtml};', builderContext);
 const sample = Object.entries(map).find(([url]) => /^https:\/\/cdn\.mchose\.com\.cn\/configCenter\/static\/.*\.png$/i.test(url));
@@ -58,7 +59,7 @@ const nestedFixture = 'async function initializeApp(){};window.readMouseAllInfo=
 assert.ok(builderContext.builder.patchCompatibility(nestedFixture, 'assets/nested-fixture.js').includes('function nested(){return "factory-nested-return"}'), 'Nested functions must not receive config-return wrappers.');
 
 for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchose-offline/']) {
-  const context = vm.createContext({ DATA: data, base, URL });
+  const context = vm.createContext({ DATA: data, base, URL, localStaticPath });
   vm.runInContext(['canonical', 'assetUrl', 'rewriteText', 'mapResourceData'].map(name => runtimeFunctions.get(name)).join('\n')
     + '\nglobalThis.api={assetUrl,rewriteText,mapResourceData};', context);
   const api = context.api;
@@ -67,7 +68,7 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
   assert.equal(mapped.nested[0].image, expected);
   assert.equal(mapped.nested[0].css, `background-image:url("${expected}")`);
   assert.equal(mapped.relative, expected); assert.equal(mapped.protocolRelative, expected);
-  assert.equal(mapped.api, payload.api); assert.equal(mapped.unknown, unknown); assert.equal(mapped.version, payload.version);
+  assert.equal(mapped.api, payload.api); assert.equal(mapped.unknown, new URL('vendor/cdn.mchose.com.cn/not-in-this-snapshot.png', base).href); assert.equal(mapped.version, payload.version);
   assert.equal(mapped.supportedWebOrigins, payload.supportedWebOrigins, 'Bare origins must remain origins, including a trailing slash.');
   assert.equal(payload.nested[0].image, imageSource, 'Resource mapping must not mutate the original config payload.');
   const unchanged = { code: 200, user: { token: 'factory-session', supportedWebOrigins: payload.supportedWebOrigins }, api: payload.api };
@@ -91,7 +92,7 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
     vm.runInContext(patchedFunctions.get('loadConfigFromUrl'), configContext);
     const value = await configContext.loadConfigFromUrl(mode === 'zip' ? 'custom/fixture.zip' : 'custom/fixture.json', mode.startsWith('fetch') ? { hash: 'factory-hash' } : '');
     assert.equal(value.nested[0].image, expected, 'Decoded config path failed: ' + mode);
-    assert.equal(value.api, payload.api); assert.equal(value.unknown, unknown);
+    assert.equal(value.api, payload.api); assert.equal(value.unknown, new URL('vendor/cdn.mchose.com.cn/not-in-this-snapshot.png', base).href);
     assert.equal(value.supportedWebOrigins[0], 'https://www.mchose.com.cn');
   }
   const nestedContext = vm.createContext({ window: { __mchoseMirror: api } });
@@ -127,6 +128,8 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
     assert.ok(children.includes(api.assetUrl(source)), 'Inline factory boot resource must use exact mirror/factory fallback: ' + resource);
   }
   assert.ok(html.includes('mirror-runtime.js'));
+  const flight = value => [...value.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/gi)].map(match => match[0]).filter(script => /self\.__next_f(?:\s*=|\.push\()/.test(script));
+  assert.deepEqual(flight(html), flight(originalHtml), 'Length-framed React Flight records must remain byte-identical during URL rewriting.');
   console.log(`PASS config/inline resources ${base}: decoded returns, nested DOM data, origins/unknowns preserved, loader reload identity, original Next driver boot`);
 }
 

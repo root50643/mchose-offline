@@ -53,6 +53,14 @@ async function verifyMirrorBuild() {
     if (report.mode !== 'mirror' || report.passed !== true) throw new Error(`reports/${filename} has not passed mirror validation.`);
     if (report.version !== version) throw new Error(`reports/${filename} does not match the current mirror build.`);
   }
+  const independence = readReport('mirror-independence.json');
+  if (independence.passed !== true || independence.version !== version || independence.availability?.unresolved?.length) throw new Error('Current static independence checks have not passed.');
+  const dependencies = readReport('mirror-dependencies.json');
+  if (dependencies.passed !== true) throw new Error('Independent source dependency audit has not passed.');
+  for (const filename of ['source-manifest.json', 'mirror-source-manifest.json']) {
+    const hash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'snapshots', filename))).digest('hex');
+    if (dependencies.manifestHashes?.[filename] !== hash) throw new Error('Source dependency audit is stale: ' + filename);
+  }
   const website = path.join(root, 'site');
   if (!fs.existsSync(website) || fs.lstatSync(website).isSymbolicLink()) throw new Error('The mirror website directory is missing or is a symbolic link.');
   const realSite = fs.realpathSync(website);

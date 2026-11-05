@@ -3,6 +3,9 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { parse } from './vendor/acorn.mjs';
+import { localStaticPath } from './mirror-resource-policy.mjs';
+import { decodeFactoryConfig } from './factory-config.mjs';
+import { gzipSync, gunzipSync } from 'node:zlib';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const site = path.join(root, 'site');
@@ -15,18 +18,48 @@ try { manifest = JSON.parse(await fs.readFile(path.join(root, 'snapshots/mirror-
 catch { manifest = { files: [] }; }
 const combined = new Map(originalManifest.files.filter(file => file.status === 'ok').map(file => [file.url, file]));
 for (const file of manifest.files) if (file.status === 'ok') combined.set(file.url, file);
-const records = [...combined.values()].map(file => {
+const desktopUpdates = [...combined.values()].filter(file => /^https:\/\/cdn\.mchose\.com\.cn(?:\/customPage\/(?:pre|prod)(?:\/|$)|\/systemRepair\/)/.test(file.url));
+const records = [...combined.values()].filter(file => !desktopUpdates.includes(file)).map(file => {
   const entry = { 'https://www.mchose.com.cn/': 'index.html', 'https://www.mchose.com.cn/gmouse/': 'gmouse/index.html', 'https://www.mchose.com.cn/g7max/': 'g7max/index.html' }[file.url];
   return entry ? { ...file, sitePath: entry } : file;
 }).sort((a, b) => a.url.localeCompare(b.url));
 const map = Object.fromEntries(records.map(file => [file.url, file.sitePath]));
-const globalConfig = JSON.parse(await fs.readFile(path.join(root, 'snapshots/config/global.json'), 'utf8'));
+const physicalPaths = new Map(records.map(file => [file.url, file.sitePath]));
+const fontRepresentatives = new Map(), fontAliases = [], skippedFontCopies = new Set();
+for (const file of records) {
+  if (!/\.(?:woff2?|ttf|otf|eot)$/i.test(file.sitePath)) continue;
+  const representative = fontRepresentatives.get(file.sha256);
+  if (!representative) fontRepresentatives.set(file.sha256, file);
+  else {
+    map[file.url] = representative.sitePath; physicalPaths.set(file.url, representative.sitePath); skippedFontCopies.add(file.url);
+    fontAliases.push({ url: file.url, originalPath: file.sitePath, sharedPath: representative.sitePath, bytesSaved: file.bytes, sha256: file.sha256 });
+  }
+}
+const presetRecord = records.find(file => file.url === 'https://cdn.mchose.com.cn/configCenter/custom/keyboardPreset.json');
+if (!presetRecord) throw new Error('The captured factory keyboard preset index is required.');
+const presetIndex = decodeFactoryConfig(await fs.readFile(path.join(root, presetRecord.upstreamPath)));
+const presetUrls = new Set(Object.values(presetIndex).filter(value => typeof value === 'string' && /^https?:/.test(value)).map(value => { const url = new URL(value); url.search = ''; url.hash = ''; return url.href; }));
+const compressed = {}, packedPayloads = new Map();
+for (const file of records) {
+  if (!presetUrls.has(file.url) || !/\.json$/i.test(file.sitePath)) continue;
+  const bytes = await fs.readFile(path.join(root, file.upstreamPath));
+  if (bytes.length !== file.bytes || sha(bytes) !== file.sha256) throw new Error('Preset source integrity failed: ' + file.url);
+  const packed = gzipSync(bytes, { level: 9 }); packed[9] = 255;
+  if (packed.length >= bytes.length) continue;
+  if (!gunzipSync(packed).equals(bytes)) throw new Error('Preset compression is not lossless: ' + file.url);
+  const physicalPath = file.sitePath + '.gz';
+  map[file.url] = physicalPath; physicalPaths.set(file.url, physicalPath); packedPayloads.set(file.url, packed);
+  compressed[physicalPath] = { bytes: file.bytes, sha256: file.sha256, sourceUrl: file.url };
+}
+const globalRecord = records.find(file => file.url === 'https://cdn.mchose.com.cn/configCenter/config/global.json');
+if (!globalRecord) throw new Error('The captured factory global configuration is required.');
+const globalConfig = decodeFactoryConfig(await fs.readFile(path.join(root, globalRecord.upstreamPath)));
 const subapps = {};
 for (const name of ['gmouse', 'g7max']) {
   const record = records.find(file => file.sitePath === `${name}/index.html`);
   if (record) subapps[name] = record.sitePath;
 }
-const report = { mode: 'mirror', generatedAt: new Date().toISOString(), sourceFiles: records.length, behaviorPatches: [], resourceRewrites: [], configurationRewrites: [], subapps, factoryConfigurationLoaders: true, staticConfiguration: 'original-copied-files', optionalKeyboardConfigTimeoutMs: 5000, precache: false };
+const report = { mode: 'mirror', generatedAt: new Date().toISOString(), sourceFiles: records.length, desktopUpdateFilesExcluded: desktopUpdates.length, fontAliases, compressedPresetPayloads: compressed, behaviorPatches: [], resourceRewrites: [], configurationRewrites: [], subapps, factoryConfigurationLoaders: true, staticConfiguration: 'original-copied-files', staticResourcePolicy: 'same-origin-only', precache: false };
 
 function walk(node, visit, parent = null) {
   if (!node || typeof node !== 'object') return;
@@ -87,6 +120,44 @@ function patchConfigLoaderResults(text, file) {
   if (edits.length) report.configurationRewrites.push({ file, name: 'loaderActiveValue', assignments: edits.length });
   return editsApplied(text, edits);
 }
+function patchCzConfigResults(text, file) {
+  if (!/^cizhou\/CZ_SHARED_DATA\/main\.[^/]+\.js$/.test(file)) return text;
+  const modules = new Map(), edits = [];
+  walk(parseJs(text), node => {
+    if (node.type === 'Property' && [71024, 27122].includes(node.key?.value)) modules.set(node.key.value, node.value);
+  });
+  if (modules.size !== 2) throw new Error('Factory CZ configuration module boundaries changed.');
+  const mapDecodedAssignment = (node, name) => {
+    let count = 0;
+    walk(node, child => {
+      if (child.type !== 'AssignmentExpression' || child.left.type !== 'Identifier' || child.left.name !== 'n'
+          || child.right.type !== 'MemberExpression' || child.right.object.name !== 'e' || child.right.property.name !== 'sent') return;
+      edits.push({ start: child.right.start, end: child.right.end, text: `window.__mchoseMirror.mapResourceData(${text.slice(child.right.start, child.right.end)})` }); count++;
+    });
+    if (count !== 1) throw new Error(`Factory CZ ${name} decoding boundary changed (${count}).`);
+    report.configurationRewrites.push({ file, name, assignments: count });
+  };
+  mapDecodedAssignment(modules.get(71024), 'czKeyboardConfig');
+  let preset, payload;
+  walk(modules.get(27122), node => {
+    if (node.type !== 'VariableDeclarator' || !node.init) return;
+    if (text.slice(node.init.start, node.init.end).includes('custom/keyboardPreset.json')) preset = node.init;
+    if (node.id.name === 'w') payload = node.init;
+  });
+  if (!preset || !payload) throw new Error('Factory CZ preset loaders changed.');
+  mapDecodedAssignment(preset, 'czKeyboardPresetIndex');
+  let payloadReturns = 0;
+  walk(payload, node => {
+    if (node.type !== 'CallExpression' || node.callee.type !== 'MemberExpression' || node.callee.property.name !== 'abrupt'
+        || node.arguments[0]?.value !== 'return' || node.arguments[1]?.type !== 'CallExpression'
+        || node.arguments[1].callee.type !== 'MemberExpression' || node.arguments[1].callee.property.name !== 'json') return;
+    const result = node.arguments[1];
+    edits.push({ start: result.start, end: result.end, text: `window.__mchoseMirror.readStaticJson(${text.slice(result.callee.object.start, result.callee.object.end)}).then(window.__mchoseMirror.mapResourceData)` }); payloadReturns++;
+  });
+  if (payloadReturns !== 1) throw new Error('Factory CZ preset payload boundary changed.');
+  report.configurationRewrites.push({ file, name: 'czKeyboardPresetPayload', returns: payloadReturns });
+  return editsApplied(text, edits);
+}
 function rewriteJs(text, file) {
   const edits = [];
   walk(parseJs(text), (node, parent) => {
@@ -129,7 +200,7 @@ function localReference(value, sourceUrl, outputPath) {
   if (/^(?:data:|blob:|#)/.test(value)) return value;
   let url;
   try { url = new URL(value, sourceUrl); } catch { return value; }
-  const target = map[url.href.split(/[?#]/)[0]];
+  const target = map[url.href.split(/[?#]/)[0]] || localStaticPath(url);
   if (!target) return ['https:', 'http:'].includes(url.protocol) ? url.href : value;
   let relative = path.posix.relative(path.posix.dirname(outputPath), target); if (!relative.startsWith('.')) relative = './' + relative;
   return relative + url.search + url.hash;
@@ -141,6 +212,14 @@ function rewriteCss(text, record) {
   return text.replace(/@import\s*(["'])([^"']+)\1/g, (whole, quote, value) => `@import ${JSON.stringify(localReference(value, record.url, record.sitePath))}`);
 }
 function rewriteHtml(text, record) {
+  // React Flight text chunks carry byte-length framing. Changing URLs inside
+  // those opaque strings corrupts hydration. The executable Next script queue
+  // is rewritten separately, before the factory idempotent boot script runs.
+  const flight = [];
+  text = text.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, script => {
+    if (!/self\.__next_f(?:\s*=|\.push\()/.test(script)) return script;
+    const key = `<!--MCHOSE_PRESERVED_FLIGHT_${flight.length}-->`; flight.push(script); return key;
+  });
   const prefix = path.posix.relative(path.posix.dirname(record.sitePath), '.') || '.';
   text = text.replace(/    <script>\s*\/\/ 注销 Service Worker[\s\S]*?    <\/script>/, '');
   text = text.replace(/\b(src|href|poster)=(['"])([^'"]+)\2/g, (whole, attribute, quote, value) => `${attribute}=${quote}${localReference(value, record.url, record.sitePath)}${quote}`);
@@ -159,6 +238,7 @@ function rewriteHtml(text, record) {
     return `<script${attributes}>${rewriteJs(source, `${record.sitePath}#inline-${++inlineScript}`)}</script>`;
   });
   text = text.replace('<head>', `<head>\n    <script src="${prefix}/mirror-runtime.js"></script>\n    <script src="${prefix}/mirror-cleanup.js" defer></script>`);
+  text = text.replace(/<!--MCHOSE_PRESERVED_FLIGHT_(\d+)-->/g, (whole, index) => flight[Number(index)]);
   return text;
 }
 
@@ -168,20 +248,22 @@ if (realSite !== path.join(realRoot, 'site') || (await fs.lstat(site)).isSymboli
 await fs.rm(site, { recursive: true, force: true });
 await fs.mkdir(site);
 for (const record of records) {
+  if (skippedFontCopies.has(record.url)) continue;
   if (!record.sitePath || !record.upstreamPath) throw new Error(`Incomplete source record: ${record.url}`);
   const input = await fs.readFile(path.join(root, record.upstreamPath));
   if (input.length !== record.bytes || sha(input) !== record.sha256) throw new Error(`Source integrity mismatch: ${record.url}`);
   let output = input;
-  if (/\.m?js$/i.test(record.sitePath)) output = Buffer.from(rewriteJs(patchConfigLoaderResults(patchCompatibility(input.toString('utf8'), record.sitePath), record.sitePath), record.sitePath));
+  if (packedPayloads.has(record.url)) output = packedPayloads.get(record.url);
+  else if (/\.m?js$/i.test(record.sitePath)) output = Buffer.from(rewriteJs(patchCzConfigResults(patchConfigLoaderResults(patchCompatibility(input.toString('utf8'), record.sitePath), record.sitePath), record.sitePath), record.sitePath));
   else if (/\.css$/i.test(record.sitePath)) output = Buffer.from(rewriteCss(input.toString('utf8'), record));
   else if (/\.html$/i.test(record.sitePath)) output = Buffer.from(rewriteHtml(input.toString('utf8'), record));
-  const destination = path.resolve(site, record.sitePath);
+  const destination = path.resolve(site, physicalPaths.get(record.url));
   if (!destination.startsWith(site + path.sep)) throw new Error('Invalid deployment path.');
   await fs.mkdir(path.dirname(destination), { recursive: true }); await fs.writeFile(destination, output);
 }
 const storage = await fs.readFile(path.join(root, 'tools/mirror-storage.js'), 'utf8');
 const template = await fs.readFile(path.join(root, 'tools/mirror-runtime.template.js'), 'utf8');
-const runtime = template.replace('/*__MIRROR_STORAGE__*/', () => storage).replace('/*__MIRROR_DATA__*/{}', () => JSON.stringify({ map, hosts: knownHosts, subapps, driverUiVersion: String(globalConfig.version?.__duVersion || '') }));
+const runtime = template.replace('/*__MIRROR_STORAGE__*/', () => storage).replace('/*__MIRROR_RESOURCE_POLICY__*/', () => localStaticPath.toString()).replace('/*__MIRROR_DATA__*/{}', () => JSON.stringify({ map, compressed, hosts: knownHosts, subapps, driverUiVersion: String(globalConfig.version?.__duVersion || '') }));
 parseJs(runtime); await fs.writeFile(path.join(site, 'mirror-runtime.js'), runtime);
 const cleanup = await fs.readFile(path.join(root, 'tools/mirror-cleanup-template.js'));
 await fs.writeFile(path.join(site, 'mirror-cleanup.js'), cleanup); await fs.writeFile(path.join(site, 'sw.js'), cleanup);

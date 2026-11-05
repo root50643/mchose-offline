@@ -1,28 +1,50 @@
 {
   "mode": "mirror",
   "passed": true,
-  "version": "6ea63f4d84fc24ff559cee785b223fce41b4cc6f596dbe5d679a70baffab7c08",
-  "generatedAt": "2026-11-04T15:39:03.221Z",
-  "scope": "Mirrored static files, factory main interface, project subpath, former offline-cache migration, and read-only A7 V3 Ultra+ connection",
+  "version": "28be34505a9a171516bcc0e05e5354b169e6aa928d3648fea673dcd12e4862ab",
+  "generatedAt": "2026-11-05T02:14:57.007Z",
+  "scope": "Captured factory browser frontend, all retrievable static dependencies, root and Pages project paths, original main/gmouse/g7max interfaces, and read-only A7 V3 Ultra+ verification.",
   "completeFactoryParityVerified": false,
   "checks": {
     "staticVerification": "reports/mirror-verification.json",
-    "runtimeUrlMappings": 1606,
+    "sourceDependencyAudit": "reports/mirror-dependencies.json",
+    "httpIndependence": "reports/mirror-independence.json",
+    "sourceFiles": 1857,
+    "staticDependencies": 1786,
+    "unresolvedDependencies": 0,
+    "allRetrievableCaptured": true,
+    "nestedConfigurationResources": 810,
+    "compressedPresetPayloads": 83,
+    "losslessPayloadAndAutoDecodedDeliveryVerified": true,
     "storageEventScenarios": 48,
-    "originalConfigFilesByteIdentical": 4,
     "precache": false,
     "originalTitle": "M HUB 迈从科技 官方驱动",
     "addedOfflineInterfaceAbsent": true,
     "localRootBrowser": true,
     "projectPrefixBrowser": true,
+    "gmouseReactSettingsRendered": true,
     "g7maxWelcomePage": true,
     "originalLoginDialogObserved": true,
     "formerV1ServiceWorkerMigrationObserved": true,
-    "optionalKeyboardRequestsBoundedMs": 5000
+    "staticCdnFallback": false,
+    "browserNetwork": {
+      "mainA7ObservedSeconds": 312,
+      "mainA7LocalResourceCount": 86,
+      "externalStaticAttempts": 0,
+      "unexpectedFailures": 0,
+      "factoryApiOriginsObserved": [
+        "https://chat.maicong.cn"
+      ],
+      "gmouseExternalStaticAttempts": 0,
+      "gmouseKnownUnavailableFavicon": true,
+      "g7maxExternalStaticAttempts": 0,
+      "coverage": "Opt-in local QA: fetch/XHR, resource timing and CSP; original services remain allowed. QA tools are absent from the published site."
+    }
   },
   "hardware": {
     "model": "A7 V3 Ultra+",
     "readOnly": true,
+    "factoryReader": "window.readMouseAllInfo()",
     "dpi": [
       400,
       800,
@@ -31,18 +53,32 @@
       6400,
       50000
     ],
+    "profileIndex": 0,
+    "activeDpiIndex": 3,
+    "rawDpiResponseMatchesDecodedAndCache": true,
+    "settledDpiPageMatchesReadback": true,
+    "ffResponses": 0,
+    "factoryReadElapsedMs": 98,
     "settingsWritten": false,
-    "firmwareWritten": false
+    "firmwareWritten": false,
+    "physicalReadTestOrigin": "http://127.0.0.1:8765/"
   },
   "snapshot": {
-    "sourceFiles": 803,
-    "publishedBytes": 317005892,
-    "deferredManufacturerResources": 771
+    "sourceFiles": 1857,
+    "publishedFiles": 1858,
+    "publishedBytes": 981556046,
+    "deferredManufacturerResources": 0,
+    "transientDownloadErrors": 0,
+    "activeSourceUnavailable": {
+      "http404": 14,
+      "http200EmptyFirmware": 2
+    },
+    "desktopOnlyExclusions": 148
   },
   "limitations": [
-    "Not a full offline archive. Unknown, unavailable or unsaved static assets keep their original manufacturer URLs.",
-    "The manufacturer CDN was unreachable for keyboardConfig.json, keyboardPreset.json, the React driver UI bridge and other deferred assets during testing. The two optional keyboard requests use the original SDK fallback after a 5-second timeout.",
-    "All original function entry points and backend calls were restored, but authenticated cloud synchronization, firmware flashing, other hardware models and the gmouse React application have not passed live acceptance.",
-    "GitHub Pages publication and live browser migration are verified separately in reports/mirror-deployment.json; physical HID was tested on localhost."
+    "Fourteen active dependencies remain HTTP 404 at the manufacturer and two firmware responses are proven HTTP 200 with zero bytes. URLs and evidence are recorded in mirror-independence.json; no usable files were fabricated and no original-CDN retry is used.",
+    "Login, cloud synchronization, community, notifications, user uploads, storefront and native desktop downloads retain manufacturer services. Authenticated cloud flows were not exercised.",
+    "Current physical testing covers read-only A7 V3 Ultra+ only. Other models and MagDock were not physically retested in this round. No firmware flashing, key, macro or DPI writes were performed.",
+    "This release loads resources on demand and does not provide whole-site offline caching. Publication and live-page verification are recorded separately in mirror-deployment.json."
   ]
 }

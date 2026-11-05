@@ -39,6 +39,14 @@ jobs:
         run: node tools/test-mirror-storage-events.mjs
       - name: Test previous-version cache cleanup
         run: node tools/test-mirror-cleanup.mjs
+      - name: Test opt-in local network audit
+        run: node tools/test-qa-network-audit.mjs
+      - name: Test opt-in read-only HID QA isolation
+        run: node tools/test-qa-hid-readonly.mjs
+      - name: Audit independent source dependencies
+        run: node tools/audit-mirror-dependencies.mjs
+      - name: Test static resource independence over HTTP
+        run: node tools/test-mirror-independence.mjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static files

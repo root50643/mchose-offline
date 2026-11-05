@@ -3,17 +3,25 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { parse } from './vendor/acorn.mjs';
+import { localStaticPath } from './mirror-resource-policy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const site = path.join(root, 'site');
 const build = JSON.parse(await fs.readFile(path.join(root, 'reports/mirror-build.json'), 'utf8'));
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
-const errors = [], fallbackReferences = new Set();
+const errors = [], fallbackReferences = new Set(), unavailableReferences = [];
+const unavailablePaths = new Map();
 const source = new Map();
 for (const name of ['source-manifest.json', 'mirror-source-manifest.json']) {
   let manifest;
   try { manifest = JSON.parse(await fs.readFile(path.join(root, 'snapshots', name), 'utf8')); } catch { continue; }
-  for (const file of manifest.files) if (file.status === 'ok') source.set(file.url, file);
+  for (const file of manifest.files) {
+    if (file.status === 'ok') source.set(file.url, file);
+    else if (/HTTP 404\b/.test(file.error || '') || file.sourceResponse?.httpStatus === 200 && file.sourceResponse?.contentLength === 0) {
+      const local = localStaticPath(new URL(file.url));
+      if (local) unavailablePaths.set(local, { url: file.url, error: file.error, sourceResponse: file.sourceResponse });
+    }
+  }
 }
 for (const record of source.values()) {
   try {
@@ -42,7 +50,11 @@ function reference(value, file) {
     if (!url.pathname.startsWith('/mchose-offline/')) { errors.push(`Project path escape: ${file} -> ${value}`); return; }
     let target = decodeURIComponent(url.pathname.slice('/mchose-offline/'.length));
     if (target.endsWith('/')) target += 'index.html';
-    if (!expected.has(target)) errors.push(`Missing relative reference: ${file} -> ${value}`);
+    if (!expected.has(target)) {
+      const unavailable = unavailablePaths.get(target);
+      if (unavailable) unavailableReferences.push({ file, reference: value, localPath: target, ...unavailable });
+      else errors.push(`Missing relative reference: ${file} -> ${value}`);
+    }
   } catch { errors.push(`Invalid reference: ${file} -> ${value}`); }
 }
 let bytesTotal = 0, syntaxChecks = 0;
@@ -72,8 +84,8 @@ if (sha(JSON.stringify(build.files)) !== build.version) errors.push('Build versi
 const result = {
   mode: 'mirror', passed: errors.length === 0, version: build.version, generatedAt: new Date().toISOString(),
   sourceFiles: source.size, publishedFiles: files.length, publishedBytes: bytesTotal, syntaxChecks,
-  externalFallbackReferences: [...fallbackReferences].sort(), errors,
-  limitations: ['Static verification covers mirrored files and references. Unknown assets and original live APIs still use the manufacturer servers. Browser checks are recorded separately.'],
+  externalFallbackReferences: [...fallbackReferences].sort(), unavailableReferences, errors,
+  limitations: ['Static verification covers mirrored files and references. Proven unavailable source files remain local 404 responses; no source file is fabricated. Manufacturer services and explicit downloads retain their original URLs. Browser checks are recorded separately.'],
 };
 await fs.writeFile(path.join(root, 'reports/mirror-verification.json'), JSON.stringify(result, null, 2) + '\n');
 console.log(JSON.stringify({ passed: result.passed, sourceFiles: source.size, publishedFiles: files.length, publishedBytes: bytesTotal, syntaxChecks, errors }));

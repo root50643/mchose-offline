@@ -1,6 +1,6 @@
 {
   "name": "mchose-offline",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "description": "M HUB factory frontend mirror with locally hosted static resources",
   "type": "module",
@@ -9,7 +9,8 @@
     "snapshot": "node tools/snapshot-mirror.mjs",
     "build": "node tools/build-mirror.mjs",
     "verify": "node tools/verify-mirror.mjs",
-    "test": "node tools/test-mirror.mjs && node tools/test-mirror-config.mjs && node tools/test-mirror-storage-events.mjs && node tools/test-mirror-cleanup.mjs",
+    "audit": "node tools/audit-mirror-dependencies.mjs",
+    "test": "node tools/test-mirror.mjs && node tools/test-mirror-config.mjs && node tools/test-mirror-storage-events.mjs && node tools/test-mirror-cleanup.mjs && node tools/test-qa-network-audit.mjs && node tools/test-qa-hid-readonly.mjs && node tools/audit-mirror-dependencies.mjs && node tools/test-mirror-independence.mjs",
     "serve": "node tools/dev-server.mjs --port 8765"
   }
 }

@@ -4,6 +4,7 @@
   const base = new URL('.', document.currentScript.src).href;
   const ownOrigin = new URL(base).origin;
   /*__MIRROR_STORAGE__*/
+  /*__MIRROR_RESOURCE_POLICY__*/
 
   function canonical(value) {
     const url = new URL(value, base);
@@ -16,8 +17,11 @@
     let url;
     try { url = new URL(value, base); } catch { return value; }
     const revision = url.searchParams.get('hash');
-    if (/\/customPage\/driver-ui\//.test(url.pathname) && revision && revision !== DATA.driverUiVersion) return value;
-    const local = DATA.map[canonical(url.href)];
+    if (/\/customPage\/driver-ui\//.test(url.pathname) && revision && revision !== DATA.driverUiVersion) {
+      const filename = url.pathname.slice(url.pathname.lastIndexOf('/') + 1);
+      return new URL(`_mirror_missing/driver-ui/${encodeURIComponent(revision)}/${filename}`, base).href + url.search + url.hash;
+    }
+    const local = DATA.map[canonical(url.href)] || localStaticPath(url);
     return local ? new URL(local, base).href + url.search + url.hash : value;
   }
   function rewriteText(value) {
@@ -60,11 +64,22 @@
   function projectPath(value) {
     return new URL(String(value).replace(/^\/+/, ''), base).pathname;
   }
+  async function readStaticJson(response) {
+    const url = new URL(response.url || '', base), project = new URL(base);
+    const relative = url.origin === project.origin && url.pathname.startsWith(project.pathname) ? url.pathname.slice(project.pathname.length) : null;
+    if (!relative || !DATA.compressed?.[relative]) return response.json();
+    // Fetch may already have decoded HTTP Content-Encoding. Detect the actual
+    // representation instead of decompressing twice on such static hosts.
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return new Response(bytes).json();
+    const stream = new Response(bytes).body.pipeThrough(new DecompressionStream('gzip'));
+    return new Response(stream).json();
+  }
   window.__MC_CIZHOU_ROOT_PATH__ = projectPath('cizhou');
   function customAppUrl(name, fallback) {
     const key = String(name).replace(/^.*\//, '');
     if (DATA.subapps[key]) return new URL(DATA.subapps[key], base).href;
-    if (key === 'gmouse' || key === 'g7max') return `https://www.mchose.com.cn/${key}/`;
+    if (key === 'gmouse' || key === 'g7max') return new URL(`${key}/index.html`, base).href;
     return fallback;
   }
   const nativeFetch = window.fetch.bind(window);
@@ -73,22 +88,6 @@
     if (method !== 'GET' && method !== 'HEAD') return nativeFetch(input, options);
     const raw = input instanceof Request ? input.url : String(input);
     const mapped = assetUrl(raw);
-    // The factory SDK already falls back to its bundled keyboard definitions on
-    // network failure. Bound only its optional updates so an unavailable CDN
-    // cannot hold the entire mouse application behind a long TCP timeout.
-    let url;
-    try { url = new URL(raw, base); } catch { return nativeFetch(input, options); }
-    if (mapped === raw && url.hostname === 'cdn.mchose.com.cn' && /^\/configCenter\/custom\/keyboard(?:Config|Preset)\.json$/.test(url.pathname)) {
-      const controller = new AbortController();
-      const upstreamSignal = options?.signal || (input instanceof Request ? input.signal : null);
-      const abort = () => controller.abort(upstreamSignal.reason);
-      if (upstreamSignal?.aborted) abort();
-      else upstreamSignal?.addEventListener('abort', abort, { once: true });
-      const timer = setTimeout(() => controller.abort(new DOMException('Optional factory configuration timed out', 'TimeoutError')), 5000);
-      return nativeFetch(input, { ...options, signal: controller.signal }).finally(() => {
-        clearTimeout(timer); upstreamSignal?.removeEventListener('abort', abort);
-      });
-    }
     if (mapped === raw) return nativeFetch(input, options);
     return nativeFetch(input instanceof Request ? new Request(mapped, input) : mapped, options);
   };
@@ -97,5 +96,5 @@
     const readOnly = /^(?:GET|HEAD)$/i.test(String(method));
     return nativeOpen.call(this, method, readOnly ? assetUrl(String(value)) : value, ...rest);
   };
-  window.__mchoseMirror = Object.freeze({ base, assetUrl, rewriteText, mapResourceData, projectPath, customAppUrl });
+  window.__mchoseMirror = Object.freeze({ base, assetUrl, rewriteText, mapResourceData, projectPath, customAppUrl, readStaticJson });
 })();

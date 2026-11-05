@@ -52,16 +52,6 @@ function harness(base, options = {}) {
   vm.runInContext(runtime, context, { timeout: 5000 });
   return { window, navigator, context, calls, original, rawLocal, api: window.__mchoseMirror };
 }
-for (const optional of ['keyboardConfig', 'keyboardPreset']) {
-  let timeout, cleared = false;
-  const h = harness('https://root50643.github.io/mchose-offline/', { waitForAbort: true, setTimeout: (callback, delay) => { assert.equal(delay, 5000); timeout = callback; return 1; }, clearTimeout: () => { cleared = true; } });
-  const source = `https://cdn.mchose.com.cn/configCenter/custom/${optional}.json?hash=factory-version`;
-  const pending = h.window.fetch(source);
-  assert.equal(typeof timeout, 'function'); timeout();
-  await assert.rejects(pending, error => error.name === 'TimeoutError');
-  assert.equal(cleared, true);
-  assert.equal(h.calls.fetch[0][0], source, 'The optional config still attempts the real original URL.');
-}
 let mappings = 0;
 for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchose-offline/']) {
   const h = harness(base);
@@ -75,14 +65,13 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
   assert.ok(sample, 'Original compressed configuration file is copied.');
   assert.equal(h.api.assetUrl(sample[0] + '?t=123#value'), new URL(sample[1], base).href + '?t=123#value');
   const driver = 'https://cdn.mchose.com.cn/customPage/driver-ui/driver-ui.global.js';
-  assert.equal(h.api.assetUrl(driver + '?hash=new-unknown-version'), driver + '?hash=new-unknown-version');
+  assert.equal(h.api.assetUrl(driver + '?hash=new-unknown-version'), new URL('_mirror_missing/driver-ui/new-unknown-version/driver-ui.global.js?hash=new-unknown-version', base).href);
   assert.equal(h.api.assetUrl(driver + '?hash=' + data.driverUiVersion), new URL(data.map[driver], base).href + '?hash=' + data.driverUiVersion);
   const backend = [
     'https://www.maicong.cn/mchose/official?name=A7V3Ultra%2B',
     'https://www.maicong.cn/mchose/cloud/search',
     'https://serverapi.maicong.cn/user/info',
     'https://chat.maicong.cn/register/client/node',
-    'https://cdn.mchose.com.cn/unknown-new-model.bin',
   ];
   for (const url of backend) {
     assert.equal(h.api.assetUrl(url), url);
@@ -90,6 +79,16 @@ for (const base of ['http://127.0.0.1:8765/', 'https://root50643.github.io/mchos
     assert.equal(await result.text(), 'real network fixture');
     assert.equal(h.calls.fetch.at(-1)[0], url);
     assert.equal(h.calls.fetch.at(-1)[1].body, 'factory-payload');
+  }
+  const missing = 'https://cdn.mchose.com.cn/unknown-new-model.bin';
+  assert.equal(h.api.assetUrl(missing), new URL('vendor/cdn.mchose.com.cn/unknown-new-model.bin', base).href);
+  await h.window.fetch(missing);
+  assert.equal(h.calls.fetch.at(-1)[0], new URL('vendor/cdn.mchose.com.cn/unknown-new-model.bin', base).href, 'Uncaptured static assets must not silently return to the manufacturer CDN.');
+  for (const filename of ['keyboardConfig', 'keyboardPreset']) {
+    const source = `https://cdn.mchose.com.cn/configCenter/custom/${filename}.json`;
+    assert.ok(data.map[source], 'Required shared SDK configuration must be captured: ' + source);
+    await h.window.fetch(source);
+    assert.equal(h.calls.fetch.at(-1)[0], new URL(data.map[source], base).href);
   }
   const request = new Request(sample[0], { method: 'HEAD', headers: { 'X-Test': 'preserve' } });
   await h.window.fetch(request);

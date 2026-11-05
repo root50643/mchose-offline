@@ -1,0 +1,597 @@
+{
+  "mode": "factory-static-independence",
+  "generatedAt": "2026-11-05T01:45:47.370Z",
+  "passed": true,
+  "scope": "Captured source dependency graph, original nested configurations and actual local HTTP delivery; manufacturer services remain live.",
+  "browserAndHardwareExecuted": false,
+  "precache": false,
+  "origins": [
+    "http://127.0.0.1:50154/",
+    "http://127.0.0.1:62384/mchose-offline/"
+  ],
+  "availability": {
+    "unavailableAtSource": [
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-empty",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin",
+        "error": "Error: Source returned HTTP 200 with an empty body",
+        "sourceResponse": {
+          "httpStatus": 200,
+          "contentLength": 0,
+          "etag": "\"D41D8CD98F00B204E9800998ECF8427E\"",
+          "lastModified": "Sat, 13 Jun 2026 08:19:27 GMT",
+          "contentType": "application/octet-stream",
+          "finalUrl": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin"
+        },
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/cizhou/CZ_SHARED_DATA/main.b1d3fb6f68d495cc5961.js",
+            "offset": 122381,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-empty",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin",
+        "error": "Error: Source returned HTTP 200 with an empty body",
+        "sourceResponse": {
+          "httpStatus": 200,
+          "contentLength": 0,
+          "etag": "\"D41D8CD98F00B204E9800998ECF8427E\"",
+          "lastModified": "Sat, 13 Jun 2026 08:19:27 GMT",
+          "contentType": "application/octet-stream",
+          "finalUrl": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin"
+        },
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/cizhou/CZ_SHARED_DATA/main.b1d3fb6f68d495cc5961.js",
+            "offset": 121434,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/favicon.ico",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/gmouse/",
+            "offset": 1072,
+            "pattern": "html-resource"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/index.txt",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/gmouse/_next/static/chunks/69-4a8d8286260c07a7.js",
+            "offset": 9983,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/renderer/tips.html",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/assets/main-DnvOpr5S.js",
+            "offset": 108132,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/src/icons/empty.svg",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/g7max/assets/index-CdCuEt9D.js",
+            "offset": 67893,
+            "pattern": "literal"
+          }
+        ]
+      }
+    ],
+    "source404": [
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/A5Ultra_v2.0.11.0.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2NEW_v4.8.4.3.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/AX5V2OLD_v4.4.4.3.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra4K_v6.2.5.2.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.offer.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/public/newBin/G3Ultra8K_v6.0.4.2.payload.bin",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+            "offset": 0,
+            "pattern": "legacy-mouse-firmware"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/favicon.ico",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/gmouse/",
+            "offset": 1072,
+            "pattern": "html-resource"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/index.txt",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/gmouse/_next/static/chunks/69-4a8d8286260c07a7.js",
+            "offset": 9983,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/renderer/tips.html",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/assets/main-DnvOpr5S.js",
+            "offset": 108132,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-404",
+        "usable": false,
+        "url": "https://www.mchose.com.cn/src/icons/empty.svg",
+        "error": "Error: HTTP 404 curl: (22) The requested URL returned error: 404",
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/g7max/assets/index-CdCuEt9D.js",
+            "offset": 67893,
+            "pattern": "literal"
+          }
+        ]
+      }
+    ],
+    "sourceEmpty": [
+      {
+        "kind": "source-empty",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin",
+        "error": "Error: Source returned HTTP 200 with an empty body",
+        "sourceResponse": {
+          "httpStatus": 200,
+          "contentLength": 0,
+          "etag": "\"D41D8CD98F00B204E9800998ECF8427E\"",
+          "lastModified": "Sat, 13 Jun 2026 08:19:27 GMT",
+          "contentType": "application/octet-stream",
+          "finalUrl": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3_RF.ef46db37_744cf6e0921a.bin"
+        },
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/cizhou/CZ_SHARED_DATA/main.b1d3fb6f68d495cc5961.js",
+            "offset": 122381,
+            "pattern": "literal"
+          }
+        ]
+      },
+      {
+        "kind": "source-empty",
+        "usable": false,
+        "url": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin",
+        "error": "Error: Source returned HTTP 200 with an empty body",
+        "sourceResponse": {
+          "httpStatus": 200,
+          "contentLength": 0,
+          "etag": "\"D41D8CD98F00B204E9800998ECF8427E\"",
+          "lastModified": "Sat, 13 Jun 2026 08:19:27 GMT",
+          "contentType": "application/octet-stream",
+          "finalUrl": "https://cdn.mchose.com.cn/configCenter/static/binaries/update_K87V3.ef46db37_6cf10cfa9c49.bin"
+        },
+        "evidence": [
+          {
+            "source": "https://www.mchose.com.cn/cizhou/CZ_SHARED_DATA/main.b1d3fb6f68d495cc5961.js",
+            "offset": 121434,
+            "pattern": "literal"
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "complete": false
+  },
+  "localHttp": [
+    {
+      "prefix": "/",
+      "capturedResources": 1857,
+      "expectedMapEntries": 1857,
+      "unavailableSameOrigin404": 16,
+      "actualLocalRequests": 1966,
+      "externalStaticAttempts": []
+    },
+    {
+      "prefix": "/mchose-offline",
+      "capturedResources": 1857,
+      "expectedMapEntries": 1857,
+      "unavailableSameOrigin404": 16,
+      "actualLocalRequests": 1966,
+      "externalStaticAttempts": []
+    }
+  ],
+  "nestedConfiguration": [
+    {
+      "prefix": "/",
+      "configFiles": 7,
+      "staticDOMValues": 810
+    },
+    {
+      "prefix": "/mchose-offline",
+      "configFiles": 7,
+      "staticDOMValues": 810
+    }
+  ],
+  "compressedPresetConsumption": [
+    {
+      "prefix": "/",
+      "logicalPayloads": 83,
+      "hostingAutoDecodedPayloads": 83,
+      "expectedPayloads": 83,
+      "logicalBytes": 27297720,
+      "physicalBytes": 1200857
+    },
+    {
+      "prefix": "/mchose-offline",
+      "logicalPayloads": 83,
+      "hostingAutoDecodedPayloads": 83,
+      "expectedPayloads": 83,
+      "logicalBytes": 27297720,
+      "physicalBytes": 1200857
+    }
+  ],
+  "servicePassthrough": [
+    {
+      "prefix": "/",
+      "fixtures": [
+        {
+          "url": "https://www.maicong.cn/mchose/official?name=A7V3Ultra%2B",
+          "method": "GET"
+        },
+        {
+          "url": "https://www.maicong.cn/mchose/cloud/search",
+          "method": "POST",
+          "body": "original-community-request"
+        },
+        {
+          "url": "https://www.maicong.cn/app-api/member/user/get",
+          "method": "GET"
+        },
+        {
+          "url": "https://serverapi.maicong.cn/user/info",
+          "method": "GET"
+        },
+        {
+          "url": "https://chat.maicong.cn/register/client/node",
+          "method": "GET"
+        }
+      ],
+      "contactedManufacturer": false
+    },
+    {
+      "prefix": "/mchose-offline",
+      "fixtures": [
+        {
+          "url": "https://www.maicong.cn/mchose/official?name=A7V3Ultra%2B",
+          "method": "GET"
+        },
+        {
+          "url": "https://www.maicong.cn/mchose/cloud/search",
+          "method": "POST",
+          "body": "original-community-request"
+        },
+        {
+          "url": "https://www.maicong.cn/app-api/member/user/get",
+          "method": "GET"
+        },
+        {
+          "url": "https://serverapi.maicong.cn/user/info",
+          "method": "GET"
+        },
+        {
+          "url": "https://chat.maicong.cn/register/client/node",
+          "method": "GET"
+        }
+      ],
+      "contactedManufacturer": false
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "This does not execute the full UI or issue HID commands. Browser and physical checks are recorded separately.",
+    "A permanent source 404 is reported as unavailable, never as a working mirrored feature.",
+    "Live account, OAuth, community, notification and user-upload services are excluded from static independence and are not contacted by this test."
+  ],
+  "version": "28be34505a9a171516bcc0e05e5354b169e6aa928d3648fea673dcd12e4862ab",
+  "publishedFiles": 1858,
+  "publishedBytes": 981556046,
+  "sourceAudit": {
+    "generatedAt": "2026-11-05T01:27:33.361Z",
+    "sourceCount": 406,
+    "dependencies": 1786,
+    "unresolvedPatterns": 0,
+    "scanErrors": []
+  },
+  "requiredStartupDependencies": 15,
+  "explicitDynamicSeeds": 48,
+  "resourceMapEntries": 1857,
+  "originalStaticConfigs": 7,
+  "fontAliases": {
+    "checked": 14
+  }
+}
